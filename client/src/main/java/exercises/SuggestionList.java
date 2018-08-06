@@ -1,13 +1,13 @@
 package exercises;
 
 import interfaceProgram.EffectFont;
-import interfaceProgram.IRootExercises;
+import interfaceProgram.IRoot;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 
 // SuggestionList - список предложений
-class SuggestionList implements IRootExercises
+class SuggestionList implements IRoot
 {
     // list - ячейки для предложений
     // value - номер предложения с которого нужно начать добавление в list

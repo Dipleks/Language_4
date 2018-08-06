@@ -1,6 +1,6 @@
 package menu;
 
-import exerciseT.Exercises;
+import exams.Exams;
 import interfaceProgram.RootWindows;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -18,15 +18,15 @@ public class MenuBarEngRus implements RootWindows
 
     private SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
 
-    private final Menu menuFile = new Menu("Файл");
-    private final Menu menuExams = new Menu("Контрольные");
-    private final Menu menuTexts = new Menu("Тексты");
+    private final Menu menuFile = new Menu("Изучить");
+    private final Menu menuE = new Menu("В разработке");
+    private final Menu menuTexts = new Menu("В разработке");
     private final Menu menuCards = new Menu("Карточки");
     private final MenuItem menuExercises = new MenuItem("Задания");
     private final MenuItem menu_my_words = new MenuItem("Мой словарь");
-    private final MenuItem examPS = new MenuItem("Контрольная PS");
-    private final MenuItem menuToBe = new MenuItem("Форма \"to be\"");
-    private final MenuItem examToBe = new MenuItem("Контрольная \"to be\"");
+    private final MenuItem examPS = new MenuItem("2");
+    private final MenuItem menuExam = new MenuItem("Контрольные");
+    private final MenuItem examToBe = new MenuItem("1");
     private final MenuItem textsLevelOne = new MenuItem("Легкий");
     private final MenuItem textsLevelTwo = new MenuItem("Средний");
     private final MenuItem textsLevelThree = new MenuItem("Сложный");
@@ -64,10 +64,10 @@ public class MenuBarEngRus implements RootWindows
         menuBar.setMinWidth(WIDTH_SIZE);
         menuTexts.getItems().addAll(textsLevelOne, textsLevelTwo, textsLevelThree);
         menuServes.getItems().addAll(menuSetting, about);
-        menuFile.getItems().addAll(menuExercises, menuToBe, separatorMenuItem, menu_my_words);
-        menuExams.getItems().addAll(examPS, examToBe);
+        menuFile.getItems().addAll(menuExercises, menuExam, separatorMenuItem, menu_my_words);
+        menuE.getItems().addAll(examPS, examToBe);
         menuCards.getItems().addAll(cardsWords, cardsPhrases, cardsOffers);
-        menuBar.getMenus().addAll(menuFile, menuExams, menuTexts, menuCards, menuHelp, menuServes);
+        menuBar.getMenus().addAll(menuFile, menuE, menuTexts, menuCards, menuHelp, menuServes);
 
         return menuBar;
     }
@@ -137,12 +137,12 @@ public class MenuBarEngRus implements RootWindows
         });
     }
     private void getMenuToBe(){
-        menuToBe.setOnAction(event -> {
+        menuExam.setOnAction(event -> {
             ClearDisplay.clearMethod();
             MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
             menuBarEngRus.getMenu();
-//            AddExerciseExam addExerciseExam = new AddExerciseExam();
-//            addExerciseExam.AddMenuButtonToBe();
+            Exams exams = new Exams();
+            exams.getExams();
         });
     }
     private void getExamToBe(){
