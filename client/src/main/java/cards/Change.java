@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 
 class Change implements ICards
 {
-    Button getNext(int b, IOutputCard card){
+    Button getNext(int a, int b, IOutputCard card){
         next.setLayoutX(WIDTH_SIZE/2.5);
         next.setLayoutY(HEIGHT_SIZE/4);
         next.setStyle(EffectStyle.getStyleButtonDefault10());
@@ -19,7 +19,7 @@ class Change implements ICards
             ROOT_PANE.getChildren().remove(title);
 
             OutputCard outputCard = new OutputCard();
-            outputCard.getOutputCard(b, card);
+            outputCard.getOutputCard(a, b, card);
 
             ROOT_PANE.getChildren().add(title);
 

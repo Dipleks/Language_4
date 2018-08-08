@@ -55,7 +55,7 @@ class CallCard implements ICards
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
             word.setStyle(EffectStyle.getStyleButtonDefault12());
             Change change = new Change();
-            change.getNext(699, new OutputCardExamPS());
+            change.getNext(0, 699, new OutputCardExamPS());
             change.getTranslation();
             ROOT_PANE.getChildren().addAll(next, translation);
         });
@@ -66,7 +66,7 @@ class CallCard implements ICards
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
             Change change = new Change();
-            change.getNext(399, new OutputCardExamToBe());
+            change.getNext(0,399, new OutputCardExamToBe());
             change.getTranslation();
             ROOT_PANE.getChildren().addAll(next, translation);
         });
@@ -77,7 +77,7 @@ class CallCard implements ICards
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
             word.setStyle(EffectStyle.getStyleButton12());
             Change change = new Change();
-            change.getNext(5, new OutputCardWords());
+            change.getNext(0, 5, new OutputCardWords());
             change.getTranslation();
             ROOT_PANE.getChildren().addAll(next, translation);
         });
