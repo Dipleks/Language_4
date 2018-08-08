@@ -228,7 +228,7 @@ public class ExamText
         examEnPS.put(160,"He sees that mistake");
         examEnPS.put(161,"Does this lesson seem useful?");
         examEnPS.put(162,"Who supports you?");
-        examEnPS.put(163,"It seems interestin");
+        examEnPS.put(163,"It seems interesting");
         examEnPS.put(164,"I don't agree with you / I disagree with you");
         examEnPS.put(165,"She misses you");
         examEnPS.put(166,"Do they support this decision?");
@@ -270,7 +270,7 @@ public class ExamText
         examEnPS.put(202,"They go to school");
         examEnPS.put(203,"Do I have enough money?");
         examEnPS.put(204,"I want to do it");
-        examEnPS.put(205,"My brother thies to do it");
+        examEnPS.put(205,"My brother tries to do it");
         examEnPS.put(206,"She doesn't remember it");
         examEnPS.put(207,"I speak English");
         examEnPS.put(208,"His lessons seem very useful");
@@ -327,7 +327,7 @@ public class ExamText
         examEnPS.put(259,"He'd like to become a doctor");
         examEnPS.put(260,"He makes so many mistakes");
         examEnPS.put(261,"What books do you read?");
-        examEnPS.put(262,"She goes to scholl");
+        examEnPS.put(262,"She goes to school");
         examEnPS.put(263,"I support this decision");
         examEnPS.put(264,"Who does it motivate?");
         examEnPS.put(265,"It seems useless");
@@ -351,7 +351,7 @@ public class ExamText
         examEnPS.put(283,"Does it seem boring?");
         examEnPS.put(284,"I feel it");
         examEnPS.put(285,"It happens");
-        examEnPS.put(286,"What kind of comruter games do they play?");
+        examEnPS.put(286,"What kind of computer games do they play?");
         examEnPS.put(287,"I need to solve these problems");
         examEnPS.put(288,"I like this channel");
         examEnPS.put(289,"Those lessons don't help me at all");
@@ -547,7 +547,7 @@ public class ExamText
         examEnPS.put(479,"We live here");
         examEnPS.put(480,"How often do these things happen?");
         examEnPS.put(481,"My father leaves home very early");
-        examEnPS.put(482,"He dosen't work there");
+        examEnPS.put(482,"He doesn't work there");
         examEnPS.put(483,"He works here");
         examEnPS.put(484,"Do these lessons help you?");
         examEnPS.put(485,"I need to check it");
@@ -610,7 +610,7 @@ public class ExamText
         examEnPS.put(542,"What kind of movies does she watch?");
         examEnPS.put(543,"Do you need to solve this problem right now?");
         examEnPS.put(544,"We really like this channel");
-        examEnPS.put(545,"Do you go to scholl?");
+        examEnPS.put(545,"Do you go to school?");
         examEnPS.put(546,"My father does business");
         examEnPS.put(547,"I need to learn English");
         examEnPS.put(548,"I really like these exercises");
@@ -724,7 +724,7 @@ public class ExamText
         examEnPS.put(656,"How often do you watch TV?");
         examEnPS.put(657,"Does this channel seem very interesting?");
         examEnPS.put(658,"Does he always pay for her?");
-        examEnPS.put(659,"How do you gind this idea?");
+        examEnPS.put(659,"How do you find this idea?");
         examEnPS.put(660,"Who motivates you?");
         examEnPS.put(661,"How much free time do you have?");
         examEnPS.put(662,"Does it look strange?");
@@ -1505,7 +1505,7 @@ public class ExamText
         examEnToBe.put(19,"It isn't a very bad situation");
         examEnToBe.put(20,"It's so cheap");
         examEnToBe.put(21,"Is this story so funny?");
-        examEnToBe.put(22,"It's the best cource");
+        examEnToBe.put(22,"It's the best course");
         examEnToBe.put(23,"He's such a clever person");
         examEnToBe.put(24,"How useful is the lesson?");
         examEnToBe.put(25,"How much is the computer?");
@@ -1637,7 +1637,7 @@ public class ExamText
         examEnToBe.put(151,"Is he single?");
         examEnToBe.put(152,"Is it the same?");
         examEnToBe.put(153,"I'm full of ideas");
-        examEnToBe.put(154,"Is he talanted?");
+        examEnToBe.put(154,"Is he talented?");
         examEnToBe.put(155,"Is this test too difficult?");
         examEnToBe.put(156,"Where are our teachers?");
         examEnToBe.put(157,"It isn't so easy");
@@ -1727,13 +1727,13 @@ public class ExamText
         examEnToBe.put(241,"It's a very important detail");
         examEnToBe.put(242,"Are you together?");
         examEnToBe.put(243,"It's very boring");
-        examEnToBe.put(244,"This thing is very impotant");
+        examEnToBe.put(244,"This thing is very important");
         examEnToBe.put(245,"What's really useful?");
         examEnToBe.put(246,"Why is it useless?");
         examEnToBe.put(247,"It's so easy");
         examEnToBe.put(248,"It isn't the best course");
         examEnToBe.put(249,"It's an expensive car");
-        examEnToBe.put(250,"We aren't collegues");
+        examEnToBe.put(250,"We aren't colleagues");
         examEnToBe.put(251,"We aren't tired at all");
         examEnToBe.put(252,"My brother is sixteen");
         examEnToBe.put(253,"Are the computers new?");
@@ -1760,11 +1760,11 @@ public class ExamText
         examEnToBe.put(274,"Is cold here?");
         examEnToBe.put(275,"He's a professional teacher");
         examEnToBe.put(276,"It isn't rainy. It's sunny");
-        examEnToBe.put(277,"Theiridea is very interesting");
+        examEnToBe.put(277,"Their idea is very interesting");
         examEnToBe.put(278,"It's such a difficult exam");
         examEnToBe.put(279,"Is that thing really important?");
         examEnToBe.put(280,"It's a cold day");
-        examEnToBe.put(281,"Is this thing really so imporant?");
+        examEnToBe.put(281,"Is this thing really so important?");
         examEnToBe.put(282,"The day is rainy");
         examEnToBe.put(283,"It isn't on the right");
         examEnToBe.put(284,"It isn't a very big mistake");
@@ -1796,7 +1796,7 @@ public class ExamText
         examEnToBe.put(310,"It's bad");
         examEnToBe.put(311,"It's an important thing");
         examEnToBe.put(312,"It isn't so");
-        examEnToBe.put(313,"What's your gilrfriend's name?");
+        examEnToBe.put(313,"What's your girlfriend's name?");
         examEnToBe.put(314,"Are the lessons really useful?");
         examEnToBe.put(315,"Is the food good?");
         examEnToBe.put(316,"Is the university famous?");
@@ -1814,7 +1814,7 @@ public class ExamText
         examEnToBe.put(328,"It's a warm day");
         examEnToBe.put(329,"Is he a successful businessman?");
         examEnToBe.put(330,"Where is it?");
-        examEnToBe.put(331,"How dgood is the lesson?");
+        examEnToBe.put(331,"How good is the lesson?");
         examEnToBe.put(332,"How is the movie?");
         examEnToBe.put(333,"Is it for children?");
         examEnToBe.put(334,"Are the problems so big?");

@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feafebe0-03e5-4f4f-9b0b-4d911c81482b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/data/IRoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/exams/Exams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/exams/RunServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/add_exams_ps.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/add_exams_to_be.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/createDB.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/Change.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/Change.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/ExamText.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/ExamText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <ignored path="$PROJECT_DIR$/client/target/" />
@@ -17,7 +24,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Exams.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/exams/Exams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1748">
+              <caret line="119" column="44" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunServer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/exams/RunServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,14 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/main/java/exercises/Invocation.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/CallableExams.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/SettingsExercisesList.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exercises/SettingsExercisesList.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamsPS.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamsToBe.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/FormToBe.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/FormPS.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exams/Exams.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exams/Invocation.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java" />
@@ -76,7 +97,6 @@
         <option value="$PROJECT_DIR$/client/src/main/java/cards/OutputCardExercisesPS.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/OutputCardExercisesToBe.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/OutputNext.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamText.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/menu/ClearDisplay.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/ExamText.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/words/ExamText.java" />
@@ -99,6 +119,15 @@
         <option value="$PROJECT_DIR$/client/src/main/java/cards/Change.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/createDB.db" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/add_exams_ps.db" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/add_exams_to_be.db" />
+        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamText.java" />
+        <option value="$PROJECT_DIR$/server/pom.xml" />
+        <option value="$PROJECT_DIR$/server/src/main/java/exams/IRoot.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/exams/Test.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/exams/Exams.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/exams/RunServer.java" />
       </list>
     </option>
   </component>
@@ -126,11 +155,20 @@
           <item name="client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="54" />
     <option name="width" value="509" />
     <option name="height" value="605" />
@@ -176,7 +214,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cards" type="462c0819:PsiDirectoryNode" />
+              <item name="exams" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
@@ -197,6 +235,47 @@
             <path>
               <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exams" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Language_4">
+  <component name="RunManager" selected="Application.RunServer">
     <configuration name="Language_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="interfaceProgram.Language_4" />
       <module name="client" />
@@ -251,6 +330,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="interfaceProgram.RootExercises2" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="RunServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exams.RunServer" />
+      <module name="server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -314,9 +404,11 @@
       <item itemvalue="Application.Language_4" />
       <item itemvalue="Application.Test2" />
       <item itemvalue="JAR Application.client-3.0.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <item itemvalue="Application.RunServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunServer" />
         <item itemvalue="Application.Language_4" />
         <item itemvalue="JAR Application.client-3.0.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="Application.Test2" />
@@ -338,6 +430,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1456" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -348,7 +441,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.13825215" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19972453" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21212122" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292011" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -371,14 +464,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExerciseText.java" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExercisesNegPS.java" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExercisesNegToBe.java" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/SubMenu.java" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExceptionExercises.java" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/test/ExercisesLabel.java" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootExercises.java" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootExercises2.java" />
     <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootWindows.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -426,13 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/ExerciseText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="996" column="54" lean-forward="true" selection-start-line="996" selection-start-column="54" selection-end-line="996" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -513,13 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="1998" column="39" selection-start-line="1998" selection-start-column="28" selection-end-line="1998" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -634,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -698,6 +762,85 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/createDB.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/resources/dataBase.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/ExerciseText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7865">
+          <caret line="1124" selection-start-line="1124" selection-end-line="1124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/add_exams_ps.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="661" column="14" selection-start-line="661" selection-start-column="14" selection-end-line="661" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/add_exams_to_be.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20016">
+          <caret line="1816" column="32" lean-forward="true" selection-start-line="1816" selection-start-column="32" selection-end-line="1816" selection-end-column="32" />
+          <folding>
+            <element signature="method#getStrRuPS#0;class#ExamText#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/data/IRoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/exams/Exams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="119" column="44" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/exams/RunServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
         </state>
       </provider>
     </entry>
