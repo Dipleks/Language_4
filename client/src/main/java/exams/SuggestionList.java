@@ -22,15 +22,17 @@ class SuggestionList implements IRoot
 
             list[i].setText(assignable.getAssignment(value, i, "RU"));
             list[i].setOnMouseClicked(event -> {
-                if (examText.getText().equals(assignable.getAssignment(value, finalI, "EN"))){
+                if (examText.getText().equalsIgnoreCase(assignable.getAssignment(value, finalI, "EN"))){
                     list[finalI].setText(assignable.getAssignment(value, finalI, "EN"));
                     list[finalI].setTextFill(Color.LIMEGREEN);
+                    textLanguage.setTextFill(Color.LIMEGREEN);
                 } else if (examText.getText().equals("")){
                     Exception exception = new Exception();
                     exception.exception("Введите текст!");
                 } else {
                     list[finalI].setText(assignable.getAssignment(value, finalI, "RU"));
                     list[finalI].setTextFill(Color.RED);
+                    textLanguage.setTextFill(Color.RED);
                 }
                 textLanguage.setText(examText.getText());
                 examText.clear();

@@ -37,9 +37,9 @@ class PaneWithForm implements IRoot
             paneSubMenu.setLayoutY(HEIGHT_SIZE/4.2);
             paneSubMenu.setSpacing(HEIGHT_SIZE/60);
             paneSubMenu.getChildren().addAll(
-                    subMenuApp.getSubMenu("Утверждения", new AppPS()),
-                    subMenuNeg.getSubMenu("Отрицания", new NegPS()),
-                    subMenuQues.getSubMenu("Вопросы", new QuesPS()));
+                    subMenuApp.getSubMenu("Утверждения", new OutputAppPS()),
+                    subMenuNeg.getSubMenu("Отрицания", new OutputNegPS()),
+                    subMenuQues.getSubMenu("Вопросы", new OutputQuesPS()));
         });
         tobe.setPrefSize(WIDTH_SIZE/8, HEIGHT_SIZE/18);
         tobe.setStyle(released);
@@ -63,9 +63,9 @@ class PaneWithForm implements IRoot
             paneSubMenu.setLayoutY(HEIGHT_SIZE/3.2);
             paneSubMenu.setSpacing(HEIGHT_SIZE/60);
             paneSubMenu.getChildren().addAll(
-                    subMenuApp.getSubMenu("Утверждения", new AppToBe()),
-                    subMenuNeg.getSubMenu("Отрицания", new NegToBe()),
-                    subMenuQues.getSubMenu("Вопросы", new QuesToBe())
+                    subMenuApp.getSubMenu("Утверждения", new OutputAppToBe()),
+                    subMenuNeg.getSubMenu("Отрицания", new OutputNegToBe()),
+                    subMenuQues.getSubMenu("Вопросы", new OutputQuesToBe())
             );
         });
 

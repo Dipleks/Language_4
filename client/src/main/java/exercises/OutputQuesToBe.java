@@ -3,7 +3,7 @@ package exercises;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Label;
 
-public class AppToBe implements CallableExercises, IRoot
+public class OutputQuesToBe implements CallableExercises, IRoot
 {
     @Override
     public void getListExercises() {
@@ -16,12 +16,11 @@ public class AppToBe implements CallableExercises, IRoot
         invocationPane.setLayoutX(WIDTH_SIZE/12);
         invocationPane.setLayoutY(HEIGHT_SIZE/6);
         invocationPane.getChildren().addAll(
-                invocation1.getInvocation("Задание 1", new Label[43], 0, new FormToBe()),
-                invocation2.getInvocation("Задание 2", new Label[58], 43, new FormToBe()),
-                invocation3.getInvocation("Задание 3", new Label[36], 101, new FormToBe()),
-                invocation4.getInvocation("Задание 4", new Label[51], 137, new FormToBe())
+                invocation1.getInvocation("Задание 1", new Label[69], 228, new FormToBe()),
+                invocation2.getInvocation("Задание 2", new Label[54], 297, new FormToBe()),
+                invocation3.getInvocation("Задание 3", new Label[54], 351, new FormToBe()),
+                invocation4.getInvocation("Задание 4", new Label[57], 405, new FormToBe())
         );
-
         SettingsList settingsExercisesList = new SettingsList();
         settingsExercisesList.settings();
     }

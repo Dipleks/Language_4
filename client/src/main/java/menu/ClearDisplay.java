@@ -1,10 +1,11 @@
 package menu;
 
 import interfaceProgram.ClockDisplay;
+import interfaceProgram.ICards;
 import interfaceProgram.IRoot;
 import interfaceProgram.RootWindows;
 
-public class ClearDisplay implements RootWindows, IRoot
+public class ClearDisplay implements RootWindows, IRoot, ICards
 {
     // Полная зачистка главного окна:
     public static void clearMethod() {
@@ -15,6 +16,7 @@ public class ClearDisplay implements RootWindows, IRoot
         paneLanguageV.getChildren().clear();
         paneForm.getChildren().clear();
         paneSubMenu.getChildren().clear();
+        CALL_CARDS.getChildren().clear();
         ROOT_PANE.getChildren().clear();
         ClockDisplay.clock();
         MenuBarEngRus menuBarEngRus = new MenuBarEngRus();

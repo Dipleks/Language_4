@@ -7,17 +7,19 @@ import javafx.scene.control.Button;
 
 class Change implements ICards
 {
-    Button getNext(){
+    Button getNext(int b, IOutputCard card){
         next.setLayoutX(WIDTH_SIZE/2.5);
         next.setLayoutY(HEIGHT_SIZE/4);
-        next.setStyle(EffectStyle.getStyleButton());
+        next.setStyle(EffectStyle.getStyleButtonDefault10());
+        next.setOnMousePressed(event -> next.setStyle(EffectStyle.getStyleButton10()));
+        next.setOnMouseReleased(event -> next.setStyle(EffectStyle.getStyleButtonDefault10()));
         next.setEffect(EffectShadow.getShadow());
         next.setPrefSize(WIDTH_SIZE/12, HEIGHT_SIZE/25);
         next.setOnAction(event -> {
             ROOT_PANE.getChildren().remove(title);
 
             OutputCard outputCard = new OutputCard();
-            outputCard.getOutputCard(0, 515, new OutputCardExamPS());
+            outputCard.getOutputCard(b, card);
 
             ROOT_PANE.getChildren().add(title);
 
@@ -27,8 +29,10 @@ class Change implements ICards
     Button getTranslation(){
         translation.setLayoutX(WIDTH_SIZE/1.4);
         translation.setLayoutY(HEIGHT_SIZE/4);
-        translation.setStyle(EffectStyle.getStyleButton());
+        translation.setStyle(EffectStyle.getStyleButtonDefault10());
         translation.setEffect(EffectShadow.getShadow());
+        translation.setOnMousePressed(event -> translation.setStyle(EffectStyle.getStyleButton10()));
+        translation.setOnMouseReleased(event -> translation.setStyle(EffectStyle.getStyleButtonDefault10()));
         translation.setPrefSize(WIDTH_SIZE/12, HEIGHT_SIZE/25);
         return translation;
     }

@@ -10,7 +10,7 @@ class SubMenu implements IRoot
     private final String pressed = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
     Button getSubMenu(String title, CallableExercises list){
         Button subMenu = new Button(title);
-        subMenu.setStyle(EffectStyle.getStyleButton());
+        subMenu.setStyle(EffectStyle.getStyleButtonDefault10());
         subMenu.setPrefSize(WIDTH_SIZE/10, HEIGHT_SIZE/22);
         subMenu.setOnMouseEntered(event -> subMenu.setStyle(pressed));
         subMenu.setOnMouseExited(event -> subMenu.setStyle(released));

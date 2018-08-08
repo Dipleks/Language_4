@@ -3,7 +3,7 @@ package exercises;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Label;
 
-public class AppPS implements CallableExercises, IRoot
+public class OutputAppPS implements CallableExercises, IRoot
 {
     @Override
     public void getListExercises() {

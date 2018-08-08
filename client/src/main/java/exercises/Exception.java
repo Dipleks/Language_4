@@ -20,7 +20,7 @@ class Exception implements IRoot
         label.setStyle(EffectStyle.getStyleLabel());
         label.setEffect(EffectShadow.getShadow());
         Button button = new Button("Закрыть");
-        button.setStyle(EffectStyle.getStyleButton());
+        button.setStyle(EffectStyle.getStyleButtonDefault10());
         button.setEffect(EffectShadow.getShadow());
         button.setOnAction(event1 -> stage.close());
         button.setPrefSize(WIDTH_SIZE/15, HEIGHT_SIZE/30);

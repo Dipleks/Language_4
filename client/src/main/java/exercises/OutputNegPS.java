@@ -3,7 +3,7 @@ package exercises;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Label;
 
-public class NegPS implements CallableExercises, IRoot
+public class OutputNegPS implements CallableExercises, IRoot
 {
     @Override
     public void getListExercises() {

@@ -36,7 +36,7 @@ public class SettingsList implements IRoot
         paneLanguage.getChildren().addAll(rus, eng);
         paneLanguageV.getChildren().addAll(lang, paneLanguage);
 
-        backward.setStyle(EffectStyle.getStyleButton());
+        backward.setStyle(EffectStyle.getStyleButtonDefault10());
         backward.setEffect(EffectShadow.getShadow());
         backward.setPrefSize(WIDTH_SIZE/12, HEIGHT_SIZE/20);
         backward.setLayoutX(WIDTH_SIZE/3.7);

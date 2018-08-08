@@ -13,16 +13,7 @@ public class Cards implements ICards
         SeparatorExercises separatorExercises = new SeparatorExercises();
         separatorExercises.getSeparator();
 
-        Change change = new Change();
-        change.getNext();
-        change.getTranslation();
-        rus.setLayoutX(50);
-        rus.setLayoutY(100);
-        eng.setLayoutY(100);
-        eng.setLayoutX(100);
-        rus.setToggleGroup(group);
-        eng.setToggleGroup(group);
-        rus.setSelected(true);
-        ROOT_PANE.getChildren().addAll(next, translation, rus, eng);
+        CallCard callCard = new CallCard();
+        callCard.getCallCards();
     }
 }

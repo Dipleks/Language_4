@@ -4,6 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.VBox;
 
 public interface ICards extends RootWindows
 {
@@ -15,9 +16,10 @@ public interface ICards extends RootWindows
     Button translation = new Button("Перевод"); //перевод
 
     Label title = new Label(); //рандомный текст
+    Label label = new Label("В данной области будет таблица с оригиналом и переводом предыдущей карточки");
 
-    Label yes = new Label("Верно");
-    Label no = new Label("Не верно");
-    Label yesOutput = new Label();
-    Label noOutput = new Label();
+    VBox CALL_CARDS = new VBox();
+    Button examPS = new Button("Present Simple");
+    Button examToBe = new Button("Form \"to be\"");
+    Button word = new Button("Слова");
 }

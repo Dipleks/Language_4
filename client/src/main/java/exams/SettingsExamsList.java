@@ -25,7 +25,7 @@ public class SettingsExamsList implements IRoot
         exercisesPane.setEffect(EffectShadow.getShadow());
         exercisesPane.setContent(suggestionPane);
 
-        backward.setStyle(EffectStyle.getStyleButton());
+        backward.setStyle(EffectStyle.getStyleButtonDefault10());
         backward.setEffect(EffectShadow.getShadow());
         backward.setPrefSize(WIDTH_SIZE/12, HEIGHT_SIZE/20);
         backward.setLayoutX(WIDTH_SIZE/3.7);
