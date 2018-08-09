@@ -1,37 +1,48 @@
 package test_server_client;
 
-import exams.Exams;
-
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.Socket;
-import java.util.Map;
-import java.util.Scanner;
+import java.net.ServerSocket;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Server implements Runnable
-{
-    private Socket socket;
-    private Exams exams = new Exams();
+public class Server extends Thread{
 
-    public Server(Socket socket) {
-        this.socket = socket;
+    public static List<ClientConnection> connects = new ArrayList<>();
+
+    private final int port = 4444;
+    private ServerSocket serverSoket;
+
+    public Server() {
+        try {
+            serverSoket = new ServerSocket(port);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
-    @Override
     public void run() {
-        try(Scanner scanner = new Scanner(socket.getInputStream());
-            PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true)){
-
-            Map<Integer, String> enPS;
-            enPS = exams.getExamEnPS();
-//            for (int i = 0; i < 700; i++) {
-//                System.out.println(enPS.get(i));
-//            }
-            if (scanner.hasNextLine()){
-                printWriter.print("test");
+        while (true) {
+            try {
+                ClientConnection clientConnection = new ClientConnection(serverSoket.accept());
+                sendMessageAll("added: " + clientConnection.toString());
+                Server.connects.add(clientConnection);
+            } catch (IOException ex) {
+                ex.printStackTrace();
             }
-        } catch (IOException e){
-            e.printStackTrace();
+        }
+    }
+
+    public void startServer() {
+        start();
+    }
+
+    public void stopServer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void sendMessageAll(String msg) {
+        for(ClientConnection client : connects) {
+            client.send(msg);
         }
     }
 }
