@@ -6,8 +6,6 @@ public class RunServer
 {
     public static void main(String[] args) {
         Exams exams = new Exams();
-//        exams.getExamEnPS();
-//        exams.getExamRuPS();
 
         Map<Integer, String> enPS;
         enPS = exams.getExamEnPS();

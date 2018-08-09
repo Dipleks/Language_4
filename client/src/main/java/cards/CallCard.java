@@ -77,7 +77,7 @@ class CallCard implements ICards
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
             word.setStyle(EffectStyle.getStyleButton12());
             Change change = new Change();
-            change.getNext(0, 5, new OutputCardWords());
+            change.getNext(0, 422, new OutputCardWords());
             change.getTranslation();
             ROOT_PANE.getChildren().addAll(next, translation);
         });
