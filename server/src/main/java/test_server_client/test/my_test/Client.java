@@ -1,4 +1,4 @@
-package test_server_client.my_test;
+package test_server_client.test.my_test;
 
 import exams.Exams;
 
@@ -41,12 +41,12 @@ public class Client
             }
 //            objectOutputStream.writeObject("Test Client");
 
-            while (true){
-                String str = (String) objectInputStream.readObject();
-                System.out.println(str);
-                objectOutputStream.writeObject("test connect");
-            }
-        } catch (IOException | ClassNotFoundException e) {
+//            while (true){
+//                String str = (String) objectInputStream.readObject();
+//                System.out.println(str);
+//                objectOutputStream.writeObject("test connect");
+//            }
+        } catch (IOException /*| ClassNotFoundException*/ e) {
             e.printStackTrace();
         }
 

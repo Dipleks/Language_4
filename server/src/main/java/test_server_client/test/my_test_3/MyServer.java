@@ -1,4 +1,4 @@
-package test_server_client.my_test;
+package test_server_client.test.my_test_3;
 
 public class MyServer
 {

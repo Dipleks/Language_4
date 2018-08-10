@@ -1,4 +1,4 @@
-package test_server_client.my_test;
+package test_server_client.test.my_test;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -26,7 +26,7 @@ public class ConnectClient extends Thread
                 System.out.println(str);
             }
         } catch (IOException | ClassNotFoundException ex){
-            ex.printStackTrace();
+            System.out.println("MISTAKE");
         }
     }
 

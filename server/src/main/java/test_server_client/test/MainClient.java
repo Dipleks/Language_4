@@ -1,4 +1,4 @@
-package test_server_client;
+package test_server_client.test;
 
 public class MainClient
 {
