@@ -6,8 +6,8 @@ public class FormToBe implements Assignable
 
     @Override
     public String getAssignment(int value, int n, String language) {
-        if (language.equals("RU")) text.getToBeFileRu().get(value + n);
-        if (language.equals("EN")) text.getToBeFileEn().get(value + n);
+        if (language.equals("RU")) return text.getToBeFileRu().get(value + n);
+        if (language.equals("EN")) return text.getToBeFileEn().get(value + n);
         return "No Files";
     }
 }

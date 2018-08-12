@@ -1,6 +1,7 @@
 package menu;
 
-import exerciseT.Exercises;
+import cards.Cards;
+import exams.Exams;
 import interfaceProgram.RootWindows;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -18,21 +19,15 @@ public class MenuBarEngRus implements RootWindows
 
     private SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
 
-    private final Menu menuFile = new Menu("Файл");
-    private final Menu menuExams = new Menu("Контрольные");
-    private final Menu menuTexts = new Menu("Тексты");
-    private final Menu menuCards = new Menu("Карточки");
+    private final Menu menuFile = new Menu("Уроки");
+    private final Menu menuCheck = new Menu("Проверка");
     private final MenuItem menuExercises = new MenuItem("Задания");
+    private final MenuItem menuCards = new MenuItem("Карточки");
     private final MenuItem menu_my_words = new MenuItem("Мой словарь");
-    private final MenuItem examPS = new MenuItem("Контрольная PS");
-    private final MenuItem menuToBe = new MenuItem("Форма \"to be\"");
-    private final MenuItem examToBe = new MenuItem("Контрольная \"to be\"");
+    private final MenuItem menuExam = new MenuItem("Контрольные");
     private final MenuItem textsLevelOne = new MenuItem("Легкий");
     private final MenuItem textsLevelTwo = new MenuItem("Средний");
     private final MenuItem textsLevelThree = new MenuItem("Сложный");
-    private final MenuItem cardsWords = new MenuItem("Слова");
-    private final MenuItem cardsPhrases = new MenuItem("Фразы");
-    private final MenuItem cardsOffers = new MenuItem("Предложения");
 
     private final Menu menuHelp = new Menu("Подсказки");
 
@@ -47,29 +42,34 @@ public class MenuBarEngRus implements RootWindows
 
         getMenuPS();
         getMenu_my_words();
-        getExamPS();
         getAbout();
         getMenuToBe();
-        getExamToBe();
         getTextsLevelOne();
         getMenuServes();
+        getMenuCards();
 
         menuHelp.setDisable(true);
-        cardsWords.setDisable(true);
-        cardsPhrases.setDisable(true);
-        cardsOffers.setDisable(true);
         textsLevelTwo.setDisable(true);
         textsLevelThree.setDisable(true);
+        menu_my_words.setDisable(true);
+        menuSetting.setDisable(true);
 
         menuBar.setMinWidth(WIDTH_SIZE);
-        menuTexts.getItems().addAll(textsLevelOne, textsLevelTwo, textsLevelThree);
         menuServes.getItems().addAll(menuSetting, about);
-        menuFile.getItems().addAll(menuExercises, menuToBe, separatorMenuItem, menu_my_words);
-        menuExams.getItems().addAll(examPS, examToBe);
-        menuCards.getItems().addAll(cardsWords, cardsPhrases, cardsOffers);
-        menuBar.getMenus().addAll(menuFile, menuExams, menuTexts, menuCards, menuHelp, menuServes);
+        menuFile.getItems().addAll(menuExercises, menuExam, separatorMenuItem, menu_my_words);
+        menuCheck.getItems().addAll(menuCards);
+        menuBar.getMenus().addAll(menuFile, menuCheck, menuHelp, menuServes);
 
         return menuBar;
+    }
+    private void getMenuCards(){
+        menuCards.setOnAction(event -> {
+            ClearDisplay.clearMethod();
+            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+            menuBarEngRus.getMenu();
+            Cards cards = new Cards();
+            cards.getCards();
+        });
     }
     private void getMenuServes(){
         menuSetting.setOnAction(event -> {
@@ -104,15 +104,6 @@ public class MenuBarEngRus implements RootWindows
             addExerciseExam.getExercises();
         });
     }
-    private void getExamPS(){
-        examPS.setOnAction(event -> {
-            ClearDisplay.clearMethod();
-            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
-            menuBarEngRus.getMenu();
-//            AddExerciseExam addExerciseExam = new AddExerciseExam();
-//            addExerciseExam.AddMenuButtonExamPS();
-        });
-    }
     private void getAbout(){
         about.setOnAction(event -> {
             Stage window = new Stage();
@@ -123,7 +114,7 @@ public class MenuBarEngRus implements RootWindows
             label.setPrefSize(WIDTH_SIZE/4, HEIGHT_SIZE/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +
-                    "\n\n                                    Версия программы: 2.2.3");
+                    "\n\n                                    Версия программы: 3.0.1");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, HEIGHT_SIZE*0.015));
             label.setAlignment(Pos.CENTER);
@@ -137,21 +128,12 @@ public class MenuBarEngRus implements RootWindows
         });
     }
     private void getMenuToBe(){
-        menuToBe.setOnAction(event -> {
+        menuExam.setOnAction(event -> {
             ClearDisplay.clearMethod();
             MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
             menuBarEngRus.getMenu();
-//            AddExerciseExam addExerciseExam = new AddExerciseExam();
-//            addExerciseExam.AddMenuButtonToBe();
-        });
-    }
-    private void getExamToBe(){
-        examToBe.setOnAction(event -> {
-            ClearDisplay.clearMethod();
-            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
-            menuBarEngRus.getMenu();
-//            AddExerciseExam addExerciseExam = new AddExerciseExam();
-//            addExerciseExam.AddMenuButtonExamToBe();
+            Exams exams = new Exams();
+            exams.getExams();
         });
     }
     private void getTextsLevelOne(){

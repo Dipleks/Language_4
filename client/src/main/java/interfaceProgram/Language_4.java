@@ -1,7 +1,5 @@
 package interfaceProgram;
 
-import interfaceProgram.ClockDisplay;
-import interfaceProgram.RootWindows;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import menu.MenuBarEngRus;
@@ -17,7 +15,7 @@ public class Language_4 extends Application implements RootWindows
         ClockDisplay.clock();
         ROOT_PANE.getChildren().addAll();
 
-        WINDOW.setTitle("language_4");
+        WINDOW.setTitle("Learn English");
         WINDOW.setMaximized(true); //устанавливаем размер окна на весь экран
         WINDOW.setScene(SCENE_ROOT);
         WINDOW.show();
