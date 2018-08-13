@@ -47,6 +47,8 @@ class CallCard implements ICards
         getSettingsButton();
 
         examPS.setOnAction(event -> {
+            OutputCard outputCard = new OutputCard();
+            outputCard.deleteHistory();
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
             examPS.setStyle(EffectStyle.getStyleButton12());
@@ -58,6 +60,8 @@ class CallCard implements ICards
             ROOT_PANE.getChildren().addAll(next, translation);
         });
         examToBe.setOnAction(event -> {
+            OutputCard outputCard = new OutputCard();
+            outputCard.deleteHistory();
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButton12());
             word.setStyle(EffectStyle.getStyleButtonDefault12());
@@ -69,6 +73,8 @@ class CallCard implements ICards
             ROOT_PANE.getChildren().addAll(next, translation);
         });
         word.setOnAction(event -> {
+            OutputCard outputCard = new OutputCard();
+            outputCard.deleteHistory();
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());

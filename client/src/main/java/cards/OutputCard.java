@@ -5,11 +5,14 @@ import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
 import javafx.geometry.Pos;
+import javafx.scene.control.Label;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 class OutputCard implements ICards, IDataBase
 {
@@ -45,21 +48,33 @@ class OutputCard implements ICards, IDataBase
             System.out.println("не удалось найти драйвер");
             e.printStackTrace();
         }
-        try{
-            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
-            Statement statement = connection.createStatement();
-
-            // TODO добавить экранирование опострофа для корретного добавления данных в БД
+        try(Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement())
+        {
+            Pattern pattern  = Pattern.compile("'"); // то что нужно заменить
+            Matcher matcher = pattern.matcher(card.getCard(random_number, "EN")); // там где нужно заменить
+            String result = matcher.replaceAll("''"); // то чем заменить
             statement.executeUpdate("INSERT INTO history (russia, english) VALUES " +
                     "('"+ card.getCard(random_number, "RU") +"', '" +
-                    card.getCard(random_number, "EN") +"');");
-
-            statement.close();
-            connection.close();
-            ROOT_PANE.getChildren().add(tablePane);
+                    result +"');");
         } catch (SQLException e){
            e.printStackTrace();
         }
+    }
 
+    void deleteHistory(){
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e){
+            System.out.println("не удалось найти драйвер");
+            e.printStackTrace();
+        }
+        try(Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement())
+        {
+            statement.executeUpdate("DELETE FROM history; ALTER SEQUENCE history_id_seq RESTART WITH 1;");
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 }
