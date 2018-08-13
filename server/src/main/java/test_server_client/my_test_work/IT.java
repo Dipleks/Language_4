@@ -8,4 +8,6 @@ public interface IT
     Label l1 = new Label();
     Label l2 = new Label();
     Button b = new Button("Press");
+
+    Label[] ls = new Label[10];
 }

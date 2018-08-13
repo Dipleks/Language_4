@@ -7,13 +7,14 @@ import menu.MenuBarEngRus;
 public class Language_4 extends Application implements RootWindows
 {
     private MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+    private Rule rule = new Rule();
 
     @Override
     public void start(Stage primaryStage) {
 
         menuBarEngRus.getMenu();
         ClockDisplay.clock();
-        ROOT_PANE.getChildren().addAll();
+        ROOT_PANE.getChildren().addAll(rule.getCollectionRules());
 
         WINDOW.setTitle("Learn English");
         WINDOW.setMaximized(true); //устанавливаем размер окна на весь экран
