@@ -20,7 +20,7 @@ class History implements ICards, IDataBase
         tablePane.setLayoutY(HEIGHT_SIZE/2.7);
         tablePane.setEffect(EffectShadow.getShadow());
         tablePane.setPrefSize(WIDTH_SIZE/1.9, HEIGHT_SIZE/2.5);
-        tablePane.setStyle("-fx-border-color: red");
+//        tablePane.setStyle("-fx-border-color: red");
 
         TableView<HistoryTable> table = new TableView<>();
         TableColumn<HistoryTable, String> rusColumn = new TableColumn<>("Русский");

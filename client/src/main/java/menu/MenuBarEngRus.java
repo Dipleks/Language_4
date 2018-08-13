@@ -114,7 +114,7 @@ public class MenuBarEngRus implements RootWindows
             label.setPrefSize(WIDTH_SIZE/4, HEIGHT_SIZE/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +
-                    "\n\n                                    Версия программы: 3.0.1");
+                    "\n\n                                    Версия программы: 3.0.2");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, HEIGHT_SIZE*0.015));
             label.setAlignment(Pos.CENTER);
