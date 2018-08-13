@@ -14,6 +14,7 @@ class CallCard implements ICards
     VBox getCallCards(){
         rus.setLayoutX(WIDTH_SIZE/18);
         rus.setLayoutY(HEIGHT_SIZE/1.25);
+        rus.setEffect(EffectShadow.getShadow());
         rus.setStyle(EffectStyle.getStyleButton10());
         rus.setOnAction(event -> {
             eng.setStyle(EffectStyle.getStyleButtonDefault10());
@@ -22,6 +23,7 @@ class CallCard implements ICards
         rus.setPrefSize(WIDTH_SIZE/15, HEIGHT_SIZE/20);
         eng.setLayoutX(WIDTH_SIZE/7);
         eng.setLayoutY(HEIGHT_SIZE/1.25);
+        eng.setEffect(EffectShadow.getShadow());
         eng.setOnAction(event -> {
             rus.setStyle(EffectStyle.getStyleButtonDefault10());
             eng.setStyle(EffectStyle.getStyleButton10());
@@ -31,10 +33,6 @@ class CallCard implements ICards
         rus.setToggleGroup(group);
         eng.setToggleGroup(group);
         rus.setSelected(true);
-
-        label.setLayoutX(WIDTH_SIZE/2);
-        label.setLayoutY(HEIGHT_SIZE/2);
-        ROOT_PANE.getChildren().add(label);
 
         ROOT_PANE.getChildren().addAll(rus, eng);
 

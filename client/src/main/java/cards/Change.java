@@ -17,12 +17,15 @@ class Change implements ICards
         next.setPrefSize(WIDTH_SIZE/12, HEIGHT_SIZE/25);
         next.setOnAction(event -> {
             ROOT_PANE.getChildren().remove(title);
+            ROOT_PANE.getChildren().remove(tablePane);
 
             OutputCard outputCard = new OutputCard();
             outputCard.getOutputCard(a, b, card);
 
-            ROOT_PANE.getChildren().add(title);
+            History history = new History();
+            history.getHistory();
 
+            ROOT_PANE.getChildren().add(title);
         });
         return next;
     }
