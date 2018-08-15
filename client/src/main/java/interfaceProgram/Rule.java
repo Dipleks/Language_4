@@ -8,7 +8,7 @@ class Rule implements RootWindows
     private final String r5 = "- Нажимайте на предложения и получайте перевод";
     private final String r6 = "- Нажимайте \"Далее\" и получайте следующею карточку";
     private final String r3 = "- Выберите упражнения по темам";
-    private final String r4 = "- На данный момент в программе более 1000 предложений и более 500 слов";
+    private final String r4 = "- На данный момент в программе более 1000 предложений и более 1000 слов";
     private final String r1 = "- Программа находится в разработке и является продолжением Language_2";
     private final String r2 = "- Все функции с Language_2 будут добавлены в ближайшем обновлении";
 
