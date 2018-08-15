@@ -47,7 +47,7 @@ public class SettingsList implements IRoot
             ClearDisplay.clearMethod();
             MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
             menuBarEngRus.getMenu();
-            exercises.Exercises addExerciseExam = new exercises.Exercises();
+            Exercises addExerciseExam = new exercises.Exercises();
             addExerciseExam.getExercises();
         });
 

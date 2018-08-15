@@ -28,7 +28,6 @@ class OutputCard implements ICards, IDataBase
             ResultSet resultSet = statement.executeQuery("SELECT id FROM "+ nameTable +" ORDER BY random() LIMIT 1;");
             resultSet.next();
             random_number = (resultSet.getInt("id")-1);
-            System.out.println(random_number);
             statement.executeUpdate("DELETE FROM "+ nameTable +" WHERE number = " + random_number + ";");
             statement.executeUpdate("ALTER SEQUENCE "+ nameTable +"_id_seq RESTART WITH 1;");
 

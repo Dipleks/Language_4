@@ -1,6 +1,8 @@
 package menu;
 
 import cards.Cards;
+import db.IDataBase;
+import db.UpdateTable;
 import exams.Exams;
 import interfaceProgram.RootWindows;
 import javafx.geometry.Pos;
@@ -13,7 +15,9 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class MenuBarEngRus implements RootWindows
+import java.sql.*;
+
+public class MenuBarEngRus implements RootWindows, IDataBase
 {
     private final MenuBar menuBar = new MenuBar();
 
@@ -53,6 +57,20 @@ public class MenuBarEngRus implements RootWindows
         textsLevelThree.setDisable(true);
         menu_my_words.setDisable(true);
         menuSetting.setDisable(true);
+        menuCheck.setDisable(true);
+
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e){
+            System.out.println("не удалось найти драйвер");
+            e.printStackTrace();
+        }
+        try (Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS))
+        {
+            menuCheck.setDisable(false);
+        } catch (SQLException e){
+            System.out.println("БД отключена");
+        }
 
         menuBar.setMinWidth(WIDTH_SIZE);
         menuServes.getItems().addAll(menuSetting, about);

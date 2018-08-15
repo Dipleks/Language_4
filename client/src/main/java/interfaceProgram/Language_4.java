@@ -11,7 +11,7 @@ public class Language_4 extends Application implements RootWindows
     private Rule rule = new Rule();
 
     @Override
-    public void init() throws Exception {
+    public void init() {
         UpdateTable updateTable = new UpdateTable();
         updateTable.deleteUpdateCard();
         updateTable.deleteUpdateExamPS();
