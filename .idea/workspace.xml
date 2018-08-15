@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="feafebe0-03e5-4f4f-9b0b-4d911c81482b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/SettingsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/SettingsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/interfaceProgram/Language_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/interfaceProgram/Language_4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/menu/MenuBarEngRus.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/menu/MenuBarEngRus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/words/WordsText.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/words/WordsText.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <ignored path="$PROJECT_DIR$/client/target/" />
@@ -39,11 +35,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OutputCard.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OutputCard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="72">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_db_home.db" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_db_home.db">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="12" selection-end-line="6" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Language_4.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
+              <folding>
+                <element signature="e#3233#3234#0" expanded="true" />
+                <element signature="e#3261#3262#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,11 +84,12 @@
       <find>''</find>
       <find>Её</find>
       <find>реально</find>
-      <find>Её р</find>
-      <find>Что стра</find>
-      <find>Я чувствую</find>
-      <find>Как ты доби</find>
-      <find>Почему тот</find>
+      <find />
+      <find />
+      <find />
+      <find />
+      <find />
+      <find />
       <find />
     </findStrings>
   </component>
@@ -117,20 +136,20 @@
         <option value="$PROJECT_DIR$/client/src/main/resources/add_db_home.db" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/SaveNumber.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" />
-        <option value="$PROJECT_DIR$/client/src/main/resources/add_words.db" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/UpdateTableCard.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/UpdateTable.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/words/WordsText.java" />
         <option value="$PROJECT_DIR$/client/src/main/resources/add_exams_ps.db" />
-        <option value="$PROJECT_DIR$/client/src/main/resources/add_history_cards.db" />
         <option value="$PROJECT_DIR$/client/src/main/resources/add_exams_to_be.db" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/Change.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/SettingsList.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/words/WordsText.java" />
+        <option value="$PROJECT_DIR$/client/src/main/resources/add_history_cards.db" />
+        <option value="$PROJECT_DIR$/client/src/main/resources/add_words.db" />
+        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" />
       </list>
     </option>
   </component>
@@ -171,8 +190,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="54" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="445" />
+    <option name="y" value="330" />
     <option name="width" value="509" />
     <option name="height" value="605" />
   </component>
@@ -225,22 +245,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exams" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exercises" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
@@ -521,7 +525,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.13825215" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24655648" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21900827" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292011" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -630,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_db_home.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -655,6 +652,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -687,41 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/words/WordsText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="450" column="45" lean-forward="true" selection-start-line="450" selection-start-column="45" selection-end-line="450" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_words.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_history_cards.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_exams_to_be.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_exams_ps.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="91" lean-forward="true" selection-start-column="91" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCardExercisesToBe.java" />
     <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Change.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -744,13 +709,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -792,10 +750,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/words/WordsText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="1920" column="47" selection-start-line="1920" selection-start-column="47" selection-end-line="1920" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="72">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_db_home.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="12" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_exams_ps.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="81" selection-start-column="81" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_exams_to_be.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_history_cards.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="88" lean-forward="true" selection-start-column="88" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_words.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="102" lean-forward="true" selection-start-column="102" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
+          <folding>
+            <element signature="e#3233#3234#0" expanded="true" />
+            <element signature="e#3261#3262#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
