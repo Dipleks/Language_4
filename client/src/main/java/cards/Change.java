@@ -13,7 +13,7 @@ import java.sql.Statement;
 
 class Change implements ICards, IDataBase
 {
-    Button getNext(int a, int b, IOutputCard card){
+    Button getNext(IOutputCard card, String nameTable){
         next.setLayoutX(WIDTH_SIZE/2.5);
         next.setLayoutY(HEIGHT_SIZE/4);
         next.setStyle(EffectStyle.getStyleButtonDefault10());
@@ -26,7 +26,7 @@ class Change implements ICards, IDataBase
             ROOT_PANE.getChildren().remove(tablePane);
 
             OutputCard outputCard = new OutputCard();
-            outputCard.getOutputCard(a, b, card);
+            outputCard.getOutputCard(card, nameTable);
 
             History history = new History();
             history.getHistory();

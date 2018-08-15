@@ -1,5 +1,6 @@
 package interfaceProgram;
 
+import db.UpdateTable;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import menu.MenuBarEngRus;
@@ -8,6 +9,14 @@ public class Language_4 extends Application implements RootWindows
 {
     private MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
     private Rule rule = new Rule();
+
+    @Override
+    public void init() throws Exception {
+        UpdateTable updateTable = new UpdateTable();
+        updateTable.deleteUpdateCard();
+        updateTable.deleteUpdateExamPS();
+        updateTable.deleteUpdateExamToBe();
+    }
 
     @Override
     public void start(Stage primaryStage) {

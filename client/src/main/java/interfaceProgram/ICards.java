@@ -5,6 +5,9 @@ import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 public interface ICards extends RootWindows
 {
     ToggleGroup group = new ToggleGroup();

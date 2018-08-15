@@ -1,12 +1,19 @@
 package cards;
 
+import db.IDataBase;
 import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
+import words.WordsText;
 
-class CallCard implements ICards
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+class CallCard implements ICards, IDataBase
 {
     private double w = WIDTH_SIZE/8;
     private double h = HEIGHT_SIZE/18;
@@ -55,7 +62,7 @@ class CallCard implements ICards
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
             word.setStyle(EffectStyle.getStyleButtonDefault12());
             Change change = new Change();
-            change.getNext(0, 699, new OutputCardExamPS());
+            change.getNext(new OutputCardExamPS(), "exam_cards_ps");
             change.getTranslation();
             ROOT_PANE.getChildren().addAll(next, translation);
         });
@@ -68,7 +75,7 @@ class CallCard implements ICards
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
             Change change = new Change();
-            change.getNext(0,399, new OutputCardExamToBe());
+            change.getNext(new OutputCardExamToBe(), "exam_cards_to_be");
             change.getTranslation();
             ROOT_PANE.getChildren().addAll(next, translation);
         });
@@ -81,7 +88,7 @@ class CallCard implements ICards
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
             word.setStyle(EffectStyle.getStyleButton12());
             Change change = new Change();
-            change.getNext(0, 422, new OutputCardWords());
+            change.getNext(new OutputCardWords(), "words");
             change.getTranslation();
             ROOT_PANE.getChildren().addAll(next, translation);
         });
