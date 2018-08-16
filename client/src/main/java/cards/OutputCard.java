@@ -37,6 +37,10 @@ class OutputCard implements ICards, IDataBase
         } catch (SQLException e){
             UpdateTable updateTable = new UpdateTable();
             updateTable.deleteUpdateCard();
+            updateTable.deleteUpdateExamPS();
+            updateTable.deleteUpdateExamToBe();
+            RangeWords rangeWords = new RangeWords();
+            rangeWords.addRangeTable();
         }
 
         title.setLayoutX(WIDTH_SIZE/2.5);
@@ -63,6 +67,8 @@ class OutputCard implements ICards, IDataBase
                 ROOT_PANE.getChildren().add(title);
             });
         }
+
+        // история
         try {
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e){

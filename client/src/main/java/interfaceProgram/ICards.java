@@ -25,4 +25,9 @@ public interface ICards extends RootWindows
     Button word = new Button("Слова");
 
     StackPane tablePane = new StackPane();
+
+    Label titleRange = new Label("Задать ограничение для слов");
+    TextField MIN = new TextField();
+    TextField MAX = new TextField();
+    Button range = new Button("Выбрать диапазон"); // выбрать диапазон значений
 }

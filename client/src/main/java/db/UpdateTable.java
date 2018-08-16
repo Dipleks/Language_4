@@ -80,4 +80,28 @@ public class UpdateTable implements IDataBase
             e.printStackTrace();
         }
     }
+
+    public void deleteUpdateWordsRange(int min, int max){
+        WordsText wordsText = new WordsText();
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e){
+            System.out.println("не удалось найти драйвер");
+            e.printStackTrace();
+        }
+        try(Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement())
+        {
+            statement.executeUpdate("DELETE FROM words_range; ALTER SEQUENCE words_range_id_seq RESTART WITH 1;");
+            for (int i = (min-1); i < (max-1); i++) {
+                Pattern pattern  = Pattern.compile("'"); // то что нужно заменить
+                Matcher matcher = pattern.matcher(wordsText.getWordsEn().get(i)); // там где нужно заменить
+                String result = matcher.replaceAll("''"); // то чем заменить
+                statement.executeUpdate("INSERT INTO words_range(russia, english, number) " +
+                        "VALUES ('"+ wordsText.getWordsRu().get(i) +"', '"+ result +"', "+ i +");");
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 }

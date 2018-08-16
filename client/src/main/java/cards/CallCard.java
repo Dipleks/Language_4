@@ -4,14 +4,7 @@ import db.IDataBase;
 import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
-import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
-import words.WordsText;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
 
 class CallCard implements ICards, IDataBase
 {
@@ -43,7 +36,7 @@ class CallCard implements ICards, IDataBase
 
         ROOT_PANE.getChildren().addAll(rus, eng);
 
-        CALL_CARDS.setLayoutX(WIDTH_SIZE/12);
+        CALL_CARDS.setLayoutX(WIDTH_SIZE/14);
         CALL_CARDS.setLayoutY(HEIGHT_SIZE/5);
         CALL_CARDS.setSpacing(HEIGHT_SIZE/50);
         CALL_CARDS.setEffect(EffectShadow.getShadow());
@@ -60,6 +53,7 @@ class CallCard implements ICards, IDataBase
             ROOT_PANE.getChildren().remove(translation);
             examPS.setStyle(EffectStyle.getStyleButton12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
+            range.setStyle(EffectStyle.getStyleButtonDefault10());
             word.setStyle(EffectStyle.getStyleButtonDefault12());
             Change change = new Change();
             change.getNext(new OutputCardExamPS(), "exam_cards_ps");
@@ -71,6 +65,7 @@ class CallCard implements ICards, IDataBase
             outputCard.deleteHistory();
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButton12());
+            range.setStyle(EffectStyle.getStyleButtonDefault10());
             word.setStyle(EffectStyle.getStyleButtonDefault12());
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
@@ -86,9 +81,28 @@ class CallCard implements ICards, IDataBase
             ROOT_PANE.getChildren().remove(translation);
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
+            range.setStyle(EffectStyle.getStyleButtonDefault10());
             word.setStyle(EffectStyle.getStyleButton12());
             Change change = new Change();
             change.getNext(new OutputCardWords(), "words");
+            change.getTranslation();
+            ROOT_PANE.getChildren().addAll(next, translation);
+        });
+        range.setOnAction(event -> {
+            OutputCard outputCard = new OutputCard();
+            outputCard.deleteHistory();
+            ROOT_PANE.getChildren().remove(next);
+            ROOT_PANE.getChildren().remove(translation);
+            examPS.setStyle(EffectStyle.getStyleButtonDefault12());
+            examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
+            word.setStyle(EffectStyle.getStyleButtonDefault12());
+            range.setStyle(EffectStyle.getStyleButton10());
+
+            RangeWords rangeWords = new RangeWords();
+            rangeWords.addRangeTable();
+
+            Change change = new Change();
+            change.getNext(new OutputCardWords(), "words_range");
             change.getTranslation();
             ROOT_PANE.getChildren().addAll(next, translation);
         });
