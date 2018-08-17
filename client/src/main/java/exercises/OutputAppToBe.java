@@ -3,10 +3,10 @@ package exercises;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Label;
 
-public class OutputAppToBe implements CallableExercises, IRoot
+public class OutputAppToBe implements Callable, IRoot
 {
     @Override
-    public void getListExercises() {
+    public void getList() {
         Invocation invocation1 = new Invocation();
         Invocation invocation2 = new Invocation();
         Invocation invocation3 = new Invocation();

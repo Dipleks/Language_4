@@ -3,10 +3,10 @@ package exercises;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Label;
 
-public class OutputNegToBe implements CallableExercises, IRoot
+public class OutputNegToBe implements Callable, IRoot
 {
     @Override
-    public void getListExercises() {
+    public void getList() {
         Invocation invocation1 = new Invocation();
 
         invocationPane.setSpacing(WIDTH_SIZE/65);

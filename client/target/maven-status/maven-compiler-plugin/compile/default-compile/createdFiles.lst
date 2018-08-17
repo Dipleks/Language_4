@@ -17,7 +17,6 @@ cards\OutputCardExamPS.class
 exams\SettingsExamsList.class
 exercises\SubMenu.class
 interfaceProgram\Language_4.class
-exercises\CallableExercises.class
 interfaceProgram\Rule.class
 cards\CallCard.class
 cards\Cards.class
@@ -51,7 +50,6 @@ interfaceProgram\IRoot.class
 cards\OutputCardWords.class
 exercises\OutputQuesToBe.class
 cards\History.class
-exams\CallableExercises.class
 interfaceProgram\EffectColor.class
 menu\ClearDisplay.class
 exercises\SettingsList.class

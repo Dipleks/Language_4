@@ -1,4 +1,4 @@
-package exercises;
+package words;
 
 
 // Assignable - Назначаемый

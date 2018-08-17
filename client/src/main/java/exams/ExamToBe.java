@@ -2,10 +2,10 @@ package exams;
 
 import interfaceProgram.IRoot;
 
-public class ExamToBe implements CallableExercises, IRoot
+public class ExamToBe implements Callable, IRoot
 {
     @Override
-    public void getListExercises() {
+    public void getList() {
         Invocation invocation1 = new Invocation();
         Invocation invocation2 = new Invocation();
         Invocation invocation3 = new Invocation();
