@@ -1,6 +1,7 @@
 package exams;
 
 import interfaceProgram.IRoot;
+import patterns.Callable;
 
 public class ExamPS implements Callable, IRoot
 {

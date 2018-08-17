@@ -2,6 +2,8 @@ package exercises;
 
 import interfaceProgram.IRoot;
 import javafx.scene.control.Label;
+import patterns.Callable;
+import patterns.Invocation;
 
 public class OutputNegToBe implements Callable, IRoot
 {

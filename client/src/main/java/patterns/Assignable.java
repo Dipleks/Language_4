@@ -1,8 +1,8 @@
-package words;
+package patterns;
 
 
 // Assignable - Назначаемый
-interface Assignable
+public interface Assignable
 {
     // int value - номер с которого начется заполнение предложений
     // int n - общая нумерация в цикле при заполнении массива Label

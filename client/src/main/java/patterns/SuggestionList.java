@@ -1,10 +1,11 @@
-package words;
+package patterns;
 
 import interfaceProgram.EffectFont;
 import interfaceProgram.IRoot;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
+import patterns.Assignable;
 
 // SuggestionList - список предложений
 class SuggestionList implements IRoot

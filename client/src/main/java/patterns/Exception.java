@@ -1,4 +1,4 @@
-package exercises;
+package patterns;
 
 import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
@@ -11,9 +11,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-class Exception implements IRoot
+public class Exception implements IRoot
 {
-    void exception(String str){
+    public void exception(String str){
         Stage stage = new Stage();
         VBox vBox = new VBox();
         Label label = new Label(str);

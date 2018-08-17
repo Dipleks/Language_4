@@ -1,8 +1,9 @@
 package words;
 
-import exercises.Callable;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Label;
+import patterns.Callable;
+import patterns.Invocation;
 
 public class OutputWords implements Callable, IRoot
 {

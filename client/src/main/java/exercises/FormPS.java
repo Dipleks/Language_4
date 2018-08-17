@@ -1,5 +1,7 @@
 package exercises;
 
+import patterns.Assignable;
+
 public class FormPS implements Assignable
 {
     private ExerciseText text = new ExerciseText();

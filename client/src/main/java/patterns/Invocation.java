@@ -1,4 +1,4 @@
-package words;
+package patterns;
 
 import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 // Invocation - вызов. Класс создает новую кнопку котороая помещается в
 // массив кнопок который добавляется в окно для вызова соответствующего
 // списка предложений
-class Invocation implements IRoot
+public class Invocation implements IRoot
 {
     private Button call = new Button();
     private SuggestionList suggestionList = new SuggestionList();
@@ -18,7 +18,7 @@ class Invocation implements IRoot
     private final String pressedCol = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
 
     // name - имя кнопки
-    Button getInvocation(String name, Label[] list, int value, Assignable assignable){
+    public Button getInvocation(String name, Label[] list, int value, Assignable assignable){
         rus.setStyle(pressedCol);
         rus.setPrefSize(WIDTH_SIZE/14, HEIGHT_SIZE/25);
         rus.setEffect(EffectShadow.getShadow());

@@ -1,5 +1,7 @@
 package words;
 
+import patterns.Assignable;
+
 class ListWords implements Assignable
 {
     private WordsText wordsText = new WordsText();
