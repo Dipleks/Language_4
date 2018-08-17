@@ -102,5 +102,22 @@ public class Language_4 extends Application implements RootWindows, IDataBase
         updateTable.deleteUpdateCard();
         updateTable.deleteUpdateExamPS();
         updateTable.deleteUpdateExamToBe();
+
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            System.out.println("не удалось найти драйвер");
+            e.printStackTrace();
+        }
+        try {
+            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement();
+            statement.executeUpdate("CREATE TABLE words_range (id SERIAL PRIMARY KEY, " +
+                    "russia VARCHAR(120), english VARCHAR(120), number INTEGER);");
+            statement.close();
+            connection.close();
+        } catch (SQLException e) {
+            System.out.println("таблица уже существует");
+        }
     }
 }

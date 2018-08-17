@@ -93,7 +93,7 @@ public class UpdateTable implements IDataBase
             Statement statement = connection.createStatement())
         {
             statement.executeUpdate("DELETE FROM words_range; ALTER SEQUENCE words_range_id_seq RESTART WITH 1;");
-            for (int i = (min-1); i < (max-1); i++) {
+            for (int i = (min-1); i < max; i++) {
                 Pattern pattern  = Pattern.compile("'"); // то что нужно заменить
                 Matcher matcher = pattern.matcher(wordsText.getWordsEn().get(i)); // там где нужно заменить
                 String result = matcher.replaceAll("''"); // то чем заменить

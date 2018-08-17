@@ -38,7 +38,7 @@ class RangeWords implements ICards, IDataBase
 
         minMax.setSpacing(WIDTH_SIZE/40);
         minMax.getChildren().addAll(MIN, MAX);
-        group.getChildren().addAll(titleRange, minMax, range);
+        group.getChildren().addAll(titleRange, titleRange2, minMax, range);
         ROOT_PANE.getChildren().addAll(group);
     }
 

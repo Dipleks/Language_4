@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feafebe0-03e5-4f4f-9b0b-4d911c81482b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/resources/add_words_range.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/Cards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/RangeWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/cards/RangeWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/db/UpdateTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/db/UpdateTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/interfaceProgram/ICards.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/interfaceProgram/ICards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/interfaceProgram/Language_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/interfaceProgram/Language_4.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <ignored path="$PROJECT_DIR$/client/target/" />
@@ -25,7 +26,7 @@
       <file leaf-file-name="CallCard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/CallCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="1800">
               <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
             </state>
           </provider>
@@ -34,8 +35,8 @@
       <file leaf-file-name="RangeWords.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="167">
+              <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,8 +47,8 @@
       <file leaf-file-name="UpdateTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="95" column="45" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="45" />
+            <state relative-caret-position="342">
+              <caret line="95" column="38" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,29 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Change.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Change.java">
+      <file leaf-file-name="ICards.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="304">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OutputCard.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Language_4.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Language_4.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+            <state relative-caret-position="322">
+              <caret line="119" column="54" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
               <folding>
                 <element signature="e#402#403#0" expanded="true" />
                 <element signature="e#425#426#0" expanded="true" />
@@ -156,20 +148,20 @@
         <option value="$PROJECT_DIR$/client/src/main/java/words/WordsText.java" />
         <option value="$PROJECT_DIR$/client/src/main/resources/add_history_cards.db" />
         <option value="$PROJECT_DIR$/client/src/main/resources/add_words.db" />
-        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" />
         <option value="$PROJECT_DIR$/client/pom.xml" />
         <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Rule.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/chatTest/ChatServer.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/chatTest/ChatClient.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/Range.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/Cards.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" />
         <option value="$PROJECT_DIR$/client/src/main/resources/add_words_range.db" />
-        <option value="$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" />
       </list>
     </option>
   </component>
@@ -210,7 +202,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="445" />
     <option name="y" value="330" />
     <option name="width" value="509" />
@@ -224,7 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,6 +291,11 @@
             </path>
             <path>
               <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_4" type="b2602c69:ProjectViewProjectNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -356,7 +353,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -541,8 +538,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="22" width="1456" height="886" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -551,13 +547,13 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.13825215" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.13825215" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24242425" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24242425" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292011" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20988539" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21275072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -695,9 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
           <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,9 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="642">
           <caret line="105" column="51" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,9 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,13 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2828">
           <caret line="1920" column="47" selection-start-line="1920" selection-start-column="47" selection-end-line="1920" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -819,55 +799,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
-          <folding>
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/CallCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="1800">
           <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="95" column="45" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Change.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="489">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Change.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="95" column="38" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="119" column="54" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
+          <folding>
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
