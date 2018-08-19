@@ -1,6 +1,8 @@
 package menu;
 
 import cards.Cards;
+import db.IDataBase;
+import db.UpdateTable;
 import exams.Exams;
 import interfaceProgram.RootWindows;
 import javafx.geometry.Pos;
@@ -12,8 +14,11 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import words.Words;
 
-public class MenuBarEngRus implements RootWindows
+import java.sql.*;
+
+public class MenuBarEngRus implements RootWindows, IDataBase
 {
     private final MenuBar menuBar = new MenuBar();
 
@@ -25,6 +30,7 @@ public class MenuBarEngRus implements RootWindows
     private final MenuItem menuCards = new MenuItem("Карточки");
     private final MenuItem menu_my_words = new MenuItem("Мой словарь");
     private final MenuItem menuExam = new MenuItem("Контрольные");
+    private final MenuItem menuWord = new MenuItem("Слова");
     private final MenuItem textsLevelOne = new MenuItem("Легкий");
     private final MenuItem textsLevelTwo = new MenuItem("Средний");
     private final MenuItem textsLevelThree = new MenuItem("Сложный");
@@ -47,16 +53,31 @@ public class MenuBarEngRus implements RootWindows
         getTextsLevelOne();
         getMenuServes();
         getMenuCards();
+        getMenuWord();
 
         menuHelp.setDisable(true);
         textsLevelTwo.setDisable(true);
         textsLevelThree.setDisable(true);
         menu_my_words.setDisable(true);
         menuSetting.setDisable(true);
+        menuCheck.setDisable(true);
+
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e){
+            System.out.println("не удалось найти драйвер");
+            e.printStackTrace();
+        }
+        try (Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS))
+        {
+            menuCheck.setDisable(false);
+        } catch (SQLException e){
+            System.out.println("БД отключена");
+        }
 
         menuBar.setMinWidth(WIDTH_SIZE);
         menuServes.getItems().addAll(menuSetting, about);
-        menuFile.getItems().addAll(menuExercises, menuExam, separatorMenuItem, menu_my_words);
+        menuFile.getItems().addAll(menuExercises, menuExam, menuWord, separatorMenuItem, menu_my_words);
         menuCheck.getItems().addAll(menuCards);
         menuBar.getMenus().addAll(menuFile, menuCheck, menuHelp, menuServes);
 
@@ -71,6 +92,17 @@ public class MenuBarEngRus implements RootWindows
             cards.getCards();
         });
     }
+
+    private void getMenuWord(){
+        menuWord.setOnAction(event -> {
+            ClearDisplay.clearMethod();
+            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+            menuBarEngRus.getMenu();
+            Words words = new Words();
+            words.getWords();
+        });
+    }
+
     private void getMenuServes(){
         menuSetting.setOnAction(event -> {
             ClearDisplay.clearMethod();
@@ -114,7 +146,7 @@ public class MenuBarEngRus implements RootWindows
             label.setPrefSize(WIDTH_SIZE/4, HEIGHT_SIZE/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +
-                    "\n\n                                    Версия программы: 3.0.1");
+                    "\n\n                                    Версия программы: 3.0.5");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, HEIGHT_SIZE*0.015));
             label.setAlignment(Pos.CENTER);

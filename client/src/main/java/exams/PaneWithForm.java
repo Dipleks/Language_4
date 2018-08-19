@@ -19,7 +19,7 @@ class PaneWithForm implements IRoot
         examText.setLayoutY(HEIGHT_SIZE/7);
         examText.setPrefWidth(WIDTH_SIZE/3.5);
         examText.setEffect(EffectShadow.getShadow());
-        examText.setPromptText("Введите текст...");
+        examText.setPromptText("Введите текст и нажмите на предложение для проверки...");
         textLanguage.setLayoutX(WIDTH_SIZE/2.3);
         textLanguage.setLayoutY(HEIGHT_SIZE/15);
         textLanguage.setPrefWidth(WIDTH_SIZE/2);
@@ -40,7 +40,7 @@ class PaneWithForm implements IRoot
             ROOT_PANE.getChildren().remove(examText);
             ROOT_PANE.getChildren().remove(textLanguage);
             ExamPS examPS = new ExamPS();
-            examPS.getListExercises();
+            examPS.getList();
             ROOT_PANE.getChildren().add(examText);
             ROOT_PANE.getChildren().add(textLanguage);
         });
@@ -56,7 +56,7 @@ class PaneWithForm implements IRoot
             ROOT_PANE.getChildren().remove(examText);
             ROOT_PANE.getChildren().remove(textLanguage);
             ExamToBe examToBe = new ExamToBe();
-            examToBe.getListExercises();
+            examToBe.getList();
             ROOT_PANE.getChildren().addAll(examText, textLanguage);
         });
 

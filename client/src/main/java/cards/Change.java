@@ -1,13 +1,19 @@
 package cards;
 
+import db.IDataBase;
 import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
 import javafx.scene.control.Button;
 
-class Change implements ICards
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+class Change implements ICards, IDataBase
 {
-    Button getNext(int a, int b, IOutputCard card){
+    Button getNext(IOutputCard card, String nameTable){
         next.setLayoutX(WIDTH_SIZE/2.5);
         next.setLayoutY(HEIGHT_SIZE/4);
         next.setStyle(EffectStyle.getStyleButtonDefault10());
@@ -17,12 +23,16 @@ class Change implements ICards
         next.setPrefSize(WIDTH_SIZE/12, HEIGHT_SIZE/25);
         next.setOnAction(event -> {
             ROOT_PANE.getChildren().remove(title);
+            ROOT_PANE.getChildren().remove(tablePane);
 
             OutputCard outputCard = new OutputCard();
-            outputCard.getOutputCard(a, b, card);
+            outputCard.getOutputCard(card, nameTable);
 
+            History history = new History();
+            history.getHistory();
+
+            ROOT_PANE.getChildren().add(tablePane);
             ROOT_PANE.getChildren().add(title);
-
         });
         return next;
     }

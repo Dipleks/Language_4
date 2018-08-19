@@ -1,11 +1,12 @@
 package exams;
 
 import interfaceProgram.IRoot;
+import patterns.Callable;
 
-public class ExamPS implements CallableExercises, IRoot
+public class ExamPS implements Callable, IRoot
 {
     @Override
-    public void getListExercises() {
+    public void getList() {
         Invocation invocation1 = new Invocation();
         Invocation invocation2 = new Invocation();
         Invocation invocation3 = new Invocation();

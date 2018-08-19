@@ -4,6 +4,7 @@ import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Button;
+import patterns.Assignable;
 
 // Invocation - вызов. Класс создает новую кнопку котороая помещается в
 // массив кнопок который добавляется в окно для вызова соответствующего

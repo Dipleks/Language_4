@@ -1,10 +1,12 @@
 package interfaceProgram;
 
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ToggleButton;
-import javafx.scene.control.ToggleGroup;
+import cards.HistoryTable;
+import javafx.scene.control.*;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+
+import java.util.HashMap;
+import java.util.HashSet;
 
 public interface ICards extends RootWindows
 {
@@ -16,10 +18,17 @@ public interface ICards extends RootWindows
     Button translation = new Button("Перевод"); //перевод
 
     Label title = new Label(); //рандомный текст
-    Label label = new Label("В данной области будет таблица с оригиналом и переводом предыдущей карточки");
 
     VBox CALL_CARDS = new VBox();
     Button examPS = new Button("Present Simple");
     Button examToBe = new Button("Form \"to be\"");
     Button word = new Button("Слова");
+
+    StackPane tablePane = new StackPane();
+
+    Label titleRange = new Label("Задать ограничение для слов");
+    Label titleRange2 = new Label("от 1 до 1039");
+    TextField MIN = new TextField();
+    TextField MAX = new TextField();
+    Button range = new Button("Выбрать диапазон"); // выбрать диапазон значений
 }
