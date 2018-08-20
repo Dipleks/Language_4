@@ -1,15 +1,15 @@
 package cards;
 
-import exams.ExamText;
+import texts.ExamTextPS;
 
 public class OutputCardExamToBe implements IOutputCard
 {
-    private ExamText examText = new ExamText();
+    private ExamTextPS examTextPS = new ExamTextPS();
 
     @Override
     public String getCard(int value, String language) {
-        if (language.equals("RU")) return examText.getExamRuToBe().get(value);
-        if (language.equals("EN")) return examText.getExamEnToBe().get(value);
+        if (language.equals("RU")) return examTextPS.getRussia().get(value);
+        if (language.equals("EN")) return examTextPS.getEnglish().get(value);
         return "No Files";
     }
 }

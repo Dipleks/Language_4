@@ -15,7 +15,6 @@ public class Language_4 extends Application implements RootWindows, IDataBase
 
     @Override
     public void init() {
-        addDB();
     }
 
     @Override
@@ -62,13 +61,7 @@ public class Language_4 extends Application implements RootWindows, IDataBase
             try {
                 Connection connection = DriverManager.getConnection(DB_URL, USER, PASS);
                 Statement statement = connection.createStatement();
-                statement.executeUpdate("CREATE DATABASE learn_english_home\n" +
-                        "  WITH OWNER = postgres\n" +
-                        "       ENCODING = 'UTF8'\n" +
-                        "       TABLESPACE = pg_default\n" +
-                        "       LC_COLLATE = 'Russian_Russia.1251'\n" +
-                        "       LC_CTYPE = 'Russian_Russia.1251'\n" +
-                        "       CONNECTION LIMIT = -1;");
+                statement.executeUpdate("CREATE DATABASE learn_english_home;");
                 statement.close();
                 connection.close();
             } catch (SQLException e) {

@@ -1,19 +1,21 @@
-package words;
+package texts;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class WordsText
+public class WordsText implements ITexts
 {
     private Map<Integer, String> wordEn = new HashMap<>();
     private Map<Integer, String> wordRu = new HashMap<>();
 
-    public Map<Integer, String> getWordsEn(){
+    @Override
+    public Map<Integer, String> getEnglish(){
         getStrWordsEn();
         return wordEn;
     }
 
-    public Map<Integer, String> getWordsRu(){
+    @Override
+    public Map<Integer, String> getRussia(){
         getStrWordsRu();
         return wordRu;
     }

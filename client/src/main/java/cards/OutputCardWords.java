@@ -1,6 +1,6 @@
 package cards;
 
-import words.WordsText;
+import texts.WordsText;
 
 public class OutputCardWords implements IOutputCard
 {
@@ -8,8 +8,8 @@ public class OutputCardWords implements IOutputCard
 
     @Override
     public String getCard(int value, String language) {
-        if (language.equals("RU")) return wordsText.getWordsRu().get(value);
-        if (language.equals("EN")) return wordsText.getWordsEn().get(value);
+        if (language.equals("RU")) return wordsText.getRussia().get(value);
+        if (language.equals("EN")) return wordsText.getEnglish().get(value);
         return "No Files";
     }
 }

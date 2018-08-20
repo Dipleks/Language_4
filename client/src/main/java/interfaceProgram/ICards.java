@@ -31,4 +31,6 @@ public interface ICards extends RootWindows
     TextField MIN = new TextField();
     TextField MAX = new TextField();
     Button range = new Button("Выбрать диапазон"); // выбрать диапазон значений
+    Button mix = new Button("Перемешать");
+    Label COUNTER = new Label();
 }

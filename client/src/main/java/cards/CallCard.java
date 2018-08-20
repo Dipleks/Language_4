@@ -5,6 +5,9 @@ import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
 import javafx.scene.layout.VBox;
+import texts.ExamTextPS;
+import texts.ExamTextToBe;
+import texts.WordsText;
 
 class CallCard implements ICards, IDataBase
 {
@@ -48,17 +51,16 @@ class CallCard implements ICards, IDataBase
 
         examPS.setOnAction(event -> {
             OutputCard outputCard = new OutputCard();
-            outputCard.deleteHistory();
+//            outputCard.deleteHistory();
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
+            ROOT_PANE.getChildren().remove(mix);
             examPS.setStyle(EffectStyle.getStyleButton12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
             range.setStyle(EffectStyle.getStyleButtonDefault10());
             word.setStyle(EffectStyle.getStyleButtonDefault12());
-            Change change = new Change();
-            change.getNext(new OutputCardExamPS(), "exam_cards_ps");
-            change.getTranslation();
-            ROOT_PANE.getChildren().addAll(next, translation);
+            outputCard.getOutputCard(699, new ExamTextPS());
+            ROOT_PANE.getChildren().addAll(next, mix, translation);
         });
         examToBe.setOnAction(event -> {
             OutputCard outputCard = new OutputCard();
@@ -69,30 +71,29 @@ class CallCard implements ICards, IDataBase
             word.setStyle(EffectStyle.getStyleButtonDefault12());
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
-            Change change = new Change();
-            change.getNext(new OutputCardExamToBe(), "exam_cards_to_be");
-            change.getTranslation();
-            ROOT_PANE.getChildren().addAll(next, translation);
+            ROOT_PANE.getChildren().remove(mix);
+            outputCard.getOutputCard(399, new ExamTextToBe());
+            ROOT_PANE.getChildren().addAll(next, mix, translation);
         });
         word.setOnAction(event -> {
             OutputCard outputCard = new OutputCard();
             outputCard.deleteHistory();
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
+            ROOT_PANE.getChildren().remove(mix);
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
             range.setStyle(EffectStyle.getStyleButtonDefault10());
             word.setStyle(EffectStyle.getStyleButton12());
-            Change change = new Change();
-            change.getNext(new OutputCardWords(), "words");
-            change.getTranslation();
-            ROOT_PANE.getChildren().addAll(next, translation);
+            outputCard.getOutputCard(1038, new WordsText());
+            ROOT_PANE.getChildren().addAll(next, mix, translation);
         });
         range.setOnAction(event -> {
             OutputCard outputCard = new OutputCard();
             outputCard.deleteHistory();
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
+            ROOT_PANE.getChildren().remove(mix);
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
             word.setStyle(EffectStyle.getStyleButtonDefault12());
@@ -101,10 +102,7 @@ class CallCard implements ICards, IDataBase
             RangeWords rangeWords = new RangeWords();
             rangeWords.addRangeTable();
 
-            Change change = new Change();
-            change.getNext(new OutputCardWords(), "words_range");
-            change.getTranslation();
-            ROOT_PANE.getChildren().addAll(next, translation);
+            ROOT_PANE.getChildren().addAll(next, mix, translation);
         });
         CALL_CARDS.getChildren().addAll(examPS, examToBe, word);
         ROOT_PANE.getChildren().add(CALL_CARDS);

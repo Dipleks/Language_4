@@ -56,4 +56,8 @@ class RangeWords implements ICards, IDataBase
         UpdateTable updateTable = new UpdateTable();
         updateTable.deleteUpdateWordsRange(min, max);
     }
+
+    private void getRangeY(){
+
+    }
 }

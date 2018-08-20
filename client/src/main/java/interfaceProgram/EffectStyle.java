@@ -25,4 +25,7 @@ public class EffectStyle
     public static String getStyleLabel(){
         return "-fx-font: bold italic 14pt Georgia;";
     }
+    public static String getStyleLabelColor(){
+        return "-fx-font: bold italic 11pt Georgia;";
+    }
 }
