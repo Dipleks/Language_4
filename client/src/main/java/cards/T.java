@@ -1,32 +1,51 @@
 package cards;
 
-import db.IDataBase;
 import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
 import javafx.geometry.Pos;
 import javafx.scene.paint.Color;
 import texts.ITexts;
+import texts.WordsText;
 
-import java.sql.*;
 import java.util.*;
 
-class OutputCard implements ICards, IDataBase
+public class T implements ICards
 {
     private List<String> engText = new ArrayList<>();
     private List<String> rusText = new ArrayList<>();
     private Map<String, String> translationENG = new HashMap<>();
     private Map<String, String> translationRUS = new HashMap<>();
-    private int random;
     private int number = 0;
+    private int n = 0;
+    int min;
+    int max;
 
-    void getOutputCard(final int max, ITexts iTexts){
+    public T(int min, int max) {
+        this.min = min;
+        this.max = max;
+    }
+
+    void getOutputCard(){
 
         getStyle();
+        WordsText wordsText = new WordsText();
+        for (int i = 0; i < 1039; i++) {
+            engText.add(i, wordsText.getEnglish().get(i));
+            rusText.add(i, wordsText.getRussia().get(i));
+        }
 
-        random = max;
-        Collections.shuffle(getRusText(iTexts));
-        Collections.shuffle(getEngText(iTexts));
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i=min; i<max; i++) {
+            list.add(new Integer(i));
+        }
+        Collections.shuffle(list);
+//        for (int i=0; i<3; i++) {
+//            System.out.println(list.get(i));
+//        }
+        n = max;
+//        Collections.shuffle(rusText);
+//        Collections.shuffle(engText);
         next.setOnAction(event -> {
             number++;
             COUNTER.setText("Пройдено карточек - " + number);
@@ -35,94 +54,81 @@ class OutputCard implements ICards, IDataBase
             ROOT_PANE.getChildren().remove(COUNTER);
             if (rus.isSelected()) {
                 try {
-                    title.setText(rusText.get(random));
+                    // TODO доделать повторы
+                    title.setText(rusText.get(max--));
                     translation.setOnAction(event2 -> {
                         ROOT_PANE.getChildren().remove(title);
-                        title.setText(getTranslationRUS(iTexts).get(title.getText()));
+                        title.setText(getTranslationRUS().get(title.getText()));
                         ROOT_PANE.getChildren().add(title);
                     });
-                    random--;
+                    n++;
+                    if (max == min){
+                        System.out.println("=");
+                        max = n;
+                    }
                 } catch (Exception e){
-                    System.out.println("rus");
-                    random = max;
+                    System.out.println("круг");
+                    max = n;
                     number = 0;
                 }
                 History history = new History();
                 history.getHistory();
                 mix.setOnAction(event3 -> {
-                    getRusText(iTexts).removeAll(rusText);
-                    Collections.shuffle(getRusText(iTexts));
+                    Collections.shuffle(rusText);
                 });
             }
             if (eng.isSelected()) {
                 try {
-                    title.setText(engText.get(random));
+                    title.setText(engText.get(max));
                     translation.setOnAction(event3 -> {
                         ROOT_PANE.getChildren().remove(title);
-                        title.setText(getTranslationENG(iTexts).get(title.getText()));
+                        title.setText(getTranslationENG().get(title.getText()));
                         ROOT_PANE.getChildren().add(title);
                     });
-                    random--;
+                    max--;
                 } catch (Exception e){
                     System.out.println("eng");
-                    random = max;
+                    n = max;
                     number = 0;
                 }
                 History history = new History();
                 history.getHistory();
                 mix.setOnAction(event2 -> {
-                    getEngText(iTexts).removeAll(engText);
-                    Collections.shuffle(getEngText(iTexts));
+                    engText.removeAll(engText);
+                    Collections.shuffle(engText);
                 });
             }
-                ROOT_PANE.getChildren().add(tablePane);
-                ROOT_PANE.getChildren().add(title);
-                ROOT_PANE.getChildren().add(COUNTER);
+            ROOT_PANE.getChildren().add(tablePane);
+            ROOT_PANE.getChildren().add(title);
+            ROOT_PANE.getChildren().add(COUNTER);
         });
 
     }
 
-    private List<String> getEngText(ITexts iTexts){
-        for (int i = 0; i < iTexts.getEnglish().size(); i++) {
-            engText.add(i, iTexts.getEnglish().get(i));
-        }
-        return engText;
-    }
-    private List<String> getRusText(ITexts iTexts){
-        for (int i = 0; i < iTexts.getRussia().size(); i++) {
-            rusText.add(i, iTexts.getRussia().get(i));
-        }
-        return rusText;
-    }
-    private Map<String, String> getTranslationENG(ITexts iTexts){
-        for (int i = 0; i < iTexts.getEnglish().size(); i++) {
-            translationENG.put(iTexts.getEnglish().get(i), iTexts.getRussia().get(i));
+//    private List<String> getEngText(){
+//        return engText;
+//    }
+//    private List<String> getRusText(){
+//        WordsText wordsText = new WordsText();
+//        for (int i = min; i < max; i++) {
+//            engText.add(i, wordsText.getRussia().get(i));
+//        }
+//        return rusText;
+//    }
+    private Map<String, String> getTranslationENG(){
+        WordsText wordsText = new WordsText();
+        for (int i = min; i < max; i++) {
+            translationENG.put(wordsText.getEnglish().get(i), wordsText.getRussia().get(i));
         }
         return translationENG;
     }
-    private Map<String, String> getTranslationRUS(ITexts iTexts){
-        for (int i = 0; i < iTexts.getRussia().size(); i++) {
-            translationRUS.put(iTexts.getRussia().get(i), iTexts.getEnglish().get(i));
+    private Map<String, String> getTranslationRUS(){
+        WordsText wordsText = new WordsText();
+        for (int i = min; i < max; i++) {
+            translationENG.put(wordsText.getRussia().get(i), wordsText.getEnglish().get(i));
         }
         return translationRUS;
     }
-
-    void deleteHistory(){
-        try {
-            Class.forName("org.postgresql.Driver");
-        } catch (ClassNotFoundException e){
-            System.out.println("не удалось найти драйвер");
-            e.printStackTrace();
-        }
-        try(Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
-            Statement statement = connection.createStatement())
-        {
-            statement.executeUpdate("DELETE FROM history; ALTER SEQUENCE history_id_seq RESTART WITH 1;");
-        } catch (SQLException e){
-            e.printStackTrace();
-        }
-    }
-
     private void getStyle(){
         translation.setLayoutX(WIDTH_SIZE/1.4);
         translation.setLayoutY(HEIGHT_SIZE/4);
@@ -162,4 +168,5 @@ class OutputCard implements ICards, IDataBase
         COUNTER.setEffect(EffectShadow.getShadow());
         COUNTER.setTextFill(Color.DARKRED);
     }
+
 }

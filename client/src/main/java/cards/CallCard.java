@@ -99,8 +99,11 @@ class CallCard implements ICards, IDataBase
             word.setStyle(EffectStyle.getStyleButtonDefault12());
             range.setStyle(EffectStyle.getStyleButton10());
 
-            RangeWords rangeWords = new RangeWords();
-            rangeWords.addRangeTable();
+//            RangeWords rangeWords = new RangeWords();
+//            rangeWords.addRangeTable();
+
+            T t = new T(5, 10);
+            t.getOutputCard();
 
             ROOT_PANE.getChildren().addAll(next, mix, translation);
         });
