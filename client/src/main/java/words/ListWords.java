@@ -3,7 +3,7 @@ package words;
 import patterns.Assignable;
 import texts.WordsText;
 
-class ListWords implements Assignable
+public class ListWords implements Assignable
 {
     private WordsText wordsText = new WordsText();
 

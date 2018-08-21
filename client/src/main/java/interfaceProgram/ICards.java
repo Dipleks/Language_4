@@ -23,14 +23,14 @@ public interface ICards extends RootWindows
     Button examPS = new Button("Present Simple");
     Button examToBe = new Button("Form \"to be\"");
     Button word = new Button("Слова");
+    Button range = new Button("Выбрать диапазон"); // выбрать диапазон значений
 
     StackPane tablePane = new StackPane();
 
-    Label titleRange = new Label("Задать ограничение для слов");
-    Label titleRange2 = new Label("от 1 до 1039");
     TextField MIN = new TextField();
     TextField MAX = new TextField();
-    Button range = new Button("Выбрать диапазон"); // выбрать диапазон значений
+
     Button mix = new Button("Перемешать");
     Label COUNTER = new Label();
+    Button backward = new Button("Назад");
 }

@@ -463,7 +463,7 @@ public class WordsText implements ITexts
         wordEn.put(439,"scarf");
         wordEn.put(440,"sock");
         wordEn.put(441,"sweater");
-        wordEn.put(442,"T-shirt");
+        wordEn.put(442,"Invoc-shirt");
         wordEn.put(443,"tie");
         wordEn.put(444,"trousers");
         wordEn.put(445,"shorts");
