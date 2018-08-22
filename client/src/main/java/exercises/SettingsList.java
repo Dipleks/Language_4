@@ -16,11 +16,9 @@ class SettingsList implements IRoot
         suggestionPane.setPrefWidth(WIDTH_SIZE/2.05);
         suggestionPane.setAlignment(Pos.CENTER);
         suggestionPane.setSpacing(HEIGHT_SIZE/80);
-//        suggestionPane.setStyle("-fx-border-color: RED");
 
         exercisesPane.setLayoutX(WIDTH_SIZE/3.5);
         exercisesPane.setLayoutY(HEIGHT_SIZE/5);
-//        exercisesPane.setStyle("-fx-border-color: RED");
         exercisesPane.setPrefSize(WIDTH_SIZE/2, HEIGHT_SIZE/1.5);
         exercisesPane.setEffect(EffectShadow.getShadow());
         exercisesPane.setContent(suggestionPane);
@@ -50,7 +48,6 @@ class SettingsList implements IRoot
             Exercises addExerciseExam = new exercises.Exercises();
             addExerciseExam.getExercises();
         });
-
         ROOT_PANE.getChildren().addAll(exercisesPane, invocationPane, paneLanguageV, backward);
     }
 }

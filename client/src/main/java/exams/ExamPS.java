@@ -15,7 +15,6 @@ public class ExamPS implements Callable, IRoot
         Invocation invocation6 = new Invocation();
         Invocation invocation7 = new Invocation();
 
-
         invocationPane.setSpacing(WIDTH_SIZE/65);
         invocationPane.setLayoutX(WIDTH_SIZE/12);
         invocationPane.setLayoutY(HEIGHT_SIZE/6);

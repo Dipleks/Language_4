@@ -21,7 +21,6 @@ public class ExamToBe implements Callable, IRoot
                 invocation3.getInvocation("Часть 3", 200, new FormToBe()),
                 invocation4.getInvocation("Часть 4", 300, new FormToBe())
         );
-
         SettingsExamsList settingsExamsList = new SettingsExamsList();
         settingsExamsList.settings();
     }

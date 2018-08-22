@@ -12,11 +12,8 @@ public class Exams implements IRoot
     }
 
     private void getExam() {
-
         SeparatorExercises separator = new SeparatorExercises();
         separator.getSeparator();
-
         paneWithForm.getPaneForm();
-
     }
 }

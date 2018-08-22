@@ -17,7 +17,7 @@ class Invocation implements IRoot
     private final String pressed = "-fx-color: #cccccc; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
     private final String pressedCol = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
 
-    // name - имя кнопки
+    // экзамены
     Button getInvocation(String name, int value, Assignable assignable){
         call.setText(name);
         call.setStyle(released);

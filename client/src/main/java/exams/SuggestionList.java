@@ -15,13 +15,12 @@ class SuggestionList implements IRoot
     // value - номер предложения с которого нужно начать добавление в list
     void getList(int value, Assignable assignable){
         for (int i = 0; i < 100; i++) {
+            int finalI = i;
             list[i] = new Label();
             list[i].setWrapText(true);
             list[i].setFont(EffectFont.getFontText());
             list[i].setAlignment(Pos.CENTER);
             list[i].setTextFill(Color.BLACK);
-            int finalI = i;
-
             list[i].setText(assignable.getAssignment(value, i, "RU"));
             list[i].setOnMouseClicked(event -> {
                 if (examText.getText().equalsIgnoreCase(assignable.getAssignment(value, finalI, "EN"))){
@@ -40,7 +39,6 @@ class SuggestionList implements IRoot
                 examText.clear();
             });
         }
-
         suggestionPane.getChildren().addAll(list);
     }
 }

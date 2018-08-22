@@ -11,10 +11,8 @@ public class Words implements IRoot
     }
 
     private void getWord() {
-
         SeparatorExercises separator = new SeparatorExercises();
         separator.getSeparator();
-
         OutputWords outputWords = new OutputWords();
         outputWords.getList();
     }

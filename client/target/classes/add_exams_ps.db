@@ -1,1 +1,0 @@
-CREATE TABLE exam_cards_ps (id SERIAL PRIMARY KEY, russia VARCHAR(120), english VARCHAR(120), number INTEGER);

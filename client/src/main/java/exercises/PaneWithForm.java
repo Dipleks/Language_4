@@ -13,8 +13,7 @@ class PaneWithForm implements IRoot
     private final String released = "-fx-color: #e6e6e6; -fx-font: bold italic 12pt Georgia; -fx-focus-color: GREEN;";
     private final String pressed = "-fx-color: #fdd2a9; -fx-font: bold italic 12pt Georgia; -fx-focus-color: GREEN;";
 
-    protected VBox getPaneForm(){
-//        ROOT_PANE.getChildren().add(paneSubMenu);
+    VBox getPaneForm(){
         ps.setPrefSize(WIDTH_SIZE/8, HEIGHT_SIZE/18);
         ps.setStyle(released);
         ps.setEffect(EffectShadow.getShadow());

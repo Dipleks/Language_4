@@ -25,9 +25,7 @@ class PaneWithForm implements IRoot
         textLanguage.setPrefWidth(WIDTH_SIZE/2);
         textLanguage.setAlignment(Pos.CENTER_RIGHT);
         textLanguage.setStyle(EffectStyle.getStyleLabel());
-//        textLanguage.setStyle("-fx-border-color: RED");
         textLanguage.setEffect(EffectShadow.getShadow());
-//        ROOT_PANE.getChildren().add(paneSubMenu);
         ps.setPrefSize(WIDTH_SIZE/6, HEIGHT_SIZE/18);
         ps.setStyle(released);
         ps.setEffect(EffectShadow.getShadow());
