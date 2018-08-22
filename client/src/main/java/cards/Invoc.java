@@ -4,17 +4,19 @@ import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import patterns.Exception;
 import texts.WordsText;
 import words.ListWords;
 import words.Words;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Invoc implements ICards
 {
@@ -25,8 +27,9 @@ public class Invoc implements ICards
     private final String pressedCol = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
     private WordsText wordsText = new WordsText();
 
-    Button getOutputCardT(String name, String[] engl, String[] rusl, int value){
-
+    Button getOutputCardT(String name, String[] engl, String[] rusl, int value, IOC ioc){
+        ROOT_PANE.getChildren().remove(rus);
+        ROOT_PANE.getChildren().remove(eng);
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
 
@@ -40,6 +43,7 @@ public class Invoc implements ICards
         }
         Collections.shuffle(list1);
         Collections.shuffle(list2);
+
 
         getStyle();
         call.setText(name);
@@ -55,40 +59,78 @@ public class Invoc implements ICards
             ROOT_PANE.getChildren().remove(next);
             ROOT_PANE.getChildren().remove(translation);
             next.setOnAction(event1 -> {
-                ROOT_PANE.getChildren().remove(title);
-                ROOT_PANE.getChildren().remove(tablePane);
-                ROOT_PANE.getChildren().remove(COUNTER);
+                try {
+                    ROOT_PANE.getChildren().remove(title);
+                    ROOT_PANE.getChildren().remove(tablePane);
+                    ROOT_PANE.getChildren().remove(COUNTER);
 
-                if (rus.isSelected()){
-                    title.setText(list2.get(number));
+                    if (rus.isSelected()) {
+                        title.setText(list2.get(number));
+                        translation.setOnAction(e -> {
+                            Collection<Integer> c = wordsText.getRussia().keySet();
+                            String str = title.getText();
+                            for (Integer key : c) {
+                                String obj = wordsText.getRussia().get(key);
+                                if (str.equals(obj)) {
+                                    title.setText(wordsText.getEnglish().get(key));
+                                }
+                            }
+                        });
+                    }
+                    if (eng.isSelected()) {
+                        title.setText(list1.get(number));
+                        translation.setOnAction(e -> {
+                            Collection<Integer> c = wordsText.getEnglish().keySet();
+                            String str = title.getText();
+                            for (Integer key : c) {
+                                String obj = wordsText.getEnglish().get(key);
+                                if (str.equals(obj)) {
+                                    title.setText(wordsText.getRussia().get(key));
+                                }
+                            }
+                        });
+                    }
+
+                    number++;
+                    COUNTER.setText("Пройдено карточек - " + number);
+                    ROOT_PANE.getChildren().add(tablePane);
+                    ROOT_PANE.getChildren().add(title);
+                    ROOT_PANE.getChildren().add(COUNTER);
+                } catch (IndexOutOfBoundsException e){
+                    number = 0;
+                    Stage stage = new Stage();
+                    StackPane stackPane = new StackPane();
+                    Scene scene = new Scene(stackPane, WIDTH_SIZE/4, HEIGHT_SIZE/4);
+                    Label label = new Label("Круг закончен!");
+                    label.setEffect(EffectShadow.getShadow());
+                    label.setStyle(EffectStyle.getStyleLabel());
+                    stackPane.getChildren().add(label);
+                    stage.initModality(Modality.APPLICATION_MODAL);
+                    stage.setScene(scene);
+                    stage.setTitle("Круг");
+                    stage.show();
                 }
-                if (eng.isSelected()){
-                    title.setText(list1.get(number));
-                }
-
-                number++;
-                COUNTER.setText("Пройдено карточек - " + number);
-                ROOT_PANE.getChildren().add(tablePane);
-                ROOT_PANE.getChildren().add(title);
-                ROOT_PANE.getChildren().add(COUNTER);
-
             });
             rus.setOnAction(event1 -> {
+                eng.setStyle(EffectStyle.getStyleButtonDefault10());
+                rus.setStyle(EffectStyle.getStyleButton10());
                 number = 0;
                 ROOT_PANE.getChildren().remove(COUNTER);
                 COUNTER.setText("Пройдено карточек - " + number);
                 ROOT_PANE.getChildren().add(COUNTER);
             });
             eng.setOnAction(event1 -> {
+                rus.setStyle(EffectStyle.getStyleButtonDefault10());
+                eng.setStyle(EffectStyle.getStyleButton10());
                 number = 0;
                 ROOT_PANE.getChildren().remove(COUNTER);
                 COUNTER.setText("Пройдено карточек - " + number);
                 ROOT_PANE.getChildren().add(COUNTER);
             });
-                History history = new History();
-                history.getHistory();
+
             ROOT_PANE.getChildren().addAll(next, translation);
         });
+        ROOT_PANE.getChildren().addAll(rus, eng);
         return call;
     }
 

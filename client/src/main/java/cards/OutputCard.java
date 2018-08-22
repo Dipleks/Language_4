@@ -5,7 +5,12 @@ import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import texts.ITexts;
 
 import java.sql.*;
@@ -28,56 +33,67 @@ class OutputCard implements ICards, IDataBase
         Collections.shuffle(getRusText(iTexts));
         Collections.shuffle(getEngText(iTexts));
         next.setOnAction(event -> {
-            number++;
-            COUNTER.setText("Пройдено карточек - " + number);
-            ROOT_PANE.getChildren().remove(title);
-            ROOT_PANE.getChildren().remove(tablePane);
-            ROOT_PANE.getChildren().remove(COUNTER);
-            if (rus.isSelected()) {
-                try {
-                    title.setText(rusText.get(random));
-                    translation.setOnAction(event2 -> {
-                        ROOT_PANE.getChildren().remove(title);
-                        title.setText(getTranslationRUS(iTexts).get(title.getText()));
-                        ROOT_PANE.getChildren().add(title);
+            try {
+                number++;
+                COUNTER.setText("Пройдено карточек - " + number);
+                ROOT_PANE.getChildren().remove(title);
+                ROOT_PANE.getChildren().remove(tablePane);
+                ROOT_PANE.getChildren().remove(COUNTER);
+                if (rus.isSelected()) {
+                    try {
+                        title.setText(rusText.get(random));
+                        translation.setOnAction(event2 -> {
+                            ROOT_PANE.getChildren().remove(title);
+                            title.setText(getTranslationRUS(iTexts).get(title.getText()));
+                            ROOT_PANE.getChildren().add(title);
+                        });
+                        random--;
+                    } catch (Exception e) {
+                        System.out.println("rus");
+                        random = max;
+                        number = 0;
+                    }
+                    mix.setOnAction(event3 -> {
+                        getRusText(iTexts).removeAll(rusText);
+                        Collections.shuffle(getRusText(iTexts));
                     });
-                    random--;
-                } catch (Exception e){
-                    System.out.println("rus");
-                    random = max;
-                    number = 0;
                 }
-                History history = new History();
-                history.getHistory();
-                mix.setOnAction(event3 -> {
-                    getRusText(iTexts).removeAll(rusText);
-                    Collections.shuffle(getRusText(iTexts));
-                });
-            }
-            if (eng.isSelected()) {
-                try {
-                    title.setText(engText.get(random));
-                    translation.setOnAction(event3 -> {
-                        ROOT_PANE.getChildren().remove(title);
-                        title.setText(getTranslationENG(iTexts).get(title.getText()));
-                        ROOT_PANE.getChildren().add(title);
+                if (eng.isSelected()) {
+                    try {
+                        title.setText(engText.get(random));
+                        translation.setOnAction(event3 -> {
+                            ROOT_PANE.getChildren().remove(title);
+                            title.setText(getTranslationENG(iTexts).get(title.getText()));
+                            ROOT_PANE.getChildren().add(title);
+                        });
+                        random--;
+                    } catch (Exception e) {
+                        System.out.println("eng");
+                        random = max;
+                        number = 0;
+                    }
+                    mix.setOnAction(event2 -> {
+                        getEngText(iTexts).removeAll(engText);
+                        Collections.shuffle(getEngText(iTexts));
                     });
-                    random--;
-                } catch (Exception e){
-                    System.out.println("eng");
-                    random = max;
-                    number = 0;
                 }
-                History history = new History();
-                history.getHistory();
-                mix.setOnAction(event2 -> {
-                    getEngText(iTexts).removeAll(engText);
-                    Collections.shuffle(getEngText(iTexts));
-                });
-            }
                 ROOT_PANE.getChildren().add(tablePane);
                 ROOT_PANE.getChildren().add(title);
                 ROOT_PANE.getChildren().add(COUNTER);
+            } catch (IndexOutOfBoundsException e){
+                number = 0;
+                Stage stage = new Stage();
+                StackPane stackPane = new StackPane();
+                Scene scene = new Scene(stackPane, WIDTH_SIZE/4, HEIGHT_SIZE/4);
+                Label label = new Label("Круг закончен!");
+                label.setEffect(EffectShadow.getShadow());
+                label.setStyle(EffectStyle.getStyleLabel());
+                stackPane.getChildren().add(label);
+                stage.initModality(Modality.APPLICATION_MODAL);
+                stage.setScene(scene);
+                stage.setTitle("Круг");
+                stage.show();
+            }
         });
 
     }

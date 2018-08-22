@@ -159,5 +159,7 @@ class CallCard implements ICards, IDataBase
         examPS.setPrefSize(w, h);
         examToBe.setPrefSize(w, h);
         word.setPrefSize(w, h);
+        range.setPrefSize(w, h);
+        range.setStyle(EffectStyle.getStyleButtonDefault10());
     }
 }

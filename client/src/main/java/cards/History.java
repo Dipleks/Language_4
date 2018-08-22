@@ -15,7 +15,7 @@ import java.sql.*;
 
 class History implements ICards, IDataBase
 {
-    void getHistory(){
+    void getHistory(String r, String e){
         tablePane.setLayoutX(WIDTH_SIZE/3);
         tablePane.setLayoutY(HEIGHT_SIZE/2.7);
         tablePane.setEffect(EffectShadow.getShadow());
@@ -36,24 +36,26 @@ class History implements ICards, IDataBase
         ObservableList<HistoryTable> list = FXCollections.observableArrayList();
 
         /////////
-        try{
-            Class.forName("org.postgresql.Driver");
-        } catch (ClassNotFoundException e){
-            e.printStackTrace();
-        }
-        try{
-            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT russia, english FROM history ORDER BY id DESC;");
-            while (resultSet.next()){
-                list.add(new HistoryTable(resultSet.getString("russia"),
-                        resultSet.getString("english")));
-            }
-        } catch (SQLException e){
-            list.add(new HistoryTable("база данных не подключена", "the database is not connected"));
+//        try{
+//            Class.forName("org.postgresql.Driver");
+//        } catch (ClassNotFoundException e){
 //            e.printStackTrace();
-        }
+//        }
+//        try{
+//            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+//            Statement statement = connection.createStatement();
+//            ResultSet resultSet = statement.executeQuery("SELECT russia, english FROM history ORDER BY id DESC;");
+//            while (resultSet.next()){
+//                list.add(new HistoryTable(resultSet.getString("russia"),
+//                        resultSet.getString("english")));
+//            }
+//        } catch (SQLException e){
+//            list.add(new HistoryTable("база данных не подключена", "the database is not connected"));
+////            e.printStackTrace();
+//        }
         /////////
+
+        list.add(new HistoryTable(r, e));
 
         table.setItems(list);
         Label l = new Label("Наведите курсор мышки");

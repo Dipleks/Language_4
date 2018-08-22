@@ -444,7 +444,7 @@ public class WordsText implements ITexts
         wordEn.put(420,"blanket");
         wordEn.put(421,"sheet");
         wordEn.put(422,"pillow");
-        wordEn.put(423,"сlothes ");
+        wordEn.put(423,"сlothes");
         wordEn.put(424,"shoes");
         wordEn.put(425,"boot");
         wordEn.put(426,"sneakers");
@@ -457,7 +457,7 @@ public class WordsText implements ITexts
         wordEn.put(433,"glove");
         wordEn.put(434,"mitten");
         wordEn.put(435,"hat");
-        wordEn.put(436,"cap  ");
+        wordEn.put(436,"cap");
         wordEn.put(437,"jacket");
         wordEn.put(438,"cardigan");
         wordEn.put(439,"scarf");

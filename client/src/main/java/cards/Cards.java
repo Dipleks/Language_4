@@ -16,9 +16,9 @@ public class Cards implements ICards
         CallCard callCard = new CallCard();
         callCard.getCallCards();
 
-        RangeWords rangeWords = new RangeWords();
-        rangeWords.removeRange();
-        rangeWords.getRange();
+//        RangeWords rangeWords = new RangeWords();
+//        rangeWords.removeRange();
+//        rangeWords.getRange();
 
     }
 }
