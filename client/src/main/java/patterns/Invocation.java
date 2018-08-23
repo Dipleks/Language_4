@@ -5,13 +5,9 @@ import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
 import interfaceProgram.IRoot;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 import texts.ITexts;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -78,8 +74,7 @@ public class Invocation implements IRoot, ICards
             });
             ROOT_PANE.getChildren().addAll(title);
             if (!rus.isSelected() && !eng.isSelected()) {
-                Exception exceptionExercises = new Exception();
-                exceptionExercises.exception("Выберите язык!");
+                getPane("Круг закончен!");
             }
         });
         return call;
@@ -104,7 +99,6 @@ public class Invocation implements IRoot, ICards
         }
         Collections.shuffle(list1);
         Collections.shuffle(list2);
-
         getStyle();
         call.setText(name);
         call.setStyle(released);
@@ -123,6 +117,7 @@ public class Invocation implements IRoot, ICards
                     ROOT_PANE.getChildren().remove(title);
                     ROOT_PANE.getChildren().remove(tablePane);
                     ROOT_PANE.getChildren().remove(COUNTER);
+                    ROOT_PANE.getChildren().remove(TITLE);
 
                     if (rus.isSelected()) {
                         title.setText(list2.get(number));
@@ -150,25 +145,21 @@ public class Invocation implements IRoot, ICards
                             }
                         });
                     }
-
+                    if (!rus.isSelected() & !eng.isSelected()) {
+                        eng.setStyle(released);
+                        rus.setStyle(released);
+                        getPane("Выберите язык");
+                    }
                     number++;
                     COUNTER.setText("Пройдено карточек - " + number);
+                    TITLE.setText("Диапазон: " + call.getText());
                     ROOT_PANE.getChildren().add(tablePane);
                     ROOT_PANE.getChildren().add(title);
                     ROOT_PANE.getChildren().add(COUNTER);
+                    ROOT_PANE.getChildren().add(TITLE);
                 } catch (IndexOutOfBoundsException e){
                     number = 0;
-                    Stage stage = new Stage();
-                    StackPane stackPane = new StackPane();
-                    Scene scene = new Scene(stackPane, WIDTH_SIZE/4, HEIGHT_SIZE/4);
-                    Label label = new Label("Круг закончен!");
-                    label.setEffect(EffectShadow.getShadow());
-                    label.setStyle(EffectStyle.getStyleLabel());
-                    stackPane.getChildren().add(label);
-                    stage.initModality(Modality.APPLICATION_MODAL);
-                    stage.setScene(scene);
-                    stage.setTitle("Круг");
-                    stage.show();
+                    getPane("Круг закончен!");
                 }
             });
             rus.setOnAction(event1 -> {
@@ -176,16 +167,22 @@ public class Invocation implements IRoot, ICards
                 rus.setStyle(EffectStyle.getStyleButton10());
                 number = 0;
                 ROOT_PANE.getChildren().remove(COUNTER);
+                ROOT_PANE.getChildren().remove(TITLE);
                 COUNTER.setText("Пройдено карточек - " + number);
+                TITLE.setText("Диапазон: " + call.getText());
                 ROOT_PANE.getChildren().add(COUNTER);
+                ROOT_PANE.getChildren().add(TITLE);
             });
             eng.setOnAction(event1 -> {
                 rus.setStyle(EffectStyle.getStyleButtonDefault10());
                 eng.setStyle(EffectStyle.getStyleButton10());
                 number = 0;
                 ROOT_PANE.getChildren().remove(COUNTER);
+                ROOT_PANE.getChildren().remove(TITLE);
                 COUNTER.setText("Пройдено карточек - " + number);
+                TITLE.setText("Диапазон: " + call.getText());
                 ROOT_PANE.getChildren().add(COUNTER);
+                ROOT_PANE.getChildren().add(TITLE);
             });
             ROOT_PANE.getChildren().addAll(next, translation);
         });
@@ -224,5 +221,11 @@ public class Invocation implements IRoot, ICards
         COUNTER.setStyle(EffectStyle.getStyleLabelColor());
         COUNTER.setEffect(EffectShadow.getShadow());
         COUNTER.setTextFill(Color.DARKRED);
+
+        TITLE.setLayoutX(WIDTH_SIZE/1.4);
+        TITLE.setLayoutY(HEIGHT_SIZE/3);
+        TITLE.setStyle(EffectStyle.getStyleLabelColor());
+        TITLE.setEffect(EffectShadow.getShadow());
+        TITLE.setTextFill(Color.DARKRED);
     }
 }

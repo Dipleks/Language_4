@@ -16,4 +16,5 @@ public interface ICards extends RootWindows
 
     StackPane tablePane = new StackPane();
     Label COUNTER = new Label();
+    Label TITLE = new Label();
 }

@@ -6,7 +6,6 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import patterns.Assignable;
-import patterns.Exception;
 
 // SuggestionList - список предложений
 class SuggestionList implements IRoot
@@ -28,8 +27,7 @@ class SuggestionList implements IRoot
                     list[finalI].setTextFill(Color.LIMEGREEN);
                     textLanguage.setTextFill(Color.LIMEGREEN);
                 } else if (examText.getText().equals("")){
-                    Exception exception = new Exception();
-                    exception.exception("Введите текст!");
+                    getPane("Введите текст!");
                 } else {
                     list[finalI].setText(assignable.getAssignment(value, finalI, "RU"));
                     list[finalI].setTextFill(Color.RED);

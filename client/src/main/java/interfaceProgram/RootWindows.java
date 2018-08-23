@@ -3,7 +3,9 @@ package interfaceProgram;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
@@ -24,4 +26,17 @@ public interface RootWindows
     VBox invocationPane = new VBox();
     Button backward = new Button("Назад");
 
+    default void getPane(String header){
+        Stage stage = new Stage();
+        StackPane stackPane = new StackPane();
+        Scene scene = new Scene(stackPane, WIDTH_SIZE/4, HEIGHT_SIZE/4);
+        Label label = new Label(header);
+        label.setEffect(EffectShadow.getShadow());
+        label.setStyle(EffectStyle.getStyleLabel());
+        stackPane.getChildren().add(label);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.setTitle("Предупреждение");
+        stage.show();
+    }
 }
