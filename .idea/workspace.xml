@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="feafebe0-03e5-4f4f-9b0b-4d911c81482b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/SuggestionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/SuggestionList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootWindows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/patterns/Exception.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java" afterDir="false" />
-    </list>
+    <list default="true" id="feafebe0-03e5-4f4f-9b0b-4d911c81482b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/server/target/" />
     <ignored path="$PROJECT_DIR$/client/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
