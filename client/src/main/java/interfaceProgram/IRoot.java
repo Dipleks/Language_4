@@ -10,18 +10,10 @@ public interface IRoot extends RootWindows
     VBox suggestionPane = new VBox();
     ScrollPane exercisesPane = new ScrollPane();
 
-    VBox invocationPane = new VBox();
     HBox languagePane = new HBox();
-
-    ToggleButton rus = new ToggleButton("Русский");
-    ToggleButton eng = new ToggleButton("English");
-    ToggleGroup group = new ToggleGroup();
     HBox paneLanguage = new HBox();
     VBox paneLanguageV = new VBox();
     Label lang = new Label("Выберите язык");
-    Label title = new Label();
-
-    Button backward = new Button("Назад");
 
     VBox paneForm = new VBox(); //панель с кнопками Present Simple, Form To Be
     VBox paneSubMenu = new VBox(); //панель с кнопками подменю

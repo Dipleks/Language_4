@@ -2,51 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feafebe0-03e5-4f4f-9b0b-4d911c81482b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/TESToffLineCARD/TEST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/TESToffLineCARD/TEST.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/Cards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/CardsText.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/Change.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/Change.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCardExercisesPS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCardExercisesToBe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/Assignable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/CallableExercises.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/Change.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/History.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/HistoryTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/IOutputCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCardExamPS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCardExamToBe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/OutputCardWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/ExamText.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/Exception.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/Exams.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/Exams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/FormPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/FormPS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/FormToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/FormToBe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/Invocation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/PaneWithForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/PaneWithForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/SettingsExamsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/SettingsExamsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/SuggestionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/SuggestionList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/Assignable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/CallableExercises.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/Exception.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/ExerciseText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/Exercises.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/FormPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/FormPS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/FormToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/FormToBe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/Invocation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppToBe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegToBe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesToBe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/PaneWithForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/PaneWithForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/SettingsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/SettingsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/SubMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/SubMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/SuggestionList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/EffectStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/EffectStyle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Language_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootWindows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/click.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/dataBase.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/my_text.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/my_words.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/ne_verno.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/transition.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/verno.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/patterns/Exception.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/words/ListWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/words/ListWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/words/OutputWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/words/OutputWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/words/SettingsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/words/SettingsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/words/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/words/Words.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/words/WordsText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/TESToffLineCARD/TEST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/CallCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/cards/CallCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/Cards.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/cards/Cards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/Change.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/History.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/HistoryTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/IOutputCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/OutputCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/OutputCardExamPS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/OutputCardExamToBe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/OutputCardWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/cards/RangeWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/db/UpdateTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/db/UpdateTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/ExamPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exams/ExamPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/ExamText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/ExamToBe.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exams/ExamToBe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/Exams.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exams/Exams.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/FormPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exams/FormPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/FormToBe.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exams/FormToBe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/PaneWithForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exams/PaneWithForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/SettingsExamsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exams/SettingsExamsList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exams/SuggestionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exams/SuggestionList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exercises/ExerciseText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exercises/Exercises.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exercises/Exercises.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exercises/FormPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exercises/FormPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exercises/FormToBe.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exercises/FormToBe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exercises/OutputAppPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exercises/OutputAppPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exercises/PaneWithForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exercises/PaneWithForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/exercises/SettingsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/exercises/SettingsList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/interfaceProgram/EffectStyle.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/interfaceProgram/EffectStyle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/interfaceProgram/ICards.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/interfaceProgram/ICards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/interfaceProgram/IRoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/interfaceProgram/IRoot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/interfaceProgram/Language_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/interfaceProgram/Language_4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/interfaceProgram/RootWindows.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/interfaceProgram/RootWindows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/menu/MenuBarEngRus.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/menu/MenuBarEngRus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/patterns/Exception.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/patterns/Invocation.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/patterns/Invocation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/words/ListWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/words/ListWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/words/OutputWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/words/OutputWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/words/SettingsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/words/SettingsList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/words/Words.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/words/Words.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/words/WordsText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/chatTest/ChatClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/chatTest/ChatClient$Receiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/chatTest/ChatClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/chatTest/ChatServer$SocketProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/chatTest/ChatServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/data/Exams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/data/IRoot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/data/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/test_server_client/my_test_work/IT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/test_server_client/my_test_work/ServerT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/test_server_client/my_test_work/T.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <ignored path="$PROJECT_DIR$/client/target/" />
@@ -60,24 +113,25 @@
     <session id="340397914">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="db" value="10" />
-          <entry key="java" value="69" />
+          <entry key="java" value="88" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="69" />
+          <entry key="JAVA" value="88" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SQL" value="9" />
           <entry key="XML" value="2" />
@@ -87,13 +141,13 @@
         <counts>
           <entry key="db" value="1" />
           <entry key="dummy" value="7" />
-          <entry key="java" value="2793" />
+          <entry key="java" value="2825" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2793" />
+          <entry key="JAVA" value="2825" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="8" />
@@ -103,15 +157,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/main/java/TESToffLineCARD/TEST.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/texts/ExamTextToBe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-251">
-              <caret line="46" column="54" lean-forward="true" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+            <state relative-caret-position="639">
+              <caret line="1241" column="56" selection-start-line="1241" selection-start-column="56" selection-end-line="1241" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="23" column="73" lean-forward="true" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/CallCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="583">
+              <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Cards.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1932#1933#0" expanded="true" />
-                <element signature="e#1960#1961#0" expanded="true" />
+                <element signature="e#158#159#0" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,6 +213,7 @@
       <find>rootExercises.getContMenuPS()</find>
       <find>rootExercises.getContMenuToBe()</find>
       <find />
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,8 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/main/java/exercise/Text.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exercise/Submenu.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/Exercise.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/LabP.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootExercises2.java" />
@@ -181,7 +260,6 @@
         <option value="$PROJECT_DIR$/client/src/main/java/exams/TestExam.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exams/FormPS.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/WordsText.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/CardsText.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/test_server_client/my_test_work/IT.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/test_server_client/my_test_work/T.java" />
@@ -192,6 +270,9 @@
         <option value="$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/TESToffLineCARD/TEST.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/texts/ExamTextToBe.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" />
       </list>
     </option>
   </component>
@@ -227,7 +308,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="54" />
     <option name="width" value="509" />
     <option name="height" value="605" />
@@ -240,6 +321,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,14 +363,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="exams" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,74 +387,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TESToffLineCARD" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="my_test_work" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Language_4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="texts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534684353581" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535192817325" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8 (3)" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -411,7 +440,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TEST">
+  <component name="RunManager" selected="Application.Language_4">
     <configuration name="Language_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="interfaceProgram.Language_4" />
       <module name="client" />
@@ -525,8 +554,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TEST" />
         <item itemvalue="Application.Language_4" />
+        <item itemvalue="Application.TEST" />
         <item itemvalue="Application.T" />
         <item itemvalue="Application.ServerT" />
         <item itemvalue="Application.Server" />
@@ -550,7 +579,7 @@
     <frame x="0" y="26" width="1920" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1638207" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17769477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -575,51 +604,13 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.1189968" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.12166489" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/Invocation.java" />
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/te.db" />
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/add_exams_to_be.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/add_exams_ps.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/createDB.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/data/IRoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/Exercises.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/test_server_client/test/Server.java" />
     <entry file="file://$PROJECT_DIR$/server/src/main/java/test_server_client/test/ClientConnection.java" />
     <entry file="file://$PROJECT_DIR$/server/src/main/java/test_server_client/test/Client.java" />
     <entry file="file://$PROJECT_DIR$/server/src/main/java/exams/T.java" />
@@ -628,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -682,13 +666,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/HistoryTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/HistoryTable.java" />
     <entry file="file://$PROJECT_DIR$/client/src/main/java/db/IDataBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -752,44 +730,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCardWords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCardWords.java" />
     <entry file="file://$PROJECT_DIR$/client/src/main/java/db/UpdateTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
           <caret line="101" column="9" lean-forward="true" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/ExerciseText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9968">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/RangeWords.java" />
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/ExerciseText.java" />
     <entry file="file://$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -797,52 +747,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Cards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/CallCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="58" column="22" lean-forward="true" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Change.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/IOutputCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCardExamPS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1746">
-          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Change.java" />
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/IOutputCard.java" />
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCardExamPS.java" />
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/OutputCard.java" />
     <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/Invocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -850,20 +758,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamText.java" />
     <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/PaneWithForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-414">
@@ -885,15 +780,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/TESToffLineCARD/TEST.java">
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/TESToffLineCARD/TEST.java" />
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/RootWindows.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="46" column="54" lean-forward="true" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+        <state relative-caret-position="177">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/SettingsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/OutputAppPS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/ICards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/Exams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" column="71" lean-forward="true" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/texts/ExamTextToBe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="1241" column="56" selection-start-line="1241" selection-start-column="56" selection-end-line="1241" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="73" lean-forward="true" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/Cards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1932#1933#0" expanded="true" />
-            <element signature="e#1960#1961#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/cards/CallCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
         </state>
       </provider>
     </entry>

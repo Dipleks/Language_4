@@ -7,16 +7,13 @@ import javafx.geometry.Pos;
 
 class SettingsList implements IRoot
 {
-
     void settings(){
         suggestionPane.setPrefWidth(WIDTH_SIZE/2.05);
         suggestionPane.setAlignment(Pos.CENTER);
         suggestionPane.setSpacing(HEIGHT_SIZE/80);
-//        suggestionPane.setStyle("-fx-border-color: RED");
 
         exercisesPane.setLayoutX(WIDTH_SIZE/3.5);
         exercisesPane.setLayoutY(HEIGHT_SIZE/5);
-//        exercisesPane.setStyle("-fx-border-color: RED");
         exercisesPane.setPrefSize(WIDTH_SIZE/2, HEIGHT_SIZE/1.5);
         exercisesPane.setEffect(EffectShadow.getShadow());
         exercisesPane.setContent(suggestionPane);

@@ -18,7 +18,6 @@ public class OutputAppPS implements Callable, IRoot
         Invocation invocation7 = new Invocation();
         Invocation invocation8 = new Invocation();
 
-
         invocationPane.setSpacing(WIDTH_SIZE/65);
         invocationPane.setLayoutX(WIDTH_SIZE/12);
         invocationPane.setLayoutY(HEIGHT_SIZE/6);

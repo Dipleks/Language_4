@@ -14,6 +14,7 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import testing.Testing;
 import words.Words;
 
 import java.sql.*;
@@ -28,6 +29,7 @@ public class MenuBarEngRus implements RootWindows, IDataBase
     private final Menu menuCheck = new Menu("Проверка");
     private final MenuItem menuExercises = new MenuItem("Задания");
     private final MenuItem menuCards = new MenuItem("Карточки");
+    private final MenuItem menuTesting = new MenuItem("Test of time");
     private final MenuItem menu_my_words = new MenuItem("Мой словарь");
     private final MenuItem menuExam = new MenuItem("Контрольные");
     private final MenuItem menuWord = new MenuItem("Слова");
@@ -54,6 +56,7 @@ public class MenuBarEngRus implements RootWindows, IDataBase
         getMenuServes();
         getMenuCards();
         getMenuWord();
+        getMenuTesting();
 
         menuHelp.setDisable(true);
         textsLevelTwo.setDisable(true);
@@ -61,6 +64,7 @@ public class MenuBarEngRus implements RootWindows, IDataBase
         menu_my_words.setDisable(true);
         menuSetting.setDisable(true);
         menuCheck.setDisable(true);
+        menuTesting.setDisable(true);
 
         try {
             Class.forName("org.postgresql.Driver");
@@ -78,7 +82,7 @@ public class MenuBarEngRus implements RootWindows, IDataBase
         menuBar.setMinWidth(WIDTH_SIZE);
         menuServes.getItems().addAll(menuSetting, about);
         menuFile.getItems().addAll(menuExercises, menuExam, menuWord, separatorMenuItem, menu_my_words);
-        menuCheck.getItems().addAll(menuCards);
+        menuCheck.getItems().addAll(menuCards, menuTesting);
         menuBar.getMenus().addAll(menuFile, menuCheck, menuHelp, menuServes);
 
         return menuBar;
@@ -90,6 +94,16 @@ public class MenuBarEngRus implements RootWindows, IDataBase
             menuBarEngRus.getMenu();
             Cards cards = new Cards();
             cards.getCards();
+        });
+    }
+
+    private void getMenuTesting(){
+        menuTesting.setOnAction(event -> {
+            ClearDisplay.clearMethod();
+            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+            menuBarEngRus.getMenu();
+            Testing testing = new Testing();
+            testing.getTesting();
         });
     }
 
@@ -146,7 +160,7 @@ public class MenuBarEngRus implements RootWindows, IDataBase
             label.setPrefSize(WIDTH_SIZE/4, HEIGHT_SIZE/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +
-                    "\n\n                                    Версия программы: 3.0.5");
+                    "\n\n                                    Версия программы: 3.0.8");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, HEIGHT_SIZE*0.015));
             label.setAlignment(Pos.CENTER);

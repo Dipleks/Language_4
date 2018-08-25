@@ -18,7 +18,6 @@ public class OutputWords implements Callable, IRoot
         Invocation invocation7 = new Invocation();
         Invocation invocation8 = new Invocation();
 
-
         invocationPane.setSpacing(WIDTH_SIZE/65);
         invocationPane.setLayoutX(WIDTH_SIZE/12);
         invocationPane.setLayoutY(HEIGHT_SIZE/6);
@@ -30,7 +29,7 @@ public class OutputWords implements Callable, IRoot
                 invocation5.getInvocation("521 - 650", new Label[130], 520, new ListWords()),
                 invocation6.getInvocation("651 - 780", new Label[130], 650, new ListWords()),
                 invocation7.getInvocation("781 - 910", new Label[130], 780, new ListWords()),
-                invocation8.getInvocation("911 - 1039", new Label[129], 910, new ListWords())
+                invocation8.getInvocation("911 - 1000", new Label[90], 910, new ListWords())
         );
         SettingsList settingsList = new SettingsList();
         settingsList.settings();

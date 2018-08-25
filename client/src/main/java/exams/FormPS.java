@@ -1,16 +1,16 @@
 package exams;
 
 import patterns.Assignable;
+import texts.ExamTextPS;
 
 public class FormPS implements Assignable
 {
-    private ExamText text = new ExamText();
+    private ExamTextPS text = new ExamTextPS();
 
     @Override
     public String getAssignment(int value, int n, String language) {
-        if (language.equals("RU")) return text.getExamRuPS().get(value + n);
-        if (language.equals("EN")) return text.getExamEnPS().get(value + n);
+        if (language.equals("RU")) return text.getRussia().get(value + n);
+        if (language.equals("EN")) return text.getEnglish().get(value + n);
         return "No Files";
     }
-
 }

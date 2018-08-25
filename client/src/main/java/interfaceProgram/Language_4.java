@@ -15,7 +15,6 @@ public class Language_4 extends Application implements RootWindows, IDataBase
 
     @Override
     public void init() {
-        addDB();
     }
 
     @Override
