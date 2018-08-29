@@ -57,6 +57,8 @@ class CallCard implements ICards, IDataBase
             Invocation invocation4 = new Invocation();
             Invocation invocation5 = new Invocation();
             Invocation invocation6 = new Invocation();
+            Invocation invocation7 = new Invocation();
+            Invocation invocation8 = new Invocation();
 
             invocationPane.getChildren().addAll(
                     invocation1.getOutputCard("1 - 100", 0, new ExamTextToBe()),
@@ -64,7 +66,9 @@ class CallCard implements ICards, IDataBase
                     invocation3.getOutputCard("201 - 300", 200, new ExamTextToBe()),
                     invocation4.getOutputCard("301 - 400", 300, new ExamTextToBe()),
                     invocation5.getOutputCard("401 - 500", 400, new ExamTextToBe()),
-                    invocation6.getOutputCard("501 - 600", 500, new ExamTextToBe())
+                    invocation6.getOutputCard("501 - 600", 500, new ExamTextToBe()),
+                    invocation7.getOutputCard("601 - 700", 600, new ExamTextToBe()),
+                    invocation8.getOutputCard("701 - 800", 700, new ExamTextToBe())
             );
 
         });
