@@ -32,7 +32,7 @@ public interface RootWindows
         Scene scene = new Scene(stackPane, WIDTH_SIZE/4, HEIGHT_SIZE/4);
         Label label = new Label(header);
         label.setEffect(EffectShadow.getShadow());
-        label.setStyle(EffectStyle.getStyleLabel());
+        label.setStyle(EffectStyle.getStyleLabel14());
         stackPane.getChildren().add(label);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);

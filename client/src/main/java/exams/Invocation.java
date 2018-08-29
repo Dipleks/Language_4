@@ -54,7 +54,7 @@ class Invocation implements IRoot
             suggestionList.getList(value, assignable);
             ROOT_PANE.getChildren().remove(title);
             title.setText(call.getText());
-            title.setStyle(EffectStyle.getStyleLabel());
+            title.setStyle(EffectStyle.getStyleLabel14());
             title.setLayoutX(WIDTH_SIZE/1.5);
             title.setLayoutY(HEIGHT_SIZE/7);
             title.setEffect(EffectShadow.getShadow());

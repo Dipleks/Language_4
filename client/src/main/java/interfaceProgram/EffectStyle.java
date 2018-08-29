@@ -22,8 +22,14 @@ public class EffectStyle
         return "-fx-color: #cccccc; -fx-font: bold italic 12pt Georgia; " +
                 "-fx-border-color: linear-gradient(#cccccc, #b3b3b3);";
     }
-    public static String getStyleLabel(){
+    public static String getStyleLabel12(){
+        return "-fx-font: bold italic 12pt Georgia;";
+    }
+    public static String getStyleLabel14(){
         return "-fx-font: bold italic 14pt Georgia;";
+    }
+    public static String getStyleLabel16(){
+        return "-fx-font: bold italic 16pt Georgia;";
     }
     public static String getStyleLabelColor(){
         return "-fx-font: bold italic 11pt Georgia;";

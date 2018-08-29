@@ -18,7 +18,7 @@ class SettingsList implements IRoot
         exercisesPane.setEffect(EffectShadow.getShadow());
         exercisesPane.setContent(suggestionPane);
 
-        lang.setStyle(EffectStyle.getStyleLabel());
+        lang.setStyle(EffectStyle.getStyleLabel14());
         lang.setEffect(EffectShadow.getShadow());
         paneLanguageV.setLayoutX(WIDTH_SIZE/18);
         paneLanguageV.setLayoutY(HEIGHT_SIZE/1.3);

@@ -42,7 +42,7 @@ class PaneWithForm implements IRoot
         textLanguage.setLayoutY(HEIGHT_SIZE/15);
         textLanguage.setPrefWidth(WIDTH_SIZE/2);
         textLanguage.setAlignment(Pos.CENTER_RIGHT);
-        textLanguage.setStyle(EffectStyle.getStyleLabel());
+        textLanguage.setStyle(EffectStyle.getStyleLabel14());
         textLanguage.setEffect(EffectShadow.getShadow());
 
         ps.setPrefSize(WIDTH_SIZE/6, HEIGHT_SIZE/18);

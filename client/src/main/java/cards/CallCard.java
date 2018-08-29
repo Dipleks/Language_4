@@ -153,7 +153,7 @@ class CallCard implements ICards
         eng.setToggleGroup(group);
         rus.setSelected(true);
 
-        lang.setStyle(EffectStyle.getStyleLabel());
+        lang.setStyle(EffectStyle.getStyleLabel14());
         lang.setEffect(EffectShadow.getShadow());
         lang.setLayoutX(WIDTH_SIZE/11);
         lang.setLayoutY(HEIGHT_SIZE/1.31);

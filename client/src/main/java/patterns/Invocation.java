@@ -1,13 +1,16 @@
 package patterns;
 
-import interfaceProgram.EffectShadow;
-import interfaceProgram.EffectStyle;
-import interfaceProgram.ICards;
-import interfaceProgram.IRoot;
+import com.sun.deploy.uitoolkit.impl.fx.HostServicesFactory;
+import com.sun.javafx.application.HostServicesDelegate;
+import interfaceProgram.*;
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.web.WebView;
+import javafx.stage.Stage;
 import texts.ITexts;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -26,8 +29,9 @@ public class Invocation implements IRoot, ICards
     private final String pressed = "-fx-color: #cccccc; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
     private final String pressedCol = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
 
-    // name - имя кнопки
-    public Button getInvocation(String name, Label[] list, int value, Assignable assignable){
+    // кнопка задания
+    public Button getInvocation(String name, Label[] list, int value, Assignable assignable)
+    {
         rus.setStyle(pressedCol);
         rus.setPrefSize(WIDTH_SIZE/14, HEIGHT_SIZE/25);
         rus.setEffect(EffectShadow.getShadow());
@@ -47,13 +51,57 @@ public class Invocation implements IRoot, ICards
         call.setOnMouseExited(event -> call.setStyle(released));
         call.setOnMousePressed(event -> call.setStyle(pressed));
         call.setOnMouseReleased(event -> call.setStyle(released));
-        call.setOnAction(event -> {
+        call.setOnAction(event ->
+        {
+            VBox vBox = new VBox();
+            vBox.getChildren().clear();
+            ROOT_PANE.getChildren().remove(vBox);
+            CLICK_TEXT.setPrefWidth(WIDTH_SIZE/7);
+            CLICK_TEXT.setWrapText(true);
+            SELECTED_LANGUAGE.setPrefWidth(WIDTH_SIZE/7);
+            SELECTED_LANGUAGE.setWrapText(true);
+            LOOC_YOUTUBE.setPrefWidth(WIDTH_SIZE/7);
+            LOOC_YOUTUBE.setWrapText(true);
+            vBox.setSpacing(HEIGHT_SIZE/60);
+            vBox.setAlignment(Pos.CENTER);
+            vBox.setLayoutX(WIDTH_SIZE/1.23);
+            vBox.setLayoutY(HEIGHT_SIZE/4);
+            vBox.setEffect(EffectShadow.getShadow());
+            vBox.setStyle(EffectStyle.getStyleLabel12());
+            INFORMATION.setStyle(EffectStyle.getStyleLabel16());
+            //////////
+            Label label = new Label("Exercise 1");
+            label.setTextFill(Color.LIMEGREEN);
+            label.setStyle(EffectStyle.getStyleLabel12());
+
+            Stage stage = new Stage();
+            WebView webview = new WebView();
+            label.setOnMouseClicked(event1 ->
+            {
+            //TODO сделать корректное воспроизведение при повторном открытии. ДОРАБОТАТЬ!!!
+                webview.getEngine().load(
+                        "https://www.youtube.com/watch?v=Hp9wUEDasY4"
+                );
+                webview.setPrefSize(WIDTH_SIZE/1.5, HEIGHT_SIZE/1.5);
+                stage.setScene(new Scene(webview));
+                stage.show();
+            });
+            Button button = new Button("STOP");
+            button.setOnAction(event1 -> {
+                webview.getEngine().load(null);
+                stage.close();
+            });
+
+            //////////
+            vBox.getChildren().addAll(INFORMATION, CLICK_TEXT, SELECTED_LANGUAGE, LOOC_YOUTUBE, label, button);
+            ROOT_PANE.getChildren().add(vBox);
+
             suggestionPane.getChildren().clear();
             languagePane.getChildren().clear();
             suggestionList.getList(list, value, assignable);
             ROOT_PANE.getChildren().remove(title);
             title.setText(call.getText());
-            title.setStyle(EffectStyle.getStyleLabel());
+            title.setStyle(EffectStyle.getStyleLabel14());
             title.setLayoutX(WIDTH_SIZE/1.5);
             title.setLayoutY(HEIGHT_SIZE/7);
             title.setEffect(EffectShadow.getShadow());
@@ -81,7 +129,8 @@ public class Invocation implements IRoot, ICards
     }
 
     // кнопка в картачках
-    public Button getOutputCard(String name, int value, ITexts iTexts){
+    public Button getOutputCard(String name, int value, ITexts iTexts)
+    {
         ROOT_PANE.getChildren().remove(rus);
         ROOT_PANE.getChildren().remove(eng);
         List<String> list1 = new ArrayList<>();
@@ -99,7 +148,9 @@ public class Invocation implements IRoot, ICards
         }
         Collections.shuffle(list1);
         Collections.shuffle(list2);
+
         getStyle();
+
         call.setText(name);
         call.setStyle(released);
         call.setPrefSize(WIDTH_SIZE/12, HEIGHT_SIZE/25);
@@ -205,7 +256,7 @@ public class Invocation implements IRoot, ICards
         title.setPrefWidth(WIDTH_SIZE/2.5);
         title.setWrapText(true);
         title.setAlignment(Pos.CENTER);
-        title.setStyle(EffectStyle.getStyleLabel() /*+ "-fx-border-color: RED;"*/);
+        title.setStyle(EffectStyle.getStyleLabel14() /*+ "-fx-border-color: RED;"*/);
         title.setEffect(EffectShadow.getShadow());
 
         next.setLayoutX(WIDTH_SIZE/2.5);

@@ -22,7 +22,7 @@ class Rule implements RootWindows
 
     VBox getCollectionRules(){
 
-        collectionRules.setStyle(EffectStyle.getStyleLabel());
+        collectionRules.setStyle(EffectStyle.getStyleLabel14());
         collectionRules.setSpacing(HEIGHT_SIZE/60);
         collectionRules.setEffect(EffectShadow.getShadow());
         collectionRules.setLayoutX(WIDTH_SIZE/4);

@@ -20,4 +20,9 @@ public interface IRoot extends RootWindows
     Rectangle rectangle = new Rectangle(); //прямогугольная область для подмению
     TextField examText = new TextField(); //текстовое поле для проверки контрольных
     Label textLanguage = new Label(); //текстовое поле в контрольных показывающее последний перевод
+
+    Label INFORMATION = new Label("ИНФОРМАЦИЯ");
+    Label CLICK_TEXT = new Label("1. Нажмите на предложение для перевода");
+    Label SELECTED_LANGUAGE = new Label("2. Выберите язык задания");
+    Label LOOC_YOUTUBE = new Label("3. Посмотреть урок на YOUTUBE:");
 }
