@@ -2,7 +2,6 @@ package menu;
 
 import cards.Cards;
 import db.IDataBase;
-import db.UpdateTable;
 import exams.Exams;
 import interfaceProgram.RootWindows;
 import javafx.geometry.Pos;

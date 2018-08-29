@@ -3,10 +3,18 @@ package exams;
 import interfaceProgram.IRoot;
 import patterns.Callable;
 
+/**
+ * Класс вызова Контрольных PS.
+ * @author Загороднев Д.М.
+ */
 public class ExamPS implements Callable, IRoot
 {
+    /**
+     * Функция получения меню навигации по Контрольным PS
+     */
     @Override
-    public void getList() {
+    public void getList()
+    {
         Invocation invocation1 = new Invocation();
         Invocation invocation2 = new Invocation();
         Invocation invocation3 = new Invocation();

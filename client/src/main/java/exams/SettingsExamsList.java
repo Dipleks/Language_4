@@ -7,12 +7,24 @@ import javafx.geometry.Pos;
 import menu.ClearDisplay;
 import menu.MenuBarEngRus;
 
+/**
+ * Класс с настройками листа контрольных.
+ * Имеет значения: <b>released</b>, <b>pressed</b>.
+ * @author Загороднев Д.М.
+ */
 class SettingsExamsList implements IRoot
 {
+    /** Стиль кнопки в отпущеном состоянии */
     private final String released = "-fx-color: #e6e6e6; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
+
+    /** Стиль кнопки в нажатом состоянии */
     private final String pressed = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
 
-    void settings(){
+    /**
+     * Функция настроек.
+     */
+    void settings()
+    {
         suggestionPane.setPrefWidth(WIDTH_SIZE/2.05);
         suggestionPane.setAlignment(Pos.CENTER);
         suggestionPane.setSpacing(HEIGHT_SIZE/80);

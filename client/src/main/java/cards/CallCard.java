@@ -1,6 +1,5 @@
 package cards;
 
-import db.IDataBase;
 import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
 import interfaceProgram.ICards;
@@ -13,17 +12,31 @@ import texts.ExamTextToBe;
 import texts.WordsText;
 import patterns.Invocation;
 
-class CallCard implements ICards, IDataBase
+/**
+ * Класс вызова карточек.
+ * @author Загороднев Д.М.
+ */
+class CallCard implements ICards
 {
+    /** Значение ширины кнопок вызова карточек */
     private double w = WIDTH_SIZE/8;
+
+    /** Значение высоты кнопок вызова карточек */
     private double h = HEIGHT_SIZE/18;
+
+    /** Предупреждение, если не выбран язык карточек */
     private Label lang = new Label("Выберите язык");
 
-    VBox getCallCards(){
-
+    /**
+     * Функция получения списка карточек.
+     * @return возвращает панель с кнопками типа карточек.
+     */
+    VBox getCallCards()
+    {
         getSettings();
 
-        examPS.setOnAction(event -> {
+        examPS.setOnAction(event ->
+        {
             remove();
             examPS.setStyle(EffectStyle.getStyleButton12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
@@ -46,7 +59,9 @@ class CallCard implements ICards, IDataBase
             );
 
         });
-        examToBe.setOnAction(event -> {
+
+        examToBe.setOnAction(event ->
+        {
             remove();
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButton12());
@@ -70,9 +85,10 @@ class CallCard implements ICards, IDataBase
                     invocation7.getOutputCard("601 - 700", 600, new ExamTextToBe()),
                     invocation8.getOutputCard("701 - 800", 700, new ExamTextToBe())
             );
-
         });
-        word.setOnAction(event -> {
+
+        word.setOnAction(event ->
+        {
             remove();
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
@@ -106,7 +122,11 @@ class CallCard implements ICards, IDataBase
         return CALL_CARDS;
     }
 
-    private void getSettings(){
+    /**
+     * Функция получения настроек меню навигации карточек.
+     */
+    private void getSettings()
+    {
         examPS.setPrefSize(w, h);
         examToBe.setPrefSize(w, h);
         word.setPrefSize(w, h);
@@ -170,7 +190,12 @@ class CallCard implements ICards, IDataBase
         });
         ROOT_PANE.getChildren().addAll(invocationPane, backward);
     }
-    private void remove(){
+
+    /**
+     * Функция очистки элементов навигации карточек.
+     */
+    private void remove()
+    {
         ROOT_PANE.getChildren().remove(next);
         ROOT_PANE.getChildren().remove(translation);
         ROOT_PANE.getChildren().remove(CALL_CARDS);
