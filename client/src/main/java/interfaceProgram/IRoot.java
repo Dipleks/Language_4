@@ -21,8 +21,11 @@ public interface IRoot extends RootWindows
     TextField examText = new TextField(); //текстовое поле для проверки контрольных
     Label textLanguage = new Label(); //текстовое поле в контрольных показывающее последний перевод
 
+    VBox PANE_INFO = new VBox();
+    Label NAME_WEB = new Label();
     Label INFORMATION = new Label("ИНФОРМАЦИЯ");
     Label CLICK_TEXT = new Label("1. Нажмите на предложение для перевода");
     Label SELECTED_LANGUAGE = new Label("2. Выберите язык задания");
-    Label LOOC_YOUTUBE = new Label("3. Посмотреть урок на YOUTUBE:");
+    Label LOOK_YOUTUBE = new Label("3. Посмотреть урок на YOUTUBE:");
+    Label PLAY_LIST = new Label("4. Весь playlist с практическими заданиями на YOUTUBE. Ссылка выше.");
 }

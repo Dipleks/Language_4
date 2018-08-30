@@ -1,16 +1,18 @@
 package patterns;
 
-import com.sun.deploy.uitoolkit.impl.fx.HostServicesFactory;
-import com.sun.javafx.application.HostServicesDelegate;
 import interfaceProgram.*;
+import javafx.application.Application;
 import javafx.geometry.Pos;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.web.WebView;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import texts.ITexts;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,7 +22,7 @@ import java.util.List;
 // Invocation - вызов. Класс создает новую кнопку котороая помещается в
 // массив кнопок который добавляется в окно для вызова соответствующего
 // списка предложений
-public class Invocation implements IRoot, ICards
+public class Invocation implements IRoot, ICards, ILink
 {
     private int number;
     private Button call = new Button();
@@ -30,7 +32,7 @@ public class Invocation implements IRoot, ICards
     private final String pressedCol = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
 
     // кнопка задания
-    public Button getInvocation(String name, Label[] list, int value, Assignable assignable)
+    public Button getInvocation(String name, Label[] list, int value, String url, Assignable assignable)
     {
         rus.setStyle(pressedCol);
         rus.setPrefSize(WIDTH_SIZE/14, HEIGHT_SIZE/25);
@@ -53,48 +55,30 @@ public class Invocation implements IRoot, ICards
         call.setOnMouseReleased(event -> call.setStyle(released));
         call.setOnAction(event ->
         {
-            VBox vBox = new VBox();
-            vBox.getChildren().clear();
-            ROOT_PANE.getChildren().remove(vBox);
+            PANE_INFO.getChildren().clear();
+            ROOT_PANE.getChildren().remove(PANE_INFO);
             CLICK_TEXT.setPrefWidth(WIDTH_SIZE/7);
             CLICK_TEXT.setWrapText(true);
             SELECTED_LANGUAGE.setPrefWidth(WIDTH_SIZE/7);
             SELECTED_LANGUAGE.setWrapText(true);
-            LOOC_YOUTUBE.setPrefWidth(WIDTH_SIZE/7);
-            LOOC_YOUTUBE.setWrapText(true);
-            vBox.setSpacing(HEIGHT_SIZE/60);
-            vBox.setAlignment(Pos.CENTER);
-            vBox.setLayoutX(WIDTH_SIZE/1.23);
-            vBox.setLayoutY(HEIGHT_SIZE/4);
-            vBox.setEffect(EffectShadow.getShadow());
-            vBox.setStyle(EffectStyle.getStyleLabel12());
+            LOOK_YOUTUBE.setPrefWidth(WIDTH_SIZE/7);
+            LOOK_YOUTUBE.setWrapText(true);
+            PLAY_LIST.setPrefWidth(WIDTH_SIZE/7);
+            PLAY_LIST.setWrapText(true);
+            PANE_INFO.setSpacing(HEIGHT_SIZE/60);
+            PANE_INFO.setAlignment(Pos.CENTER);
+            PANE_INFO.setLayoutX(WIDTH_SIZE/1.23);
+            PANE_INFO.setLayoutY(HEIGHT_SIZE/4);
+            PANE_INFO.setEffect(EffectShadow.getShadow());
+            PANE_INFO.setStyle(EffectStyle.getStyleLabel12());
             INFORMATION.setStyle(EffectStyle.getStyleLabel16());
-            //////////
-            Label label = new Label("Exercise 1");
-            label.setTextFill(Color.LIMEGREEN);
-            label.setStyle(EffectStyle.getStyleLabel12());
 
-            Stage stage = new Stage();
-            WebView webview = new WebView();
-            label.setOnMouseClicked(event1 ->
+            PANE_INFO.getChildren().addAll(INFORMATION, CLICK_TEXT, SELECTED_LANGUAGE, LOOK_YOUTUBE, getVideo(call.getText(), url), PLAY_LIST);
+            ROOT_PANE.getChildren().add(PANE_INFO);
+            if (url == null)
             {
-            //TODO сделать корректное воспроизведение при повторном открытии. ДОРАБОТАТЬ!!!
-                webview.getEngine().load(
-                        "https://www.youtube.com/watch?v=Hp9wUEDasY4"
-                );
-                webview.setPrefSize(WIDTH_SIZE/1.5, HEIGHT_SIZE/1.5);
-                stage.setScene(new Scene(webview));
-                stage.show();
-            });
-            Button button = new Button("STOP");
-            button.setOnAction(event1 -> {
-                webview.getEngine().load(null);
-                stage.close();
-            });
-
-            //////////
-            vBox.getChildren().addAll(INFORMATION, CLICK_TEXT, SELECTED_LANGUAGE, LOOC_YOUTUBE, label, button);
-            ROOT_PANE.getChildren().add(vBox);
+                ROOT_PANE.getChildren().remove(PANE_INFO);
+            }
 
             suggestionPane.getChildren().clear();
             languagePane.getChildren().clear();
@@ -126,6 +110,45 @@ public class Invocation implements IRoot, ICards
             }
         });
         return call;
+    }
+
+    private Label getVideo(String name, String url)
+    {
+        Stage web = new Stage();
+        Group group = new Group();
+        WebView webview = new WebView();
+        Scene scene = new Scene(group, WIDTH_SIZE/1.2, HEIGHT_SIZE/1.2, Color.GREY);
+
+        NAME_WEB.setText(name);
+        NAME_WEB.setTextFill(Color.LIMEGREEN);
+        NAME_WEB.setStyle(EffectStyle.getStyleLabel12());
+
+        NAME_WEB.setOnMouseClicked(event1 ->
+        {
+            webview.setPrefSize(WIDTH_SIZE/1.5, HEIGHT_SIZE/1.5);
+            webview.getEngine().load(url);
+            web.setScene(scene);
+            web.show();
+        });
+
+        webview.setLayoutX(20);
+        webview.setLayoutY(30);
+
+        Button button = new Button("Закрыть видео");
+        button.setStyle(EffectStyle.getStyleButtonDefault12());
+        button.setLayoutX(scene.getWidth()/1.15);
+        button.setLayoutY(scene.getHeight()/4);
+        button.setOnAction(event1 -> {
+            webview.getEngine().load(null);
+            web.close();
+        });
+
+        group.getChildren().addAll(webview, button);
+
+        web.initModality(Modality.APPLICATION_MODAL);
+        web.initStyle(StageStyle.TRANSPARENT);
+
+        return NAME_WEB;
     }
 
     // кнопка в картачках
