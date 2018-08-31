@@ -157,8 +157,8 @@ public class MenuBarEngRus implements RootWindows, IDataBase
             Label label = new Label();
 //                TITLE.setStyle("-fx-border-color: RED");
             label.setPrefSize(WIDTH_SIZE/4, HEIGHT_SIZE/4);
-            label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
-                    "\nдля изучения Английского языка." +
+            label.setText("Автор программы Ghost \nАвтор заданий Александр Бебрис \n" + "\n" + "Программа предназначена " +
+                    "\nдля изучения Английского языка.\n\nПрограмма находится в разработке." +
                     "\n\n                                    Версия программы: 3.1.1");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, HEIGHT_SIZE*0.015));

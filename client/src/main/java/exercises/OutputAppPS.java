@@ -19,8 +19,8 @@ public class OutputAppPS implements Callable, IRoot, ILink
         Invocation invocation7 = new Invocation();
         Invocation invocation8 = new Invocation();
 
-        invocationPane.setSpacing(WIDTH_SIZE/65);
-        invocationPane.setLayoutX(WIDTH_SIZE/12);
+        invocationPane.setSpacing(HEIGHT_SIZE/80);
+        invocationPane.setLayoutX(WIDTH_SIZE/11);
         invocationPane.setLayoutY(HEIGHT_SIZE/6);
         invocationPane.getChildren().addAll(
                 invocation1.getInvocation("Задание 1", new Label[31], 0, app_ps_1, new FormPS()),

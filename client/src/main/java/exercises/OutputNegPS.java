@@ -14,8 +14,8 @@ public class OutputNegPS implements Callable, IRoot, ILink
         Invocation invocation2 = new Invocation();
         Invocation invocation3 = new Invocation();
 
-        invocationPane.setSpacing(WIDTH_SIZE/65);
-        invocationPane.setLayoutX(WIDTH_SIZE/12);
+        invocationPane.setSpacing(HEIGHT_SIZE/80);
+        invocationPane.setLayoutX(WIDTH_SIZE/11);
         invocationPane.setLayoutY(HEIGHT_SIZE/6);
         invocationPane.getChildren().addAll(
                 invocation1.getInvocation("Задание 1", new Label[41], 193, neg_ps_1, new FormPS()),

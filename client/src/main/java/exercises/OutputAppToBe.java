@@ -15,8 +15,8 @@ public class OutputAppToBe implements Callable, IRoot, ILink
         Invocation invocation3 = new Invocation();
         Invocation invocation4 = new Invocation();
 
-        invocationPane.setSpacing(WIDTH_SIZE/65);
-        invocationPane.setLayoutX(WIDTH_SIZE/12);
+        invocationPane.setSpacing(HEIGHT_SIZE/80);
+        invocationPane.setLayoutX(WIDTH_SIZE/11);
         invocationPane.setLayoutY(HEIGHT_SIZE/6);
         invocationPane.getChildren().addAll(
                 invocation1.getInvocation("Задание 1", new Label[43], 0, app_tobe_1, new FormToBe()),

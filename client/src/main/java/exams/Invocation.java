@@ -2,6 +2,7 @@ package exams;
 
 import interfaceProgram.EffectShadow;
 import interfaceProgram.EffectStyle;
+import interfaceProgram.ILink;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Button;
 import patterns.Assignable;
@@ -11,7 +12,7 @@ import patterns.Assignable;
  * Имеет значения: <b>call</b>, <b>suggestionList</b>, <b>released</b>, <b>pressed</b>, <b>pressedCol</b>
  * @author Загороднев Д.М.
  */
-class Invocation implements IRoot
+class Invocation implements IRoot, ILink
 {
     /** Кнопка вызова заданий */
     private Button call = new Button();

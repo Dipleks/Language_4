@@ -39,4 +39,9 @@ public interface ILink
     String ques_tobe_2 = "https://www.youtube.com/watch?v=TLJa6rBI6pE&index=85&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
     String ques_tobe_3 = "https://www.youtube.com/watch?v=sQ6HMW37Xh4&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=88";
     String ques_tobe_4 = "https://www.youtube.com/watch?v=XXPzbMBNzrY&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=90";
+
+    // Контрольные Present Simple:
+
+
+    // Контрольные To Be:
 }
