@@ -41,7 +41,21 @@ public interface ILink
     String ques_tobe_4 = "https://www.youtube.com/watch?v=XXPzbMBNzrY&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=90";
 
     // Контрольные Present Simple:
-
+    String tests_ps_1 = "https://www.youtube.com/watch?v=zbgF335KN8U&index=56&t=0s&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
+    String tests_ps_2 = "https://www.youtube.com/watch?v=AL-R4Uc7X14&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=57";
+    String tests_ps_3 = "https://www.youtube.com/watch?v=bQ9l7m7KUYk&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=59";
+    String tests_ps_4 = "https://www.youtube.com/watch?v=qQGKsAeF9fI&index=61&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
+    String tests_ps_5 = "https://www.youtube.com/watch?v=Oahp_V3N8Ls&index=63&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
+    String tests_ps_6 = "https://www.youtube.com/watch?v=sctMdg9ISp0&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=65";
+    String tests_ps_7 = "https://www.youtube.com/watch?v=CY3wNk3_Rnw&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=67";
 
     // Контрольные To Be:
+    String tests_tobe_1 = "https://www.youtube.com/watch?v=gDcvt3huH_g&index=97&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
+    String tests_tobe_2 = "https://www.youtube.com/watch?v=8YFu9R9MMxg&index=99&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
+    String tests_tobe_3 = "https://www.youtube.com/watch?v=2GRJq4Y9gOo&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=101";
+    String tests_tobe_4 = "https://www.youtube.com/watch?v=AZNVY021qTo&index=103&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
+    String tests_tobe_5 = "https://www.youtube.com/watch?v=3mu_hLjqK7k&index=105&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
+    String tests_tobe_6 = "https://www.youtube.com/watch?v=0cnIEqI_J1w&index=107&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
+    String tests_tobe_7 = "https://www.youtube.com/watch?v=T8VF9d_V0eU&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=109";
+    String tests_tobe_8 = "https://www.youtube.com/watch?v=plVpgXzQ8a0&index=111&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";
 }

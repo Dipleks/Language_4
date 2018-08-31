@@ -55,7 +55,11 @@ public class Invocation implements IRoot, ICards, ILink
         call.setOnMouseReleased(event -> call.setStyle(released));
         call.setOnAction(event ->
         {
-            getInfo(url);
+            Information information = new Information();
+            information.getInfo(url, call.getText(), "1. Нажмите на предложение для перевода",
+                    "2. Выберите язык задания",
+                    "3. Посмотреть урок на YOUTUBE (нажмите):",
+                    "4. Весь playlist с практическими заданиями на YOUTUBE. Ссылка выше.");
 
             suggestionPane.getChildren().clear();
             languagePane.getChildren().clear();
@@ -87,73 +91,6 @@ public class Invocation implements IRoot, ICards, ILink
             }
         });
         return call;
-    }
-
-    private void getInfo(String url)
-    {
-        PANE_INFO.getChildren().clear();
-        ROOT_PANE.getChildren().remove(PANE_INFO);
-        CLICK_TEXT.setPrefWidth(WIDTH_SIZE/7);
-        CLICK_TEXT.setWrapText(true);
-        SELECTED_LANGUAGE.setPrefWidth(WIDTH_SIZE/7);
-        SELECTED_LANGUAGE.setWrapText(true);
-        LOOK_YOUTUBE.setPrefWidth(WIDTH_SIZE/7);
-        LOOK_YOUTUBE.setWrapText(true);
-        PLAY_LIST.setPrefWidth(WIDTH_SIZE/7);
-        PLAY_LIST.setWrapText(true);
-        PANE_INFO.setSpacing(HEIGHT_SIZE/60);
-        PANE_INFO.setAlignment(Pos.CENTER);
-        PANE_INFO.setLayoutX(WIDTH_SIZE/1.23);
-        PANE_INFO.setLayoutY(HEIGHT_SIZE/4);
-        PANE_INFO.setEffect(EffectShadow.getShadow());
-        PANE_INFO.setStyle(EffectStyle.getStyleLabel12());
-        INFORMATION.setStyle(EffectStyle.getStyleLabel16());
-
-        PANE_INFO.getChildren().addAll(INFORMATION, CLICK_TEXT, SELECTED_LANGUAGE, LOOK_YOUTUBE, getVideo(url), PLAY_LIST);
-        ROOT_PANE.getChildren().add(PANE_INFO);
-        if (url == null)
-        {
-            ROOT_PANE.getChildren().remove(PANE_INFO);
-        }
-    }
-
-    private Label getVideo(String url)
-    {
-        Stage web = new Stage();
-        Group group = new Group();
-        WebView webview = new WebView();
-        Scene scene = new Scene(group, WIDTH_SIZE/1.2, HEIGHT_SIZE/1.2, Color.GREY);
-
-        NAME_WEB.setText(call.getText());
-        NAME_WEB.setTextFill(Color.LIMEGREEN);
-        NAME_WEB.setStyle(EffectStyle.getStyleLabel12());
-
-        NAME_WEB.setOnMouseClicked(event1 ->
-        {
-            webview.setPrefSize(WIDTH_SIZE/1.5, HEIGHT_SIZE/1.5);
-            webview.getEngine().load(url);
-            web.setScene(scene);
-            web.show();
-        });
-
-        webview.setLayoutX(20);
-        webview.setLayoutY(30);
-
-        Button button = new Button("Закрыть видео");
-        button.setStyle(EffectStyle.getStyleButtonDefault12());
-        button.setLayoutX(scene.getWidth()/1.15);
-        button.setLayoutY(scene.getHeight()/4);
-        button.setOnAction(event1 -> {
-            webview.getEngine().load(null);
-            web.close();
-        });
-
-        group.getChildren().addAll(webview, button);
-
-        web.initModality(Modality.APPLICATION_MODAL);
-        web.initStyle(StageStyle.TRANSPARENT);
-
-        return NAME_WEB;
     }
 
     // кнопка в картачках

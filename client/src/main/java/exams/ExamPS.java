@@ -1,5 +1,6 @@
 package exams;
 
+import interfaceProgram.ILink;
 import interfaceProgram.IRoot;
 import patterns.Callable;
 
@@ -7,7 +8,7 @@ import patterns.Callable;
  * Класс вызова Контрольных PS.
  * @author Загороднев Д.М.
  */
-public class ExamPS implements Callable, IRoot
+public class ExamPS implements Callable, IRoot, ILink
 {
     /**
      * Функция получения меню навигации по Контрольным PS
@@ -27,13 +28,13 @@ public class ExamPS implements Callable, IRoot
         invocationPane.setLayoutX(WIDTH_SIZE/12);
         invocationPane.setLayoutY(HEIGHT_SIZE/6);
         invocationPane.getChildren().addAll(
-                invocation1.getInvocation("Часть 1", 0, new FormPS()),
-                invocation2.getInvocation("Часть 2", 100, new FormPS()),
-                invocation3.getInvocation("Часть 3", 200, new FormPS()),
-                invocation4.getInvocation("Часть 4", 300, new FormPS()),
-                invocation5.getInvocation("Часть 5", 400, new FormPS()),
-                invocation6.getInvocation("Часть 6", 500, new FormPS()),
-                invocation7.getInvocation("Часть 7", 600, new FormPS())
+                invocation1.getInvocation("Часть 1", 0, tests_ps_1, new FormPS()),
+                invocation2.getInvocation("Часть 2", 100, tests_ps_2, new FormPS()),
+                invocation3.getInvocation("Часть 3", 200, tests_ps_3, new FormPS()),
+                invocation4.getInvocation("Часть 4", 300, tests_ps_4, new FormPS()),
+                invocation5.getInvocation("Часть 5", 400, tests_ps_5, new FormPS()),
+                invocation6.getInvocation("Часть 6", 500, tests_ps_6, new FormPS()),
+                invocation7.getInvocation("Часть 7", 600, tests_ps_7, new FormPS())
         );
         SettingsExamsList settingsExamsList = new SettingsExamsList();
         settingsExamsList.settings();

@@ -24,8 +24,8 @@ public interface IRoot extends RootWindows
     VBox PANE_INFO = new VBox();
     Label NAME_WEB = new Label();
     Label INFORMATION = new Label("ИНФОРМАЦИЯ");
-    Label CLICK_TEXT = new Label("1. Нажмите на предложение для перевода");
-    Label SELECTED_LANGUAGE = new Label("2. Выберите язык задания");
-    Label LOOK_YOUTUBE = new Label("3. Посмотреть урок на YOUTUBE (нажмите):");
-    Label PLAY_LIST = new Label("4. Весь playlist с практическими заданиями на YOUTUBE. Ссылка выше.");
+    Label CLICK_TEXT = new Label();
+    Label SELECTED_LANGUAGE = new Label();
+    Label LOOK_YOUTUBE = new Label();
+    Label PLAY_LIST = new Label();
 }

@@ -6,6 +6,7 @@ import interfaceProgram.ILink;
 import interfaceProgram.IRoot;
 import javafx.scene.control.Button;
 import patterns.Assignable;
+import patterns.Information;
 
 /**
  * Класс вызова задания на контрольную работу.
@@ -36,7 +37,7 @@ class Invocation implements IRoot, ILink
      * @param assignable вызываемая форма для контрольной;
      * @return возвращает кнопку навигации контрольных работ.
      */
-    Button getInvocation(String name, int value, Assignable assignable)
+    Button getInvocation(String name, int value, String url, Assignable assignable)
     {
         call.setText(name);
         call.setStyle(released);
@@ -50,6 +51,13 @@ class Invocation implements IRoot, ILink
 
         call.setOnAction(event ->
         {
+            Information information = new Information();
+            information.getInfo(url, call.getText(),
+                    "1. Введите текст в текстовое поле.",
+                    "2. Нажмите на предложение для проверки.",
+                    "3. Посмотреть контрольную на YOUTUBE (нажмите):",
+                    "4. Весь playlist с практическими заданиями на YOUTUBE. Ссылка выше.");
+
             suggestionPane.getChildren().clear();
             languagePane.getChildren().clear();
             suggestionList.getList(value, assignable);

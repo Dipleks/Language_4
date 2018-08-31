@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feafebe0-03e5-4f4f-9b0b-4d911c81482b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/patterns/Information.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/exams/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exams/Invocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppToBe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegToBe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesToBe.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesToBe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ILink.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ILink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Rule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/words/OutputWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/words/OutputWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/patterns/Invocation.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/patterns/Invocation.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <ignored path="$PROJECT_DIR$/client/target/" />
@@ -44,13 +39,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="db" value="10" />
-          <entry key="java" value="161" />
+          <entry key="java" value="171" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="161" />
+          <entry key="JAVA" value="171" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SQL" value="9" />
           <entry key="XML" value="5" />
@@ -60,13 +55,13 @@
         <counts>
           <entry key="db" value="1" />
           <entry key="dummy" value="7" />
-          <entry key="java" value="8061" />
+          <entry key="java" value="8492" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8061" />
+          <entry key="JAVA" value="8492" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="12" />
@@ -75,13 +70,32 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/Invocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="58" column="91" lean-forward="true" selection-start-line="58" selection-start-column="91" selection-end-line="58" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/main/java/exercises/PaneWithExercises.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/Language.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/SuggestionList.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/Exercises.java" />
@@ -127,8 +140,6 @@
         <option value="$PROJECT_DIR$/client/src/main/java/cards/Cards.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/cards/CallCard.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exams/Exams.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exams/FormPS.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exams/FormToBe.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exams/PaneWithForm.java" />
@@ -140,10 +151,6 @@
         <option value="$PROJECT_DIR$/client/pom.xml" />
         <option value="$PROJECT_DIR$/client/src/main/java/menu/MenuBarEngRus.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/Rule.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/exams/Invocation.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ILink.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/words/OutputWords.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppPS.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegToBe.java" />
@@ -151,6 +158,13 @@
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/OutputQuesToBe.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/OutputAppToBe.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/exercises/OutputNegPS.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/ILink.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/patterns/Information.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/exams/Invocation.java" />
       </list>
     </option>
   </component>
@@ -301,7 +315,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535696768377" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535700487233" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8 (3)" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -474,6 +488,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1028" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19263607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -484,15 +499,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.24459614" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49893278" visible="true" weight="0.24459614" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944905" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292011" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053364" side_tool="true" weight="0.19800885" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32992035" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32992035" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3287827" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053364" side_tool="true" weight="0.32992035" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4994664" weight="0.32992035" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -507,13 +522,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_history_cards.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="61" lean-forward="true" selection-start-column="61" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/resources/add_words_range.db">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -579,20 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -708,27 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/Invocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/ILink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/words/ListWords.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -770,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/OutputAppPS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/OutputNegToBe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -812,10 +778,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamPS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/ExamToBe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/ILink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="59" column="120" selection-start-line="59" selection-start-column="120" selection-end-line="59" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exercises/OutputAppPS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/patterns/Information.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/patterns/Invocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="468">
+          <caret line="61" column="91" lean-forward="true" selection-start-line="61" selection-start-column="91" selection-end-line="61" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/interfaceProgram/IRoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/exams/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="58" column="91" lean-forward="true" selection-start-line="58" selection-start-column="91" selection-end-line="58" selection-end-column="91" />
         </state>
       </provider>
     </entry>
