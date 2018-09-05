@@ -138,7 +138,7 @@ public class ExerciseTextToBe implements ITexts
         toBeFileEn.put(103,"It's so popular");
         toBeFileEn.put(104,"It's such a popular song");
         toBeFileEn.put(105,"It's such a difficult exam");
-        toBeFileEn.put(106,"It's such an easy addText");
+        toBeFileEn.put(106,"It's such an easy test");
         toBeFileEn.put(107,"He's a professional teacher");
         toBeFileEn.put(108,"He's such a professional teacher");
         toBeFileEn.put(109,"It's an expensive car");

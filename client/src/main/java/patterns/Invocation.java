@@ -87,7 +87,7 @@ public class Invocation implements IRoot, ICards, ILink
             });
             ROOT_PANE.getChildren().addAll(title);
             if (!rus.isSelected() && !eng.isSelected()) {
-                getPane("Круг закончен!");
+                getPane("Язык не выбран!");
             }
         });
         return call;

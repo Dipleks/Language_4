@@ -1,1 +1,0 @@
-CREATE TABLE words_range (id SERIAL PRIMARY KEY, russia VARCHAR(120), english VARCHAR(120), number INTEGER);
