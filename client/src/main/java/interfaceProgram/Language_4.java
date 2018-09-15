@@ -5,19 +5,18 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import menu.MenuBarEngRus;
 
-public class Language_4 extends Application implements RootWindows, IDataBase
-{
+public class Language_4 extends Application implements RootWindows, IDataBase {
+
     private MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
     private Rule rule = new Rule();
 
     @Override
-    public void init()
-    {
+    public void init() {
+
     }
 
     @Override
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
 
         menuBarEngRus.getMenu();
         ClockDisplay.clock();

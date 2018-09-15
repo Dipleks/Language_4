@@ -9,8 +9,8 @@ import javafx.util.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class ClockDisplay implements RootWindows
-{
+public class ClockDisplay implements RootWindows {
+
     private static DateTimeFormatter format = DateTimeFormatter.ofPattern("dd MMMM yyyy");
     private static DateTimeFormatter format2 = DateTimeFormatter.ofPattern("HH:mm:ss");
     private static Label uiTimer = new Label();

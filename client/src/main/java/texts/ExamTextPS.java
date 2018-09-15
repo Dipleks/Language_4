@@ -9,8 +9,8 @@ import java.util.Map;
  * @author Загороднев Д.М.
  * @version 2.0
  */
-public class ExamTextPS implements ITexts
-{
+public class ExamTextPS implements ITexts {
+
     /** Значения времени PS, языка Английский */
     private Map<Integer, String> examEnPS = new HashMap<>();
 

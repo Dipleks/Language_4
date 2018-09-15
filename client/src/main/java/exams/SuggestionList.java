@@ -12,8 +12,8 @@ import patterns.Assignable;
  * Имеет значение: <b>list</b>
  * @author Загороднев Д.М.
  */
-class SuggestionList implements IRoot
-{
+class SuggestionList implements IRoot {
+
     /** Фиксированный список заданий */
     private Label[] list = new Label[100];
 
@@ -22,10 +22,9 @@ class SuggestionList implements IRoot
      * @param value номер задания с которого начинается запись в список.
      * @param assignable вызываемая форма для контрольной.
      */
-    void getList(int value, Assignable assignable)
-    {
-        for (int i = 0; i < 100; i++)
-        {
+    void getList(int value, Assignable assignable) {
+
+        for (int i = 0; i < 100; i++) {
             int finalI = i;
             list[i] = new Label();
             list[i].setWrapText(true);
@@ -34,10 +33,9 @@ class SuggestionList implements IRoot
             list[i].setTextFill(Color.BLACK);
             list[i].setText(assignable.getAssignment(value, i, "RU"));
 
-            list[i].setOnMouseClicked(event ->
-            {
-                if (examText.getText().equalsIgnoreCase(assignable.getAssignment(value, finalI, "EN")))
-                {
+            list[i].setOnMouseClicked(event -> {
+                if (examText.getText().equalsIgnoreCase(assignable.getAssignment(value, finalI, "EN"))) {
+
                     list[finalI].setText(assignable.getAssignment(value, finalI, "EN"));
                     list[finalI].setTextFill(Color.LIMEGREEN);
                     textLanguage.setTextFill(Color.LIMEGREEN);

@@ -12,8 +12,8 @@ import menu.MenuBarEngRus;
  * Имеет значения: <b>released</b>, <b>pressed</b>.
  * @author Загороднев Д.М.
  */
-class SettingsExamsList implements IRoot
-{
+class SettingsExamsList implements IRoot {
+
     /** Стиль кнопки в отпущеном состоянии */
     private final String released = "-fx-color: #e6e6e6; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
 
@@ -23,8 +23,7 @@ class SettingsExamsList implements IRoot
     /**
      * Функция настроек.
      */
-    void settings()
-    {
+    void settings() {
         suggestionPane.setPrefWidth(WIDTH_SIZE/2.05);
         suggestionPane.setAlignment(Pos.CENTER);
         suggestionPane.setSpacing(HEIGHT_SIZE/80);

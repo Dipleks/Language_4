@@ -9,8 +9,7 @@ import java.sql.Statement;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class UpdateTable implements IDataBase
-{
+public class UpdateTable implements IDataBase {
     public void deleteUpdateCard(){
         WordsText wordsText = new WordsText();
         try {

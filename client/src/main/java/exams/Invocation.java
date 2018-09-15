@@ -13,8 +13,8 @@ import patterns.Information;
  * Имеет значения: <b>call</b>, <b>suggestionList</b>, <b>released</b>, <b>pressed</b>, <b>pressedCol</b>
  * @author Загороднев Д.М.
  */
-class Invocation implements IRoot, ILink
-{
+class Invocation implements IRoot, ILink {
+
     /** Кнопка вызова заданий */
     private Button call = new Button();
 
@@ -37,8 +37,7 @@ class Invocation implements IRoot, ILink
      * @param assignable вызываемая форма для контрольной;
      * @return возвращает кнопку навигации контрольных работ.
      */
-    Button getInvocation(String name, int value, String url, Assignable assignable)
-    {
+    Button getInvocation(String name, int value, String url, Assignable assignable) {
         call.setText(name);
         call.setStyle(released);
         call.setPrefSize(WIDTH_SIZE/10, HEIGHT_SIZE/20);
@@ -49,8 +48,7 @@ class Invocation implements IRoot, ILink
         call.setOnMousePressed(event -> call.setStyle(pressed));
         call.setOnMouseReleased(event -> call.setStyle(released));
 
-        call.setOnAction(event ->
-        {
+        call.setOnAction(event -> {
             Information information = new Information();
             information.getInfo(url, call.getText(),
                     "1. Введите текст в текстовое поле.",

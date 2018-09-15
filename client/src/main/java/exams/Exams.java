@@ -8,8 +8,7 @@ import interfaceProgram.SeparatorExercises;
  * Имеет свойство: <b>paneWithForm</b>
  * @author Загороднев Д.М.
  */
-public class Exams implements IRoot
-{
+public class Exams implements IRoot {
 
     /** Панель вызова контрольных */
     private PaneWithForm paneWithForm = new PaneWithForm();
@@ -17,16 +16,14 @@ public class Exams implements IRoot
     /**
      * Функция вызывающая метод вызова Контрольных.
      */
-    public void getExams()
-    {
+    public void getExams() {
         getExam();
     }
 
     /**
      * Функия получения меню вызова Контрольных.
      */
-    private void getExam()
-    {
+    private void getExam() {
         SeparatorExercises separator = new SeparatorExercises();
         separator.getSeparator();
         paneWithForm.getPaneForm();

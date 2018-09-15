@@ -3,8 +3,8 @@ package interfaceProgram;
 import javafx.geometry.Orientation;
 import javafx.scene.control.Separator;
 
-public class SeparatorExercises implements RootWindows
-{
+public class SeparatorExercises implements RootWindows {
+
     private Separator separatorExercises = new Separator(Orientation.VERTICAL);
 
     public void getSeparator(){

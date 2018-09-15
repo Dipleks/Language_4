@@ -1,7 +1,7 @@
 package interfaceProgram;
 
-public class EffectStyle
-{
+public class EffectStyle {
+
     public static String getStyleButtonDefault10(){
         return "-fx-color: #e6e6e6; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
     }

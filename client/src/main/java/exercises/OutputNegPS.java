@@ -6,8 +6,8 @@ import javafx.scene.control.Label;
 import patterns.Callable;
 import patterns.Invocation;
 
-public class OutputNegPS implements Callable, IRoot, ILink
-{
+public class OutputNegPS implements Callable, IRoot, ILink {
+
     @Override
     public void getList() {
         Invocation invocation1 = new Invocation();

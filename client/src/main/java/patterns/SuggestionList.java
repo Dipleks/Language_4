@@ -1,21 +1,21 @@
 package patterns;
 
+import contMenu.ContMenu;
 import interfaceProgram.EffectFont;
 import interfaceProgram.IRoot;
 import javafx.geometry.Pos;
-import javafx.scene.control.ContextMenu;
 import javafx.scene.control.Label;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuItem;
+import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
 
 // SuggestionList - список предложений
-class SuggestionList implements IRoot
-{
+class SuggestionList implements IRoot {
+
+    private ContMenu contMenu = new ContMenu();
+
     // list - ячейки для предложений
     // value - номер предложения с которого нужно начать добавление в list
-    void getList(Label[] list, int value, Assignable assignable)
-    {
+    void getList(Label[] list, int value, Assignable assignable) {
         for (int i = 0; i < list.length; i++) {
             list[i] = new Label();
             list[i].setWrapText(true);
@@ -27,57 +27,34 @@ class SuggestionList implements IRoot
             if (rus.isSelected()){
                 list[i].setText(assignable.getAssignment(value, i, "RU"));
                 list[i].setOnMouseClicked(event -> {
-                    if (list[finalI].getText().equals(assignable.getAssignment(value, finalI, "RU"))){
-                        list[finalI].setText(assignable.getAssignment(value, finalI, "EN"));
-                        list[finalI].setTextFill(Color.LIMEGREEN);
-                    } else if (list[finalI].getText().equals(assignable.getAssignment(value, finalI, "EN"))){
-                        list[finalI].setText(assignable.getAssignment(value, finalI, "RU"));
-                        list[finalI].setTextFill(Color.BLACK);
-
+                    if (event.getButton() == MouseButton.PRIMARY){
+                        if (list[finalI].getText().equals(assignable.getAssignment(value, finalI, "RU"))){
+                            list[finalI].setText(assignable.getAssignment(value, finalI, "EN"));
+                            list[finalI].setTextFill(Color.LIMEGREEN);
+                        } else if (list[finalI].getText().equals(assignable.getAssignment(value, finalI, "EN"))){
+                            list[finalI].setText(assignable.getAssignment(value, finalI, "RU"));
+                            list[finalI].setTextFill(Color.BLACK);
+                        }
                     }
                 });
             }
             if (eng.isSelected()){
                 list[i].setText(assignable.getAssignment(value, i, "EN"));
                 list[i].setOnMouseClicked(event -> {
-                    if (list[finalI].getText().equals(assignable.getAssignment(value, finalI, "EN"))){
-                        list[finalI].setText(assignable.getAssignment(value, finalI, "RU"));
-                        list[finalI].setTextFill(Color.LIMEGREEN);
-                    } else if (list[finalI].getText().equals(assignable.getAssignment(value, finalI, "RU"))){
-                        list[finalI].setText(assignable.getAssignment(value, finalI, "EN"));
-                        list[finalI].setTextFill(Color.BLACK);
-
+                    if (event.getButton() == MouseButton.PRIMARY){
+                        if (list[finalI].getText().equals(assignable.getAssignment(value, finalI, "EN"))){
+                            list[finalI].setText(assignable.getAssignment(value, finalI, "RU"));
+                            list[finalI].setTextFill(Color.LIMEGREEN);
+                        } else if (list[finalI].getText().equals(assignable.getAssignment(value, finalI, "RU"))){
+                            list[finalI].setText(assignable.getAssignment(value, finalI, "EN"));
+                            list[finalI].setTextFill(Color.BLACK);
+                        }
                     }
                 });
             }
 
-            ContextMenu subContext = new ContextMenu();
-            Menu selected = new Menu("В избранное");
-            MenuItem ps = new MenuItem("Present Simple");
-            MenuItem tobe = new MenuItem("Form \"to be\"");
-            MenuItem words = new MenuItem("Слова");
-
-            ps.setDisable(true);
-            tobe.setDisable(true);
-            words.setDisable(true);
-
-            ps.setOnAction(event -> {
-                System.out.println(list[finalI].getText());
-            });
-
-            tobe.setOnAction(event -> {
-                System.out.println(list[finalI].getText());
-            });
-            words.setOnAction(event -> {
-                System.out.println(list[finalI].getText());
-            });
-
-            selected.getItems().addAll(ps, tobe, words);
-            subContext.getItems().addAll(selected);
-
-            list[i].setOnContextMenuRequested(event -> {
-                subContext.show(list[finalI], event.getScreenX(), event.getScreenY());
-            });
+            // Контекстное меню:
+            contMenu.contMenu(list[i]);
 
         }
         suggestionPane.getChildren().addAll(list);

@@ -12,8 +12,8 @@ import javafx.scene.layout.VBox;
  * Имеет значения: <b>ps</b>, <b>tobe</b>, <b>released</b>, <b>pressed</b>.
  * @author Загороднев Д.М.
  */
-class PaneWithForm implements IRoot
-{
+class PaneWithForm implements IRoot {
+
     /** Кнопка навигации */
     private Button ps = new Button("Контрольная PS");
 
@@ -30,8 +30,7 @@ class PaneWithForm implements IRoot
      * Функция получения панели навигации по контрольным.
      * @return вернет панель с фоармами контрольных.
      */
-    VBox getPaneForm()
-    {
+    VBox getPaneForm() {
         examText.setLayoutX(WIDTH_SIZE/2.7);
         examText.setLayoutY(HEIGHT_SIZE/7);
         examText.setPrefWidth(WIDTH_SIZE/3.5);
@@ -50,8 +49,7 @@ class PaneWithForm implements IRoot
         ps.setEffect(EffectShadow.getShadow());
         ps.setOnMouseEntered(event -> ps.setStyle(pressed));
         ps.setOnMouseExited(event -> ps.setStyle(released));
-        ps.setOnAction(event ->
-        {
+        ps.setOnAction(event -> {
             ps.setStyle(pressed);
             tobe.setStyle(released);
             paneForm.getChildren().clear();
@@ -68,8 +66,7 @@ class PaneWithForm implements IRoot
         tobe.setEffect(EffectShadow.getShadow());
         tobe.setOnMouseEntered(event -> tobe.setStyle(pressed));
         tobe.setOnMouseExited(event -> tobe.setStyle(released));
-        tobe.setOnAction(event ->
-        {
+        tobe.setOnAction(event -> {
             tobe.setStyle(pressed);
             ps.setStyle(released);
             paneForm.getChildren().clear();

@@ -3,8 +3,8 @@ package texts;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExerciseTextToBe implements ITexts
-{
+public class ExerciseTextToBe implements ITexts {
+
     /** Значения времени to be, языка Английский */
     private Map<Integer, String> toBeFileEn = new HashMap<>();
 

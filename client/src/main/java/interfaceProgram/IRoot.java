@@ -5,8 +5,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
 
-public interface IRoot extends RootWindows
-{
+public interface IRoot extends RootWindows {
+
     VBox suggestionPane = new VBox();
     ScrollPane exercisesPane = new ScrollPane();
 

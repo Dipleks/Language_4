@@ -4,8 +4,8 @@ import patterns.Assignable;
 import texts.ExerciseTextPS;
 import texts.ExerciseTextToBe;
 
-public class FormToBe implements Assignable
-{
+public class FormToBe implements Assignable {
+
     private ExerciseTextToBe text = new ExerciseTextToBe();
 
     @Override

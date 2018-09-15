@@ -3,8 +3,8 @@ package texts;
 import java.util.HashMap;
 import java.util.Map;
 
-public class WordsText implements ITexts
-{
+public class WordsText implements ITexts {
+
     private Map<Integer, String> wordEn = new HashMap<>();
     private Map<Integer, String> wordRu = new HashMap<>();
 

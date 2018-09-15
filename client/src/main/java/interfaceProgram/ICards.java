@@ -4,8 +4,8 @@ import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
-public interface ICards extends RootWindows
-{
+public interface ICards extends RootWindows {
+
     Button next = new Button("Далее"); //следюущее предложение без перевода и проверки
     Button translation = new Button("Перевод"); //перевод
 

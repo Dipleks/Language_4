@@ -5,8 +5,8 @@ import interfaceProgram.ICards;
 import interfaceProgram.IRoot;
 import interfaceProgram.RootWindows;
 
-public class ClearDisplay implements RootWindows, IRoot, ICards
-{
+public class ClearDisplay implements RootWindows, IRoot, ICards {
+
     // Полная зачистка главного окна:
     public static void clearMethod() {
         suggestionPane.getChildren().clear();

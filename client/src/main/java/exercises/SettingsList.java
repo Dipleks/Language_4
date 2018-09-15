@@ -7,8 +7,8 @@ import javafx.geometry.Pos;
 import menu.ClearDisplay;
 import menu.MenuBarEngRus;
 
-class SettingsList implements IRoot
-{
+class SettingsList implements IRoot {
+
     private final String released = "-fx-color: #e6e6e6; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
     private final String pressed = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
 
@@ -45,7 +45,7 @@ class SettingsList implements IRoot
             ClearDisplay.clearMethod();
             MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
             menuBarEngRus.getMenu();
-            Exercises addExerciseExam = new exercises.Exercises();
+            Exercises addExerciseExam = new Exercises();
             addExerciseExam.getExercises();
         });
         ROOT_PANE.getChildren().addAll(exercisesPane, invocationPane, paneLanguageV, backward);

@@ -6,8 +6,8 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 
-class PaneWithForm implements IRoot
-{
+class PaneWithForm implements IRoot {
+
     private Button ps = new Button("Present Simple");
     private Button tobe = new Button("Form to be");
     private final String released = "-fx-color: #e6e6e6; -fx-font: bold italic 12pt Georgia; -fx-focus-color: GREEN;";

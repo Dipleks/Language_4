@@ -1,7 +1,7 @@
 package interfaceProgram;
 
-public interface ILink
-{
+public interface ILink {
+
     // Задания Present Simple Утверждения:
     String app_ps_1 = "https://www.youtube.com/watch?v=Hp9wUEDasY4&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&t=1s&index=2";
     String app_ps_2 = "https://www.youtube.com/watch?v=nXI9CN5a6ew&index=3&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X";

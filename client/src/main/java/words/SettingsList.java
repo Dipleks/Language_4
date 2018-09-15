@@ -5,8 +5,8 @@ import interfaceProgram.EffectStyle;
 import interfaceProgram.IRoot;
 import javafx.geometry.Pos;
 
-class SettingsList implements IRoot
-{
+class SettingsList implements IRoot {
+
     void settings(){
         suggestionPane.setPrefWidth(WIDTH_SIZE/2.05);
         suggestionPane.setAlignment(Pos.CENTER);

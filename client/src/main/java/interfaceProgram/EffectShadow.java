@@ -3,8 +3,8 @@ package interfaceProgram;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.paint.Color;
 
-public class EffectShadow
-{
+public class EffectShadow {
+
     public static DropShadow getShadow(){
         DropShadow shadow =new DropShadow();
         shadow.setColor(Color.rgb(0, 0, 0, 0.5));

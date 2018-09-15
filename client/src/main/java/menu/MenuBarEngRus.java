@@ -18,8 +18,8 @@ import words.Words;
 
 import java.sql.*;
 
-public class MenuBarEngRus implements RootWindows, IDataBase
-{
+public class MenuBarEngRus implements RootWindows, IDataBase {
+
     private final MenuBar menuBar = new MenuBar();
 
     private SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();

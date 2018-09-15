@@ -8,14 +8,13 @@ import patterns.Callable;
  * Класс вызова Контрольных To Be.
  * @author Загороднев Д.М.
  */
-public class ExamToBe implements Callable, IRoot, ILink
-{
+public class ExamToBe implements Callable, IRoot, ILink {
+
     /**
      * Функция получения меню навигации по Контрольным To Be
      */
     @Override
-    public void getList()
-    {
+    public void getList() {
         Invocation invocation1 = new Invocation();
         Invocation invocation2 = new Invocation();
         Invocation invocation3 = new Invocation();

@@ -5,8 +5,8 @@ import javafx.scene.control.Label;
 import patterns.Callable;
 import patterns.Invocation;
 
-public class OutputWords implements Callable, IRoot
-{
+public class OutputWords implements Callable, IRoot {
+
     @Override
     public void getList() {
         Invocation invocation1 = new Invocation();

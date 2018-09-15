@@ -4,8 +4,8 @@ import interfaceProgram.IRoot;
 import interfaceProgram.SeparatorExercises;
 import javafx.scene.control.Label;
 
-public class Words implements IRoot
-{
+public class Words implements IRoot {
+
     public void getWords(){
         getWord();
     }

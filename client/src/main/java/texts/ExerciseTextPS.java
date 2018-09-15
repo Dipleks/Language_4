@@ -3,8 +3,8 @@ package texts;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExerciseTextPS implements ITexts
-{
+public class ExerciseTextPS implements ITexts {
+
     /** Значения времени PS, языка Английский */
     private Map<Integer, String> psFileEn = new HashMap<>();
 

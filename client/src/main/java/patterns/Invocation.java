@@ -22,8 +22,8 @@ import java.util.List;
 // Invocation - вызов. Класс создает новую кнопку котороая помещается в
 // массив кнопок который добавляется в окно для вызова соответствующего
 // списка предложений
-public class Invocation implements IRoot, ICards, ILink
-{
+public class Invocation implements IRoot, ICards, ILink {
+
     private int number;
     private Button call = new Button();
     private SuggestionList suggestionList = new SuggestionList();
@@ -32,8 +32,7 @@ public class Invocation implements IRoot, ICards, ILink
     private final String pressedCol = "-fx-color: #fdd2a9; -fx-font: bold italic 10pt Georgia; -fx-focus-color: GREEN;";
 
     // кнопка задания
-    public Button getInvocation(String name, Label[] list, int value, String url, Assignable assignable)
-    {
+    public Button getInvocation(String name, Label[] list, int value, String url, Assignable assignable) {
         rus.setStyle(pressedCol);
         rus.setPrefSize(WIDTH_SIZE/14, HEIGHT_SIZE/25);
         rus.setEffect(EffectShadow.getShadow());
@@ -53,8 +52,7 @@ public class Invocation implements IRoot, ICards, ILink
         call.setOnMouseExited(event -> call.setStyle(released));
         call.setOnMousePressed(event -> call.setStyle(pressed));
         call.setOnMouseReleased(event -> call.setStyle(released));
-        call.setOnAction(event ->
-        {
+        call.setOnAction(event -> {
             Information information = new Information();
             information.getInfo(url, call.getText(), "1. Нажмите на предложение для перевода",
                     "2. Выберите язык задания",
@@ -94,8 +92,7 @@ public class Invocation implements IRoot, ICards, ILink
     }
 
     // кнопка в картачках
-    public Button getOutputCard(String name, int value, ITexts iTexts)
-    {
+    public Button getOutputCard(String name, int value, ITexts iTexts) {
         ROOT_PANE.getChildren().remove(rus);
         ROOT_PANE.getChildren().remove(eng);
         List<String> list1 = new ArrayList<>();

@@ -3,8 +3,8 @@ package exercises;
 import patterns.Assignable;
 import texts.ExerciseTextPS;
 
-public class FormPS implements Assignable
-{
+public class FormPS implements Assignable {
+
     private ExerciseTextPS text = new ExerciseTextPS();
 
     @Override

@@ -3,8 +3,8 @@ package exercises;
 import interfaceProgram.IRoot;
 import interfaceProgram.SeparatorExercises;
 
-public class Exercises implements IRoot
-{
+public class Exercises implements IRoot {
+
     private PaneWithForm paneWithForm = new PaneWithForm();
 
     public void getExercises(){

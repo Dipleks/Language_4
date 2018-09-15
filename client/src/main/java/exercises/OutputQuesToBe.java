@@ -6,8 +6,8 @@ import javafx.scene.control.Label;
 import patterns.Callable;
 import patterns.Invocation;
 
-public class OutputQuesToBe implements Callable, IRoot, ILink
-{
+public class OutputQuesToBe implements Callable, IRoot, ILink {
+
     @Override
     public void getList() {
         Invocation invocation1 = new Invocation();

@@ -31,12 +31,10 @@ class CallCard implements ICards
      * Функция получения списка карточек.
      * @return возвращает панель с кнопками типа карточек.
      */
-    VBox getCallCards()
-    {
+    VBox getCallCards() {
         getSettings();
 
-        examPS.setOnAction(event ->
-        {
+        examPS.setOnAction(event -> {
             remove();
             examPS.setStyle(EffectStyle.getStyleButton12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
@@ -60,8 +58,7 @@ class CallCard implements ICards
 
         });
 
-        examToBe.setOnAction(event ->
-        {
+        examToBe.setOnAction(event -> {
             remove();
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButton12());
@@ -87,8 +84,7 @@ class CallCard implements ICards
             );
         });
 
-        word.setOnAction(event ->
-        {
+        word.setOnAction(event -> {
             remove();
             examPS.setStyle(EffectStyle.getStyleButtonDefault12());
             examToBe.setStyle(EffectStyle.getStyleButtonDefault12());
@@ -125,8 +121,8 @@ class CallCard implements ICards
     /**
      * Функция получения настроек меню навигации карточек.
      */
-    private void getSettings()
-    {
+    private void getSettings() {
+
         examPS.setPrefSize(w, h);
         examToBe.setPrefSize(w, h);
         word.setPrefSize(w, h);
@@ -194,8 +190,8 @@ class CallCard implements ICards
     /**
      * Функция очистки элементов навигации карточек.
      */
-    private void remove()
-    {
+    private void remove() {
+
         ROOT_PANE.getChildren().remove(next);
         ROOT_PANE.getChildren().remove(translation);
         ROOT_PANE.getChildren().remove(CALL_CARDS);

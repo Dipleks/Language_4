@@ -14,10 +14,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class Information implements IRoot
-{
-    public void getInfo(String url, String name, String click, String selected, String look, String play)
-    {
+public class Information implements IRoot {
+
+    public void getInfo(String url, String name, String click, String selected, String look, String play) {
         CLICK_TEXT.setText(click);
         SELECTED_LANGUAGE.setText(selected);
         LOOK_YOUTUBE.setText(look);
@@ -43,14 +42,12 @@ public class Information implements IRoot
 
         PANE_INFO.getChildren().addAll(INFORMATION, CLICK_TEXT, SELECTED_LANGUAGE, LOOK_YOUTUBE, getVideo(url, name), PLAY_LIST);
         ROOT_PANE.getChildren().add(PANE_INFO);
-        if (url == null)
-        {
+        if (url == null) {
             ROOT_PANE.getChildren().remove(PANE_INFO);
         }
     }
 
-    private Label getVideo(String url, String name)
-    {
+    private Label getVideo(String url, String name) {
         Stage web = new Stage();
         Group group = new Group();
         WebView webview = new WebView();
@@ -60,8 +57,7 @@ public class Information implements IRoot
         NAME_WEB.setTextFill(Color.LIMEGREEN);
         NAME_WEB.setStyle(EffectStyle.getStyleLabel12());
 
-        NAME_WEB.setOnMouseClicked(event1 ->
-        {
+        NAME_WEB.setOnMouseClicked(event1 -> {
             webview.setPrefSize(WIDTH_SIZE/1.5, HEIGHT_SIZE/1.5);
             webview.getEngine().load(url);
             web.setScene(scene);

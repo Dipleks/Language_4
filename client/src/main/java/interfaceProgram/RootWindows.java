@@ -9,8 +9,8 @@ import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
-public interface RootWindows
-{
+public interface RootWindows {
+
     Stage WINDOW = new Stage();
     Screen SCREEN = Screen.getPrimary();
     double WIDTH_SIZE = SCREEN.getBounds().getWidth();

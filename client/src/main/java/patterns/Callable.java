@@ -1,6 +1,6 @@
 package patterns;
 
-public interface Callable
-{
+public interface Callable {
+
     void getList();
 }
