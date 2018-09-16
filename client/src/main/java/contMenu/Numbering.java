@@ -1,16 +1,16 @@
-package contMenu.TEST_SER;
+package contMenu;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
 @JsonAutoDetect
-class Number
+public class Numbering
 {
     public int n;
 
-    Number() { }
+    Numbering() { }
 
     @Override
     public String toString() {
-        return "n = " + n;
+        return "" + n;
     }
 }

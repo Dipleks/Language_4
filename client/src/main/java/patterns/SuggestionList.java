@@ -54,7 +54,7 @@ class SuggestionList implements IRoot {
             }
 
             // Контекстное меню:
-            contMenu.contMenu(list[i]);
+            contMenu.contMenu(list[i], value + i);
 
         }
         suggestionPane.getChildren().addAll(list);

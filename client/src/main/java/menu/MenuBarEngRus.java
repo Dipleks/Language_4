@@ -3,6 +3,8 @@ package menu;
 import cards.Cards;
 import db.IDataBase;
 import exams.Exams;
+import favourites.Favourites;
+import hear.HearTraining;
 import interfaceProgram.RootWindows;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -29,7 +31,9 @@ public class MenuBarEngRus implements RootWindows, IDataBase {
     private final MenuItem menuExercises = new MenuItem("Задания");
     private final MenuItem menuCards = new MenuItem("Карточки");
     private final MenuItem menuTesting = new MenuItem("Test of time");
+    private final MenuItem hear = new MenuItem("Hearing training");
     private final MenuItem menu_my_words = new MenuItem("Мой словарь");
+    private final MenuItem favourites = new MenuItem("Избранное");
     private final MenuItem menuExam = new MenuItem("Контрольные");
     private final MenuItem menuWord = new MenuItem("Слова");
     private final MenuItem textsLevelOne = new MenuItem("Легкий");
@@ -45,6 +49,7 @@ public class MenuBarEngRus implements RootWindows, IDataBase {
     public void getMenu() {
         ROOT_PANE.getChildren().addAll(getMenuBar());
     }
+
     private MenuBar getMenuBar() {
 
         getMenuPS();
@@ -56,6 +61,8 @@ public class MenuBarEngRus implements RootWindows, IDataBase {
         getMenuCards();
         getMenuWord();
         getMenuTesting();
+        getMenuHear();
+        getFavourites();
 
         menuHelp.setDisable(true);
         textsLevelTwo.setDisable(true);
@@ -64,6 +71,8 @@ public class MenuBarEngRus implements RootWindows, IDataBase {
         menuSetting.setDisable(true);
         menuCheck.setDisable(true);
         menuTesting.setDisable(true);
+        hear.setDisable(true);
+//        favourites.setDisable(true);
 
         try {
             Class.forName("org.postgresql.Driver");
@@ -80,8 +89,8 @@ public class MenuBarEngRus implements RootWindows, IDataBase {
 
         menuBar.setMinWidth(WIDTH_SIZE);
         menuServes.getItems().addAll(menuSetting, about);
-        menuFile.getItems().addAll(menuExercises, menuExam, menuWord, separatorMenuItem, menu_my_words);
-        menuCheck.getItems().addAll(menuCards, menuTesting);
+        menuFile.getItems().addAll(menuExercises, menuExam, menuWord, separatorMenuItem, favourites, menu_my_words);
+        menuCheck.getItems().addAll(menuCards, menuTesting, hear);
         menuBar.getMenus().addAll(menuFile, menuCheck, menuHelp, menuServes);
 
         return menuBar;
@@ -103,6 +112,16 @@ public class MenuBarEngRus implements RootWindows, IDataBase {
             menuBarEngRus.getMenu();
             Testing testing = new Testing();
             testing.getTesting();
+        });
+    }
+
+    private void getMenuHear(){
+        hear.setOnAction(event -> {
+            ClearDisplay.clearMethod();
+            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+            menuBarEngRus.getMenu();
+            HearTraining hearTraining = new HearTraining();
+            hearTraining.sound();
         });
     }
 
@@ -140,6 +159,17 @@ public class MenuBarEngRus implements RootWindows, IDataBase {
 //            menu_my_words.setVisible(false);
 //        }
     }
+
+    private void getFavourites(){
+        favourites.setOnAction(event -> {
+            ClearDisplay.clearMethod();
+            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+            menuBarEngRus.getMenu();
+            Favourites favourites = new Favourites();
+            favourites.getFavourites();
+        });
+    }
+
     private void getMenuPS(){
         menuExercises.setOnAction(event -> {
             ClearDisplay.clearMethod();
@@ -159,7 +189,7 @@ public class MenuBarEngRus implements RootWindows, IDataBase {
             label.setPrefSize(WIDTH_SIZE/4, HEIGHT_SIZE/4);
             label.setText("Автор программы Ghost \nАвтор заданий Александр Бебрис \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка.\n\nПрограмма находится в разработке." +
-                    "\n\n                                    Версия программы: 3.1.2");
+                    "\n\n                                    Версия программы: 3.1.3");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, HEIGHT_SIZE*0.015));
             label.setAlignment(Pos.CENTER);
