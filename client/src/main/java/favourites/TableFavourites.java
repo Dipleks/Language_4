@@ -22,13 +22,14 @@ import java.io.InputStreamReader;
 
 public class TableFavourites implements RootWindows {
 
-    private TableView<TableFavouritesColumn> table = new TableView<>();
     private TableColumn<TableFavouritesColumn, String> en = new TableColumn<>("English");
     private TableColumn<TableFavouritesColumn, String> ru = new TableColumn<>("Русский");
-    private ObservableList<TableFavouritesColumn> lists = FXCollections.observableArrayList();
+    private ObservableList<TableFavouritesColumn> lists = null;
 
     public void getTable(String name){
 
+        lists = FXCollections.observableArrayList();
+        TableView<TableFavouritesColumn> table = new TableView<>();
         table.getColumns().clear();
         ROOT_PANE.getChildren().remove(table);
 

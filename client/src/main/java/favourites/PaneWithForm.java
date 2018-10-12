@@ -4,6 +4,7 @@ import interfaceProgram.EffectShadow;
 import interfaceProgram.RootWindows;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
+import menu.ClearDisplay;
 
 class PaneWithForm implements RootWindows {
 
@@ -25,6 +26,11 @@ class PaneWithForm implements RootWindows {
         ps.setOnMouseEntered(event -> ps.setStyle(pressed));
         ps.setOnMouseExited(event -> ps.setStyle(released));
         ps.setOnAction(event -> {
+            ClearDisplay.clearFavourites();
+            ROOT_PANE.getChildren().add(paneForm);
+            ps.setDisable(true);
+            tobe.setDisable(false);
+            word.setDisable(false);
             tableFavourites.getTable("ps");
             ps.setStyle(pressed);
             tobe.setStyle(released);
@@ -37,6 +43,11 @@ class PaneWithForm implements RootWindows {
         tobe.setOnMouseEntered(event -> tobe.setStyle(pressed));
         tobe.setOnMouseExited(event -> tobe.setStyle(released));
         tobe.setOnAction(event -> {
+            ClearDisplay.clearFavourites();
+            ROOT_PANE.getChildren().add(paneForm);
+            ps.setDisable(false);
+            tobe.setDisable(true);
+            word.setDisable(false);
             tableFavourites.getTable("tobe");
             tobe.setStyle(pressed);
             ps.setStyle(released);
@@ -49,6 +60,11 @@ class PaneWithForm implements RootWindows {
         word.setOnMouseEntered(event -> word.setStyle(pressed));
         word.setOnMouseExited(event -> word.setStyle(released));
         word.setOnAction(event -> {
+            ClearDisplay.clearFavourites();
+            ROOT_PANE.getChildren().add(paneForm);
+            ps.setDisable(false);
+            tobe.setDisable(false);
+            word.setDisable(true);
             tableFavourites.getTable("word");
             tobe.setStyle(released);
             ps.setStyle(released);

@@ -1,9 +1,7 @@
 package menu;
 
-import interfaceProgram.ClockDisplay;
-import interfaceProgram.ICards;
-import interfaceProgram.IRoot;
-import interfaceProgram.RootWindows;
+import favourites.Favourites;
+import interfaceProgram.*;
 
 public class ClearDisplay implements RootWindows, IRoot, ICards {
 
@@ -29,6 +27,13 @@ public class ClearDisplay implements RootWindows, IRoot, ICards {
         ClockDisplay.clock();
         MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
         menuBarEngRus.getMenu();
+    }
+
+    // Очистка избранного
+    public static void clearFavourites(){
+        clearMethod();
+        SeparatorExercises separator = new SeparatorExercises();
+        separator.getSeparator();
     }
 
 
